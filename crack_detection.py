@@ -67,11 +67,12 @@ DATA ascii
 #mode = 'rgb'
 #mode = 'feat'
 mode = 'fpfh'
-save_viz = True
+save_viz = False
+print('params',sys.argv)
 agg_precision = []
 agg_recall = []
-#for column_id in range(1, 8):
-for column_id in [7]:
+for column_id in range(1, 8):
+#for column_id in [7]:
     column = numpy.loadtxt('data/column%d.ply' % column_id, skiprows=13)
 #    print('Column',column.shape)
 
@@ -108,8 +109,10 @@ for column_id in [7]:
             fpfh = numpy.load('data/column%d_fpfh.npy'%column_id)
         except FileNotFoundError:
             savePCD('tmp/tmp.pcd', column)
-            os.system('pcl_normal_estimation tmp/tmp.pcd tmp/normal.pcd -radius 0.015')
-            os.system('pcl_fpfh_estimation tmp/normal.pcd tmp/fpfh.pcd -radius 0.015')
+            R1 = 0.015
+            R2 = 0.01
+            os.system('pcl_normal_estimation tmp/tmp.pcd tmp/normal.pcd -radius %f' % R1)
+            os.system('pcl_fpfh_estimation tmp/normal.pcd tmp/fpfh.pcd -radius %f' % R2)
             os.system('pcl_convert_pcd_ascii_binary tmp/fpfh.pcd tmp/fpfh_ascii.pcd 0')
             fpfh = loadFPFH('tmp/fpfh_ascii.pcd')
             numpy.save('data/column%d_fpfh.npy'%column_id, fpfh)
@@ -118,7 +121,11 @@ for column_id in [7]:
             embedded_color = (X_embedded - X_embedded.min(axis=0)) / (X_embedded.max(axis=0) - X_embedded.min(axis=0))
             column[:,3:6] = embedded_color * 255
             savePLY('viz/column%d_%s.ply' % (column_id, mode), column)
-        sys.exit(1)
+        K = 2
+        kmeans = KMeans(n_clusters=K,init='k-means++',random_state=0)
+        kmeans.fit(fpfh)
+        counts = [numpy.sum(kmeans.labels_==k) for k in range(K)]	
+        predict_mask = kmeans.labels_==numpy.argmin(counts)
     elif mode=='norm' or mode=='curv':
         try:
             normals = numpy.load('data/column%d_norm.npy'%column_id)
@@ -192,4 +199,4 @@ for column_id in [7]:
     agg_recall.append(recall)
     print('Column %d precision %.2f recall %.2f'%(column_id, precision, recall))
 
-print('%s precision %.2f recall %.2f'%(mode, numpy.mean(agg_precision), numpy.mean(agg_recall)))
+print('Overall %s precision %.2f recall %.2f'%(mode, numpy.mean(agg_precision), numpy.mean(agg_recall)))
