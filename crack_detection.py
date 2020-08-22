@@ -5,7 +5,10 @@ from sklearn.cluster import KMeans
 import itertools
 import math
 from sklearn.decomposition import PCA
+from pyquaternion import Quaternion
 import os
+from scipy.spatial import ConvexHull
+import networkx as nx
 
 def savePLY(filename, points):
 	f = open(filename, 'w')
@@ -60,17 +63,75 @@ DATA ascii
 	f.close()
 	print('Saved %d points to %s' % (l,filename))
 
-#mode = sys.argv[1]
+def get_crack_dimensions(crack_points):
+#    print(len(crack_points), crack_points.min(axis=0), crack_points.max(axis=0))
+    # project to plane
+    crack_points_centered = crack_points - numpy.mean(crack_points, axis=0)
+    cov = crack_points.T.dot(crack_points_centered) / len(crack_points)
+#    print('cov', cov)
+    U, S, V = numpy.linalg.svd(cov)
+    normal = V[2]
+    offset = -numpy.mean(crack_points.dot(normal))
+#    print('normal',normal, offset)
+    # rotate to XY plane
+    from_vec = normal
+    to_vec = numpy.array([0,0,1])
+    q = Quaternion(scalar=from_vec.dot(to_vec)+1, vector=numpy.cross(from_vec, to_vec)).normalised
+    R = q.rotation_matrix
+#    print(R)
+#    print(q.axis, q.angle/numpy.pi*180)
+#    print(normal.dot(R.T))
+    crack_points_XY = crack_points.dot(R.T)[:, :2]
+#    print(crack_points_XY.min(axis=0), crack_points_XY.max(axis=0))
+    cloud = crack_points_XY[ConvexHull(crack_points_XY).vertices]
+#    numpy.savetxt('crack_points.txt', crack_points)
+#    numpy.savetxt('crack_points_XY.txt', crack_points_XY)
+#    numpy.savetxt('hull.txt', hull)
+    edgeAngles = []
+    for i in range(len(cloud)-1):
+        theta = numpy.arctan2(cloud[i+1,1]-cloud[i,1], cloud[i+1,0]-cloud[i,0])
+        edgeAngles.append(theta)
+    minArea = float('inf');
+    crack_width = 0
+    crack_length = 0
+    for theta in edgeAngles:
+        R = numpy.array([
+            [numpy.cos(theta), numpy.sin(theta)],
+            [-numpy.sin(theta), numpy.cos(theta)]
+        ])
+        rotated = R.dot(cloud.T).T
+        xmin, ymin = rotated.min(axis=0)
+        xmax, ymax = rotated.max(axis=0)
+        area = (xmax-xmin) * (ymax-ymin)
+        if xmax-xmin > ymax-ymin and area < minArea:
+            minArea = area
+            crack_width = xmax-xmin
+            crack_length = ymax-ymin
+            box = numpy.array([
+                [xmin,ymin],
+                [xmax,ymin],
+                [xmin,ymax],
+                [xmax,ymax],
+            ])
+            box = R.T.dot(box.T).T
+            loadX = R[0,0] * (xmin+xmax)/2 + R[1,0] * (ymin+ymax)/2
+            loadY = R[0,1] * (xmin + xmax)/2 + R[1,1] * (ymin + ymax)/2
+#    print('crack', crack_width, crack_length)
+    return crack_width, crack_length
+
+mode = sys.argv[1]
+#mode = 'rgb'
+#mode = 'int'
 #mode = 'norm'
 #mode = 'curv'
-#mode = 'int'
-#mode = 'rgb'
+#mode = 'fpfh'
 #mode = 'feat'
-mode = 'fpfh'
 save_viz = False
-print('params',sys.argv)
 agg_precision = []
 agg_recall = []
+agg_F1 = []
+agg_length_err = []
+agg_width_err = []
 for column_id in range(1, 8):
 #for column_id in [7]:
     column = numpy.loadtxt('data/column%d.ply' % column_id, skiprows=13)
@@ -90,7 +151,40 @@ for column_id in range(1, 8):
         column[:,3:6] = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
         column[crack_mask, 3:6] = [255,255,0]
         savePLY('data/column%d_gt.ply'%column_id, column)
-#    print('Crack',numpy.sum(crack_mask))
+
+    try:
+        crack_main_mask = numpy.load('data/column%d_main_mask.npy'%column_id)
+    except FileNotFoundError:
+        crack = column[crack_mask]
+        resolution = 0.008
+        voxel_map = {}
+        edges = []
+        for i in range(len(crack)):
+            k = tuple(numpy.round(crack[i, :3] / resolution).astype(int))
+            if not k in voxel_map:
+                voxel_map[k] = []
+            voxel_map[k].append(i)
+        for k in voxel_map:
+            for offset in itertools.product([-1,0,1],[-1,0,1],[-1,0,1]):
+                kk = (k[0]+offset[0], k[1]+offset[1], k[2]+offset[2])
+                if kk in voxel_map:
+                    for i in voxel_map[k]:
+                        for j in voxel_map[kk]:
+                            edges.append([i, j])
+        G = nx.Graph(edges)
+        clusters = nx.connected_components(G)
+        clusters = [list(c) for c in clusters]
+        max_cluster_size = max([len(c) for c in clusters])
+        crack_main_mask = numpy.zeros(len(crack_mask), dtype=bool)
+        for c in clusters:
+            if len(c)==max_cluster_size:
+                crack_main_mask[numpy.nonzero(crack_mask)[0][c]] = True
+                break
+        numpy.save('data/column%d_main_mask.npy'%column_id, crack_main_mask)
+        column[:,3:6] = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
+        column[crack_main_mask, 3:6] = [255,255,0]
+        savePLY('data/column%d_main_gt.ply'%column_id, column)
+#    print('Crack',numpy.sum(crack_mask),numpy.sum(crack_main_mask))
 
     if mode=='feat':
         features = numpy.load('data/column%d_feat.npy'%column_id)
@@ -195,8 +289,23 @@ for column_id in range(1, 8):
     tp = numpy.sum(numpy.logical_and(predict_mask, crack_mask))
     precision = tp / numpy.sum(predict_mask)
     recall = tp / numpy.sum(crack_mask)
+    F1 = 2 * precision * recall / (precision + recall + 1e-6)
     agg_precision.append(precision)
     agg_recall.append(recall)
-    print('Column %d precision %.2f recall %.2f'%(column_id, precision, recall))
+    agg_F1.append(F1)
 
-print('Overall %s precision %.2f recall %.2f'%(mode, numpy.mean(agg_precision), numpy.mean(agg_recall)))
+    gt_length, gt_width = get_crack_dimensions(column[crack_main_mask, :3])
+    intersect_mask = crack_main_mask & predict_mask
+    if numpy.sum(intersect_mask) > 3:
+        predict_length, predict_width = get_crack_dimensions(column[intersect_mask, :3])
+        length_err = numpy.abs(predict_length - gt_length)
+        width_err = numpy.abs(predict_width - gt_width)
+        agg_length_err.append(length_err)
+        agg_width_err.append(width_err)
+    else:
+        length_err = numpy.nan
+        width_err = numpy.nan
+
+    print('Column %d precision %.2f recall %.2f F1 %.2f length %.3f width %.3f'%(column_id, precision, recall, F1, length_err, width_err))
+
+print('Overall %s precision %.2f recall %.2f F1 %.2f length %.3f width %.3f'%(mode, numpy.mean(agg_precision), numpy.mean(agg_recall), numpy.mean(agg_F1), numpy.mean(agg_length_err), numpy.mean(agg_width_err)))
