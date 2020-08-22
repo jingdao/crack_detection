@@ -2,6 +2,7 @@ import numpy
 import matplotlib.pyplot as plt
 import sys
 from sklearn.cluster import KMeans
+from sklearn.mixture import GaussianMixture
 import itertools
 import math
 from sklearn.decomposition import PCA
@@ -9,6 +10,7 @@ from pyquaternion import Quaternion
 import os
 from scipy.spatial import ConvexHull
 import networkx as nx
+import argparse
 
 def savePLY(filename, points):
 	f = open(filename, 'w')
@@ -64,29 +66,19 @@ DATA ascii
 	print('Saved %d points to %s' % (l,filename))
 
 def get_crack_dimensions(crack_points):
-#    print(len(crack_points), crack_points.min(axis=0), crack_points.max(axis=0))
     # project to plane
     crack_points_centered = crack_points - numpy.mean(crack_points, axis=0)
     cov = crack_points.T.dot(crack_points_centered) / len(crack_points)
-#    print('cov', cov)
     U, S, V = numpy.linalg.svd(cov)
     normal = V[2]
     offset = -numpy.mean(crack_points.dot(normal))
-#    print('normal',normal, offset)
     # rotate to XY plane
     from_vec = normal
     to_vec = numpy.array([0,0,1])
     q = Quaternion(scalar=from_vec.dot(to_vec)+1, vector=numpy.cross(from_vec, to_vec)).normalised
     R = q.rotation_matrix
-#    print(R)
-#    print(q.axis, q.angle/numpy.pi*180)
-#    print(normal.dot(R.T))
     crack_points_XY = crack_points.dot(R.T)[:, :2]
-#    print(crack_points_XY.min(axis=0), crack_points_XY.max(axis=0))
     cloud = crack_points_XY[ConvexHull(crack_points_XY).vertices]
-#    numpy.savetxt('crack_points.txt', crack_points)
-#    numpy.savetxt('crack_points_XY.txt', crack_points_XY)
-#    numpy.savetxt('hull.txt', hull)
     edgeAngles = []
     for i in range(len(cloud)-1):
         theta = numpy.arctan2(cloud[i+1,1]-cloud[i,1], cloud[i+1,0]-cloud[i,0])
@@ -116,17 +108,21 @@ def get_crack_dimensions(crack_points):
             box = R.T.dot(box.T).T
             loadX = R[0,0] * (xmin+xmax)/2 + R[1,0] * (ymin+ymax)/2
             loadY = R[0,1] * (xmin + xmax)/2 + R[1,1] * (ymin + ymax)/2
-#    print('crack', crack_width, crack_length)
     return crack_width, crack_length
 
-mode = sys.argv[1]
-#mode = 'rgb'
-#mode = 'int'
-#mode = 'norm'
-#mode = 'curv'
-#mode = 'fpfh'
-#mode = 'feat'
-save_viz = False
+parser = argparse.ArgumentParser()
+parser.add_argument('--mode', type=str, default='feat')
+parser.add_argument('--clustering', type=str, default='kmeans')
+parser.add_argument('--viz', action='store_true')
+args = parser.parse_args()
+K_param = {
+    'rgb':3,
+    'int':3,
+    'norm':3,
+    'curv':2,
+    'fpfh':2,
+    'feat':5,
+}
 agg_precision = []
 agg_recall = []
 agg_F1 = []
@@ -135,7 +131,7 @@ agg_width_err = []
 for column_id in range(1, 8):
 #for column_id in [7]:
     column = numpy.loadtxt('data/column%d.ply' % column_id, skiprows=13)
-#    print('Column',column.shape)
+    column_gray = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
 
     try:
         crack_mask = numpy.load('data/column%d_mask.npy'%column_id)
@@ -148,7 +144,7 @@ for column_id in range(1, 8):
             if p in crack_set:
                 crack_mask[i] = True
         numpy.save('data/column%d_mask.npy'%column_id, crack_mask)
-        column[:,3:6] = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
+        column[:,3:6] = column_gray
         column[crack_mask, 3:6] = [255,255,0]
         savePLY('data/column%d_gt.ply'%column_id, column)
 
@@ -181,24 +177,18 @@ for column_id in range(1, 8):
                 crack_main_mask[numpy.nonzero(crack_mask)[0][c]] = True
                 break
         numpy.save('data/column%d_main_mask.npy'%column_id, crack_main_mask)
-        column[:,3:6] = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
+        column[:,3:6] = column_gray
         column[crack_main_mask, 3:6] = [255,255,0]
         savePLY('data/column%d_main_gt.ply'%column_id, column)
-#    print('Crack',numpy.sum(crack_mask),numpy.sum(crack_main_mask))
 
-    if mode=='feat':
+    if args.mode=='feat':
         features = numpy.load('data/column%d_feat.npy'%column_id)
-        if save_viz:
+        if args.viz:
             X_embedded = PCA(n_components=3).fit_transform(features)
             embedded_color = (X_embedded - X_embedded.min(axis=0)) / (X_embedded.max(axis=0) - X_embedded.min(axis=0))
             column[:,3:6] = embedded_color * 255
-            savePLY('viz/column%d_%s.ply' % (column_id, mode), column)
-        K = 5
-        kmeans = KMeans(n_clusters=K,init='k-means++',random_state=0)
-        kmeans.fit(features)
-        counts = [numpy.sum(kmeans.labels_==k) for k in range(K)]	
-        predict_mask = kmeans.labels_==numpy.argmin(counts)
-    elif mode=='fpfh':
+            savePLY('viz/column%d_%s.ply' % (column_id, args.mode), column)
+    elif args.mode=='fpfh':
         try:
             fpfh = numpy.load('data/column%d_fpfh.npy'%column_id)
         except FileNotFoundError:
@@ -210,17 +200,13 @@ for column_id in range(1, 8):
             os.system('pcl_convert_pcd_ascii_binary tmp/fpfh.pcd tmp/fpfh_ascii.pcd 0')
             fpfh = loadFPFH('tmp/fpfh_ascii.pcd')
             numpy.save('data/column%d_fpfh.npy'%column_id, fpfh)
-        if save_viz:
+        if args.viz:
             X_embedded = PCA(n_components=3).fit_transform(fpfh)
             embedded_color = (X_embedded - X_embedded.min(axis=0)) / (X_embedded.max(axis=0) - X_embedded.min(axis=0))
             column[:,3:6] = embedded_color * 255
-            savePLY('viz/column%d_%s.ply' % (column_id, mode), column)
-        K = 2
-        kmeans = KMeans(n_clusters=K,init='k-means++',random_state=0)
-        kmeans.fit(fpfh)
-        counts = [numpy.sum(kmeans.labels_==k) for k in range(K)]	
-        predict_mask = kmeans.labels_==numpy.argmin(counts)
-    elif mode=='norm' or mode=='curv':
+            savePLY('viz/column%d_%s.ply' % (column_id, args.mode), column)
+        features = fpfh
+    elif args.mode=='norm' or args.mode=='curv':
         try:
             normals = numpy.load('data/column%d_norm.npy'%column_id)
             curvatures = numpy.load('data/column%d_curv.npy'%column_id)
@@ -256,35 +242,41 @@ for column_id in range(1, 8):
             curvatures = numpy.array(curvatures) #(N,)
             numpy.save('data/column%d_norm.npy'%column_id, normals)
             numpy.save('data/column%d_curv.npy'%column_id, curvatures)
-        if save_viz:
+        if args.viz:
             column[:,3:6] = normals * 255
             savePLY('viz/column%d_%s.ply' % (column_id, 'norm'), column)
             curvatures /= curvatures.max()
-#            column[:,3:6] = curvatures.reshape(-1,1)*255
             column[:, 3:6] = plt.get_cmap('jet')(curvatures)[:, :3] * 255
             savePLY('viz/column%d_%s.ply' % (column_id, 'curv'), column)
-        K = 2 if mode=='curv' else 3
-        kmeans = KMeans(n_clusters=K,init='k-means++',random_state=0)
-        kmeans.fit(curvatures.reshape(-1,1) if mode=='curv' else normals)
-        counts = [numpy.sum(kmeans.labels_==k) for k in range(K)]
-        predict_mask = kmeans.labels_==numpy.argmin(counts)
+        features = curvatures.reshape(-1, 1) if args.mode=='curv' else normals
     else:
         rgb = column[:,3:6]
         intensity = column[:,6]
-        K = 3
-        kmeans = KMeans(n_clusters=K,init='k-means++',random_state=0)
-        if mode=='int':
-            kmeans.fit(intensity.reshape(-1,1))
-        else:
-            kmeans.fit(rgb)
-        counts = [numpy.sum(kmeans.labels_==k) for k in range(K)]
-        predict_mask = kmeans.labels_==numpy.argmin(counts)
+        features = intensity.reshape(-1, 1) if args.mode=='int' else rgb
 
-    if save_viz:
-        column[:,3:6] = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
+    K = K_param[args.mode]
+    if args.clustering=='kmeans':
+        cluster_algorithm = KMeans(n_clusters=K,init='k-means++',random_state=0)
+    elif args.clustering=='gmm':
+        cluster_algorithm = GaussianMixture(n_components=K, covariance_type='full')
+    cluster_algorithm.fit(features)
+    if hasattr(cluster_algorithm, 'labels_'):
+        cluster_labels = cluster_algorithm.labels_.astype(numpy.int)
+    else:
+        cluster_labels = cluster_algorithm.predict(features)
+    counts = [numpy.sum(cluster_labels==k) for k in range(K)]	
+    predict_mask = cluster_labels==numpy.argmin(counts)
+
+    if args.viz:
+        # save visualization of clustering results
+        cluster_color = numpy.random.randint(0, 255, (K, 3))
+        column[:, 3:6] = cluster_color[cluster_labels, :]
+        savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
+        # save visualization of predict_mask
+        column[:,3:6] = column_gray
         column[predict_mask,3:6] = [255,255,0]
         print('Found %d/%d/%d cluster'%(numpy.sum(predict_mask), numpy.sum(crack_mask), len(column)))
-        savePLY('data/column%d_%s.ply' % (column_id, mode), column)
+        savePLY('data/column%d_%s.ply' % (column_id, args.mode), column)
 
     tp = numpy.sum(numpy.logical_and(predict_mask, crack_mask))
     precision = tp / numpy.sum(predict_mask)
@@ -308,4 +300,4 @@ for column_id in range(1, 8):
 
     print('Column %d precision %.2f recall %.2f F1 %.2f length %.3f width %.3f'%(column_id, precision, recall, F1, length_err, width_err))
 
-print('Overall %s precision %.2f recall %.2f F1 %.2f length %.3f width %.3f'%(mode, numpy.mean(agg_precision), numpy.mean(agg_recall), numpy.mean(agg_F1), numpy.mean(agg_length_err), numpy.mean(agg_width_err)))
+print('Overall %s precision %.2f recall %.2f F1 %.2f length %.3f width %.3f'%(args.mode, numpy.mean(agg_precision), numpy.mean(agg_recall), numpy.mean(agg_F1), numpy.mean(agg_length_err), numpy.mean(agg_width_err)))
