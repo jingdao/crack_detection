@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import sys
 from sklearn.cluster import KMeans
 from sklearn.mixture import GaussianMixture
+from sklearn.ensemble import IsolationForest
 import itertools
 import math
 from sklearn.decomposition import PCA
@@ -254,24 +255,34 @@ for column_id in range(1, 8):
         intensity = column[:,6]
         features = intensity.reshape(-1, 1) if args.mode=='int' else rgb
 
-    K = K_param[args.mode]
-    if args.clustering=='kmeans':
-        cluster_algorithm = KMeans(n_clusters=K,init='k-means++',random_state=0)
-    elif args.clustering=='gmm':
-        cluster_algorithm = GaussianMixture(n_components=K, covariance_type='full')
-    cluster_algorithm.fit(features)
-    if hasattr(cluster_algorithm, 'labels_'):
-        cluster_labels = cluster_algorithm.labels_.astype(numpy.int)
-    else:
-        cluster_labels = cluster_algorithm.predict(features)
-    counts = [numpy.sum(cluster_labels==k) for k in range(K)]	
-    predict_mask = cluster_labels==numpy.argmin(counts)
+    if args.clustering in ['kmeans', 'gmm']:
+        K = K_param[args.mode]
+        if args.clustering=='kmeans':
+            cluster_algorithm = KMeans(n_clusters=K,init='k-means++',random_state=0)
+        elif args.clustering=='gmm':
+            cluster_algorithm = GaussianMixture(n_components=K, covariance_type='full')
+        cluster_algorithm.fit(features)
+        if hasattr(cluster_algorithm, 'labels_'):
+            cluster_labels = cluster_algorithm.labels_.astype(numpy.int)
+        else:
+            cluster_labels = cluster_algorithm.predict(features)
+        counts = [numpy.sum(cluster_labels==k) for k in range(K)]	
+        predict_mask = cluster_labels==numpy.argmin(counts)
+    elif args.clustering=='isolation':
+        forest = IsolationForest(random_state=0).fit(features)
+        probs = forest.decision_function(features)
+        predict_mask = probs<0
 
     if args.viz:
         # save visualization of clustering results
-        cluster_color = numpy.random.randint(0, 255, (K, 3))
-        column[:, 3:6] = cluster_color[cluster_labels, :]
-        savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
+        if args.clustering in ['kmeans', 'gmm']:
+            cluster_color = numpy.random.randint(0, 255, (K, 3))
+            column[:, 3:6] = cluster_color[cluster_labels, :]
+            savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
+        elif args.clustering=='isolation':
+            probs = (probs - probs.min()) / (probs.max() - probs.min())
+            column[:, 3:6] = plt.get_cmap('jet')(probs)[:, :3] * 255
+            savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
         # save visualization of predict_mask
         column[:,3:6] = column_gray
         column[predict_mask,3:6] = [255,255,0]
