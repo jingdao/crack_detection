@@ -12,6 +12,12 @@ import os
 from scipy.spatial import ConvexHull
 import networkx as nx
 import argparse
+from pointnet_features import get_pointnet_features
+
+try:
+    FileNotFoundError
+except NameError:
+    FileNotFoundError = IOError
 
 def savePLY(filename, points):
 	f = open(filename, 'w')
@@ -122,6 +128,7 @@ K_param = {
     'norm':3,
     'curv':2,
     'fpfh':2,
+    'pointnet2':5,
     'feat':5,
 }
 agg_precision = []
@@ -130,7 +137,7 @@ agg_F1 = []
 agg_length_err = []
 agg_width_err = []
 for column_id in range(1, 8):
-#for column_id in [7]:
+#for column_id in [1]:
     column = numpy.loadtxt('data/column%d.ply' % column_id, skiprows=13)
     column_gray = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
 
@@ -184,11 +191,6 @@ for column_id in range(1, 8):
 
     if args.mode=='feat':
         features = numpy.load('data/column%d_feat.npy'%column_id)
-        if args.viz:
-            X_embedded = PCA(n_components=3).fit_transform(features)
-            embedded_color = (X_embedded - X_embedded.min(axis=0)) / (X_embedded.max(axis=0) - X_embedded.min(axis=0))
-            column[:,3:6] = embedded_color * 255
-            savePLY('viz/column%d_%s.ply' % (column_id, args.mode), column)
     elif args.mode=='fpfh':
         try:
             fpfh = numpy.load('data/column%d_fpfh.npy'%column_id)
@@ -201,12 +203,13 @@ for column_id in range(1, 8):
             os.system('pcl_convert_pcd_ascii_binary tmp/fpfh.pcd tmp/fpfh_ascii.pcd 0')
             fpfh = loadFPFH('tmp/fpfh_ascii.pcd')
             numpy.save('data/column%d_fpfh.npy'%column_id, fpfh)
-        if args.viz:
-            X_embedded = PCA(n_components=3).fit_transform(fpfh)
-            embedded_color = (X_embedded - X_embedded.min(axis=0)) / (X_embedded.max(axis=0) - X_embedded.min(axis=0))
-            column[:,3:6] = embedded_color * 255
-            savePLY('viz/column%d_%s.ply' % (column_id, args.mode), column)
         features = fpfh
+    elif args.mode=='pointnet2':
+        try:
+            features = numpy.load('data/column%d_pointnet2.npy'%column_id)
+        except FileNotFoundError:
+            features = get_pointnet_features(column[:, :6])
+            numpy.save('data/column%d_pointnet2.npy'%column_id, features)
     elif args.mode=='norm' or args.mode=='curv':
         try:
             normals = numpy.load('data/column%d_norm.npy'%column_id)
@@ -243,12 +246,6 @@ for column_id in range(1, 8):
             curvatures = numpy.array(curvatures) #(N,)
             numpy.save('data/column%d_norm.npy'%column_id, normals)
             numpy.save('data/column%d_curv.npy'%column_id, curvatures)
-        if args.viz:
-            column[:,3:6] = normals * 255
-            savePLY('viz/column%d_%s.ply' % (column_id, 'norm'), column)
-            curvatures /= curvatures.max()
-            column[:, 3:6] = plt.get_cmap('jet')(curvatures)[:, :3] * 255
-            savePLY('viz/column%d_%s.ply' % (column_id, 'curv'), column)
         features = curvatures.reshape(-1, 1) if args.mode=='curv' else normals
     else:
         rgb = column[:,3:6]
@@ -274,6 +271,18 @@ for column_id in range(1, 8):
         predict_mask = probs<0
 
     if args.viz:
+        # save visualization of features
+        if args.mode in ['norm', 'curv']:
+            column[:,3:6] = normals * 255
+            savePLY('viz/column%d_%s.ply' % (column_id, 'norm'), column)
+            curvatures /= curvatures.max()
+            column[:, 3:6] = plt.get_cmap('jet')(curvatures)[:, :3] * 255
+            savePLY('viz/column%d_%s.ply' % (column_id, 'curv'), column)
+        else:
+            X_embedded = PCA(n_components=3).fit_transform(features)
+            embedded_color = (X_embedded - X_embedded.min(axis=0)) / (X_embedded.max(axis=0) - X_embedded.min(axis=0))
+            column[:,3:6] = embedded_color * 255
+            savePLY('viz/column%d_%s.ply' % (column_id, args.mode), column)
         # save visualization of clustering results
         if args.clustering in ['kmeans', 'gmm']:
             cluster_color = numpy.random.randint(0, 255, (K, 3))
