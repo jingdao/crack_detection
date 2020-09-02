@@ -4,6 +4,9 @@ import sys
 from sklearn.cluster import KMeans
 from sklearn.mixture import GaussianMixture
 from sklearn.ensemble import IsolationForest
+from sklearn.svm import OneClassSVM
+from sklearn.covariance import EllipticEnvelope
+from sklearn.neighbors import LocalOutlierFactor
 import itertools
 import math
 from sklearn.decomposition import PCA
@@ -12,7 +15,6 @@ import os
 from scipy.spatial import ConvexHull
 import networkx as nx
 import argparse
-from pointnet_features import get_pointnet_features
 
 try:
     FileNotFoundError
@@ -122,6 +124,10 @@ parser.add_argument('--mode', type=str, default='feat')
 parser.add_argument('--clustering', type=str, default='kmeans')
 parser.add_argument('--viz', action='store_true')
 args = parser.parse_args()
+
+if args.mode=='pointnet2':
+    from pointnet_features import get_pointnet_features
+
 K_param = {
     'rgb':3,
     'int':3,
@@ -266,9 +272,20 @@ for column_id in range(1, 8):
         counts = [numpy.sum(cluster_labels==k) for k in range(K)]	
         predict_mask = cluster_labels==numpy.argmin(counts)
     elif args.clustering=='isolation':
-        forest = IsolationForest(random_state=0).fit(features)
-        probs = forest.decision_function(features)
-        predict_mask = probs<0
+        forest = IsolationForest(random_state=0, behaviour='new', contamination='auto').fit(features)
+        score = forest.decision_function(features)
+        predict_mask = score<0
+    elif args.clustering=='svm':
+        svm = OneClassSVM(gamma='auto', max_iter=1).fit(features)
+        score = svm.score_samples(features)
+        predict_mask = svm.predict(features)<0
+    elif args.clustering=='cov':
+        cov = EllipticEnvelope(random_state=0).fit(features)
+        predict_mask = cov.predict(features)<0
+    elif args.clustering=='lof':
+        clf = LocalOutlierFactor(n_neighbors=20)
+        predict_mask = clf.fit_predict(features)<0
+        score = clf.negative_outlier_factor_
 
     if args.viz:
         # save visualization of features
@@ -288,9 +305,9 @@ for column_id in range(1, 8):
             cluster_color = numpy.random.randint(0, 255, (K, 3))
             column[:, 3:6] = cluster_color[cluster_labels, :]
             savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
-        elif args.clustering=='isolation':
-            probs = (probs - probs.min()) / (probs.max() - probs.min())
-            column[:, 3:6] = plt.get_cmap('jet')(probs)[:, :3] * 255
+        elif args.clustering in ['isolation', 'svm', 'lof']:
+            score = (score - score.min()) / (score.max() - score.min())
+            column[:, 3:6] = plt.get_cmap('jet')(score)[:, :3] * 255
             savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
         # save visualization of predict_mask
         column[:,3:6] = column_gray
@@ -299,8 +316,8 @@ for column_id in range(1, 8):
         savePLY('data/column%d_%s.ply' % (column_id, args.mode), column)
 
     tp = numpy.sum(numpy.logical_and(predict_mask, crack_mask))
-    precision = tp / numpy.sum(predict_mask)
-    recall = tp / numpy.sum(crack_mask)
+    precision = 1.0 * tp / numpy.sum(predict_mask)
+    recall = 1.0 * tp / numpy.sum(crack_mask)
     F1 = 2 * precision * recall / (precision + recall + 1e-6)
     agg_precision.append(precision)
     agg_recall.append(recall)
