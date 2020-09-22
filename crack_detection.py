@@ -1,7 +1,7 @@
 import numpy
 import matplotlib.pyplot as plt
 import sys
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, DBSCAN, MeanShift, SpectralClustering
 from sklearn.mixture import GaussianMixture
 from sklearn.ensemble import IsolationForest
 from sklearn.svm import OneClassSVM
@@ -122,6 +122,7 @@ def get_crack_dimensions(crack_points):
 parser = argparse.ArgumentParser()
 parser.add_argument('--mode', type=str, default='feat')
 parser.add_argument('--clustering', type=str, default='kmeans')
+parser.add_argument('--param', type=int, default=0)
 parser.add_argument('--viz', action='store_true')
 args = parser.parse_args()
 
@@ -258,19 +259,31 @@ for column_id in range(1, 8):
         intensity = column[:,6]
         features = intensity.reshape(-1, 1) if args.mode=='int' else rgb
 
-    if args.clustering in ['kmeans', 'gmm']:
+    if args.clustering in ['kmeans', 'gmm', 'dbscan', 'meanshift', 'spectral']:
         K = K_param[args.mode]
         if args.clustering=='kmeans':
             cluster_algorithm = KMeans(n_clusters=K,init='k-means++',random_state=0)
         elif args.clustering=='gmm':
             cluster_algorithm = GaussianMixture(n_components=K, covariance_type='full')
+        elif args.clustering=='dbscan':
+            cluster_algorithm = DBSCAN(eps=0.5, algorithm='brute')
+        elif args.clustering=='meanshift':
+            cluster_algorithm = MeanShift(min_bin_freq=1000, cluster_all=False, max_iter=10)
+        elif args.clustering=='spectral':
+            cluster_algorithm = SpectralClustering(n_clusters=K)
         cluster_algorithm.fit(features)
         if hasattr(cluster_algorithm, 'labels_'):
+            print('labels')
             cluster_labels = cluster_algorithm.labels_.astype(numpy.int)
         else:
             cluster_labels = cluster_algorithm.predict(features)
+        if args.clustering in ['dbscan', 'meanshift']:
+            K = cluster_labels.max() + 1
         counts = [numpy.sum(cluster_labels==k) for k in range(K)]	
-        predict_mask = cluster_labels==numpy.argmin(counts)
+        if args.clustering=='meanshift':
+            predict_mask = cluster_labels==-1
+        else:
+            predict_mask = cluster_labels==numpy.argmin(counts)
     elif args.clustering=='isolation':
         forest = IsolationForest(random_state=0, behaviour='new', contamination='auto').fit(features)
         score = forest.decision_function(features)
@@ -283,7 +296,7 @@ for column_id in range(1, 8):
         cov = EllipticEnvelope(random_state=0).fit(features)
         predict_mask = cov.predict(features)<0
     elif args.clustering=='lof':
-        clf = LocalOutlierFactor(n_neighbors=20)
+        clf = LocalOutlierFactor(n_neighbors=5)
         predict_mask = clf.fit_predict(features)<0
         score = clf.negative_outlier_factor_
 
@@ -301,7 +314,12 @@ for column_id in range(1, 8):
             column[:,3:6] = embedded_color * 255
             savePLY('viz/column%d_%s.ply' % (column_id, args.mode), column)
         # save visualization of clustering results
-        if args.clustering in ['kmeans', 'gmm']:
+        if args.clustering=='meanshift':
+            cluster_color = numpy.random.randint(0, 255, (K+1, 3))
+            cluster_color[-1] = [100, 100, 100]
+            column[:, 3:6] = cluster_color[cluster_labels, :]
+            savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
+        elif args.clustering in ['kmeans', 'gmm', 'dbscan', 'spectral']:
             cluster_color = numpy.random.randint(0, 255, (K, 3))
             column[:, 3:6] = cluster_color[cluster_labels, :]
             savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
