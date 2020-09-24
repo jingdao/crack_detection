@@ -10,117 +10,18 @@ from sklearn.neighbors import LocalOutlierFactor
 import itertools
 import math
 from sklearn.decomposition import PCA
-from pyquaternion import Quaternion
 import os
-from scipy.spatial import ConvexHull
 import networkx as nx
 import argparse
+from util import loadPLY, savePLY, loadFPFH, savePCD, get_crack_dimensions
 
 try:
     FileNotFoundError
 except NameError:
     FileNotFoundError = IOError
 
-def savePLY(filename, points):
-	f = open(filename, 'w')
-	f.write("""ply
-format ascii 1.0
-element vertex %d
-property float x
-property float y
-property float z
-property uchar red
-property uchar green
-property uchar blue
-end_header
-""" % len(points))
-	for p in points:
-		f.write("%f %f %f %d %d %d\n"%(p[0],p[1],p[2],p[3],p[4],p[5]))
-	f.close()
-	print('Saved to %s: (%d points)'%(filename, len(points)))
-
-def loadFPFH(filename):
-	pcd = open(filename,'r')
-	for l in pcd:
-		if l.startswith('DATA'):
-			break
-	features = []
-	for l in pcd:
-		features.append([float(t) for t in l.split()[:33]])
-	features = numpy.array(features)
-	return features
-
-def savePCD(filename,points):
-	if len(points)==0:
-		return
-	f = open(filename,"w")
-	l = len(points)
-	header = """# .PCD v0.7 - Point Cloud Data file format
-VERSION 0.7
-FIELDS x y z rgb
-SIZE 4 4 4 4
-TYPE F F F I
-COUNT 1 1 1 1
-WIDTH %d
-HEIGHT 1
-VIEWPOINT 0 0 0 1 0 0 0
-POINTS %d
-DATA ascii
-""" % (l,l)
-	f.write(header)
-	for p in points:
-		rgb = (int(p[3]) << 16) | (int(p[4]) << 8) | int(p[5])
-		f.write("%f %f %f %d\n"%(p[0],p[1],p[2],rgb))
-	f.close()
-	print('Saved %d points to %s' % (l,filename))
-
-def get_crack_dimensions(crack_points):
-    # project to plane
-    crack_points_centered = crack_points - numpy.mean(crack_points, axis=0)
-    cov = crack_points.T.dot(crack_points_centered) / len(crack_points)
-    U, S, V = numpy.linalg.svd(cov)
-    normal = V[2]
-    offset = -numpy.mean(crack_points.dot(normal))
-    # rotate to XY plane
-    from_vec = normal
-    to_vec = numpy.array([0,0,1])
-    q = Quaternion(scalar=from_vec.dot(to_vec)+1, vector=numpy.cross(from_vec, to_vec)).normalised
-    R = q.rotation_matrix
-    crack_points_XY = crack_points.dot(R.T)[:, :2]
-    cloud = crack_points_XY[ConvexHull(crack_points_XY).vertices]
-    edgeAngles = []
-    for i in range(len(cloud)-1):
-        theta = numpy.arctan2(cloud[i+1,1]-cloud[i,1], cloud[i+1,0]-cloud[i,0])
-        edgeAngles.append(theta)
-    minArea = float('inf');
-    crack_width = 0
-    crack_length = 0
-    for theta in edgeAngles:
-        R = numpy.array([
-            [numpy.cos(theta), numpy.sin(theta)],
-            [-numpy.sin(theta), numpy.cos(theta)]
-        ])
-        rotated = R.dot(cloud.T).T
-        xmin, ymin = rotated.min(axis=0)
-        xmax, ymax = rotated.max(axis=0)
-        area = (xmax-xmin) * (ymax-ymin)
-        if xmax-xmin > ymax-ymin and area < minArea:
-            minArea = area
-            crack_width = xmax-xmin
-            crack_length = ymax-ymin
-            box = numpy.array([
-                [xmin,ymin],
-                [xmax,ymin],
-                [xmin,ymax],
-                [xmax,ymax],
-            ])
-            box = R.T.dot(box.T).T
-            loadX = R[0,0] * (xmin+xmax)/2 + R[1,0] * (ymin+ymax)/2
-            loadY = R[0,1] * (xmin + xmax)/2 + R[1,1] * (ymin + ymax)/2
-    return crack_width, crack_length
-
 parser = argparse.ArgumentParser()
-parser.add_argument('--mode', type=str, default='feat')
+parser.add_argument('--mode', type=str, default='tle')
 parser.add_argument('--clustering', type=str, default='kmeans')
 parser.add_argument('--param', type=int, default=0)
 parser.add_argument('--viz', action='store_true')
@@ -128,6 +29,9 @@ args = parser.parse_args()
 
 if args.mode=='pointnet2':
     from pointnet_features import get_pointnet_features
+if args.mode=='tle':
+#    from triplet_loss_features import get_triplet_loss_embedding
+    from triplet_loss_embedding import get_triplet_loss_embedding
 
 K_param = {
     'rgb':3,
@@ -136,7 +40,7 @@ K_param = {
     'curv':2,
     'fpfh':2,
     'pointnet2':5,
-    'feat':5,
+    'tle':5,
 }
 agg_precision = []
 agg_recall = []
@@ -144,14 +48,14 @@ agg_F1 = []
 agg_length_err = []
 agg_width_err = []
 for column_id in range(1, 8):
-#for column_id in [1]:
-    column = numpy.loadtxt('data/column%d.ply' % column_id, skiprows=13)
+#for column_id in [99]:
+    column = loadPLY('data/column%d.ply' % column_id)
     column_gray = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
 
     try:
         crack_mask = numpy.load('data/column%d_mask.npy'%column_id)
     except FileNotFoundError:
-        crack = numpy.loadtxt('tmp/column%d_crack.ply' % (column_id), skiprows=14)
+        crack = loadPLY('tmp/column%d_crack.ply' % column_id)
         crack_set = set([tuple(p) for p in crack[:,:3]])
         crack_mask = numpy.zeros(len(column), dtype=bool)
         for i in range(len(column)):
@@ -196,8 +100,13 @@ for column_id in range(1, 8):
         column[crack_main_mask, 3:6] = [255,255,0]
         savePLY('tmp/column%d_main_gt.ply'%column_id, column)
 
-    if args.mode=='feat':
-        features = numpy.load('tmp/column%d_feat.npy'%column_id)
+    if args.mode=='tle':
+        try:
+            features = numpy.load('tmp/column%d_tle.npy'%column_id)
+#            features = numpy.load('tmp/column%d_feat.npy'%column_id)
+        except FileNotFoundError:
+            features = get_triplet_loss_embedding(column[:, :6])
+            numpy.save('tmp/column%d_tle.npy'%column_id, features)
     elif args.mode=='fpfh':
         try:
             fpfh = numpy.load('tmp/column%d_fpfh.npy'%column_id)
@@ -273,7 +182,6 @@ for column_id in range(1, 8):
             cluster_algorithm = SpectralClustering(n_clusters=K)
         cluster_algorithm.fit(features)
         if hasattr(cluster_algorithm, 'labels_'):
-            print('labels')
             cluster_labels = cluster_algorithm.labels_.astype(numpy.int)
         else:
             cluster_labels = cluster_algorithm.predict(features)
@@ -308,7 +216,7 @@ for column_id in range(1, 8):
             curvatures /= curvatures.max()
             column[:, 3:6] = plt.get_cmap('jet')(curvatures)[:, :3] * 255
             savePLY('viz/column%d_%s.ply' % (column_id, 'curv'), column)
-        else:
+        elif args.mode in ['fpfh', 'pointnet2', 'tle']:
             X_embedded = PCA(n_components=3).fit_transform(features)
             embedded_color = (X_embedded - X_embedded.min(axis=0)) / (X_embedded.max(axis=0) - X_embedded.min(axis=0))
             column[:,3:6] = embedded_color * 255
