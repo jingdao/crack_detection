@@ -4,7 +4,7 @@
 ## Crack segmentation
 
 ```
-python crack_detection.py --mode feat --clustering isolation --viz
+python crack_detection.py --mode tle --clustering isolation --resolution 0.001 --viz
 ```
 
 ## Dependencies

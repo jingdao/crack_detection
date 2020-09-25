@@ -1,0 +1,1577 @@
+Downsample @ 0.001 47804 -> 47758
+Column 1 precision 0.29 recall 0.35 F1 0.31 length 2.531/2.533 width 0.151/0.161
+Downsample @ 0.001 90171 -> 90156
+Column 2 precision 0.48 recall 0.53 F1 0.50 length 2.289/2.289 width 0.198/0.198
+Downsample @ 0.001 88797 -> 88753
+Column 3 precision 0.50 recall 0.70 F1 0.59 length 2.276/2.280 width 0.175/0.201
+Downsample @ 0.001 41767 -> 41732
+Column 4 precision 0.19 recall 0.30 F1 0.23 length 2.316/2.318 width 0.079/0.083
+Downsample @ 0.001 60072 -> 60020
+Column 5 precision 0.27 recall 0.28 F1 0.28 length 2.603/2.603 width 0.138/0.162
+Downsample @ 0.001 174632 -> 174366
+Column 6 precision 0.16 recall 0.46 F1 0.24 length 2.614/2.613 width 0.113/0.120
+Downsample @ 0.001 207543 -> 207543
+Column 7 precision 0.32 recall 0.44 F1 0.37 length 2.937/2.937 width 0.280/0.281
+Overall rgb precision 0.32 recall 0.44 F1 0.36 length 0.001 width 0.010
+Downsample @ 0.002 47804 -> 47463
+Column 1 precision 0.32 recall 0.36 F1 0.34 length 2.531/2.533 width 0.149/0.161
+Downsample @ 0.002 90171 -> 87664
+Column 2 precision 0.46 recall 0.54 F1 0.50 length 2.289/2.289 width 0.198/0.198
+Downsample @ 0.002 88797 -> 86279
+Column 3 precision 0.46 recall 0.70 F1 0.56 length 2.276/2.280 width 0.178/0.201
+Downsample @ 0.002 41767 -> 41483
+Column 4 precision 0.19 recall 0.29 F1 0.23 length 2.316/2.318 width 0.079/0.083
+Downsample @ 0.002 60072 -> 59550
+Column 5 precision 0.28 recall 0.29 F1 0.28 length 2.603/2.603 width 0.138/0.162
+Downsample @ 0.002 174632 -> 158726
+Column 6 precision 0.16 recall 0.45 F1 0.24 length 2.614/2.613 width 0.113/0.120
+Downsample @ 0.002 207543 -> 191704
+Column 7 precision 0.33 recall 0.42 F1 0.37 length 2.937/2.937 width 0.275/0.281
+Overall rgb precision 0.31 recall 0.44 F1 0.36 length 0.001 width 0.011
+Downsample @ 0.005 47804 -> 42374
+Column 1 precision 0.31 recall 0.32 F1 0.31 length 2.531/2.533 width 0.149/0.161
+Downsample @ 0.005 90171 -> 62211
+Column 2 precision 0.47 recall 0.50 F1 0.48 length 2.289/2.289 width 0.198/0.198
+Downsample @ 0.005 88797 -> 59716
+Column 3 precision 0.48 recall 0.70 F1 0.57 length 2.276/2.280 width 0.175/0.201
+Downsample @ 0.005 41767 -> 36111
+Column 4 precision 0.19 recall 0.33 F1 0.24 length 2.316/2.318 width 0.079/0.083
+Downsample @ 0.005 60072 -> 46792
+Column 5 precision 0.27 recall 0.28 F1 0.27 length 2.603/2.603 width 0.127/0.162
+Downsample @ 0.005 174632 -> 87637
+Column 6 precision 0.16 recall 0.44 F1 0.24 length 2.613/2.613 width 0.113/0.120
+Downsample @ 0.005 207543 -> 106735
+Column 7 precision 0.36 recall 0.44 F1 0.39 length 2.937/2.937 width 0.272/0.281
+Overall rgb precision 0.32 recall 0.43 F1 0.36 length 0.001 width 0.013
+Downsample @ 0.007 47804 -> 32661
+Column 1 precision 0.28 recall 0.34 F1 0.31 length 2.531/2.533 width 0.150/0.161
+Downsample @ 0.007 90171 -> 40822
+Column 2 precision 0.45 recall 0.39 F1 0.42 length 2.286/2.286 width 0.197/0.197
+Downsample @ 0.007 88797 -> 39071
+Column 3 precision 0.48 recall 0.66 F1 0.56 length 2.276/2.280 width 0.175/0.202
+Downsample @ 0.007 41767 -> 27242
+Column 4 precision 0.19 recall 0.34 F1 0.24 length 2.316/2.318 width 0.079/0.089
+Downsample @ 0.007 60072 -> 35400
+Column 5 precision 0.27 recall 0.28 F1 0.27 length 2.602/2.602 width 0.138/0.162
+Downsample @ 0.007 174632 -> 50458
+Column 6 precision 0.19 recall 0.42 F1 0.26 length 2.613/2.612 width 0.112/0.119
+Downsample @ 0.007 207543 -> 61636
+Column 7 precision 0.41 recall 0.40 F1 0.41 length 2.937/2.937 width 0.275/0.280
+Overall rgb precision 0.32 recall 0.41 F1 0.35 length 0.001 width 0.012
+Downsample @ 0.010 47804 -> 20971
+Column 1 precision 0.30 recall 0.36 F1 0.33 length 2.531/2.530 width 0.147/0.154
+Downsample @ 0.010 90171 -> 22858
+Column 2 precision 0.46 recall 0.35 F1 0.40 length 2.285/2.285 width 0.197/0.197
+Downsample @ 0.010 88797 -> 22543
+Column 3 precision 0.51 recall 0.68 F1 0.58 length 2.278/2.280 width 0.164/0.200
+Downsample @ 0.010 41767 -> 17528
+Column 4 precision 0.20 recall 0.33 F1 0.25 length 2.313/2.316 width 0.079/0.083
+Downsample @ 0.010 60072 -> 21573
+Column 5 precision 0.30 recall 0.30 F1 0.30 length 2.602/2.601 width 0.140/0.159
+Downsample @ 0.010 174632 -> 25838
+Column 6 precision 0.21 recall 0.44 F1 0.29 length 2.614/2.613 width 0.105/0.116
+Downsample @ 0.010 207543 -> 31927
+Column 7 precision 0.40 recall 0.40 F1 0.40 length 2.937/2.937 width 0.280/0.280
+Overall rgb precision 0.34 recall 0.41 F1 0.36 length 0.001 width 0.011
+Downsample @ 0.020 47804 -> 6877
+Column 1 precision 0.31 recall 0.35 F1 0.33 length 2.531/2.533 width 0.144/0.149
+Downsample @ 0.020 90171 -> 5946
+Column 2 precision 0.49 recall 0.32 F1 0.39 length 2.267/2.267 width 0.194/0.196
+Downsample @ 0.020 88797 -> 5866
+Column 3 precision 0.55 recall 0.68 F1 0.61 length 2.275/2.277 width 0.157/0.196
+Downsample @ 0.020 41767 -> 5281
+Column 4 precision 0.19 recall 0.35 F1 0.25 length 2.276/2.316 width 0.078/0.081
+Downsample @ 0.020 60072 -> 7252
+Column 5 precision 0.28 recall 0.28 F1 0.28 length 2.602/2.602 width 0.136/0.159
+Downsample @ 0.020 174632 -> 7510
+Column 6 precision 0.18 recall 0.32 F1 0.23 length 2.588/2.610 width 0.099/0.117
+Downsample @ 0.020 207543 -> 7568
+Column 7 precision 0.48 recall 0.37 F1 0.42 length 2.936/2.936 width 0.268/0.274
+Overall rgb precision 0.35 recall 0.38 F1 0.36 length 0.010 width 0.014
+Downsample @ 0.050 47804 -> 968
+Column 1 precision 0.37 recall 0.46 F1 0.41 length 2.382/2.474 width 0.104/0.104
+Downsample @ 0.050 90171 -> 1019
+Column 2 precision 0.47 recall 0.23 F1 0.31 length 2.262/2.266 width 0.160/0.165
+Downsample @ 0.050 88797 -> 909
+Column 3 precision 0.63 recall 0.75 F1 0.68 length 2.151/2.205 width 0.152/0.193
+Downsample @ 0.050 41767 -> 936
+Column 4 precision 0.21 recall 0.63 F1 0.31 length 2.110/2.259 width 0.059/0.057
+Downsample @ 0.050 60072 -> 899
+Column 5 precision 0.25 recall 0.30 F1 0.27 length 2.564/2.564 width 0.064/0.131
+Downsample @ 0.050 174632 -> 1000
+Column 6 precision 0.19 recall 0.28 F1 0.22 length 2.581/2.581 width 0.050/0.091
+Downsample @ 0.050 207543 -> 1314
+Column 7 precision 0.36 recall 0.30 F1 0.33 length 2.920/2.920 width 0.152/0.272
+Overall rgb precision 0.35 recall 0.42 F1 0.36 length 0.043 width 0.040
+Downsample @ 0.070 47804 -> 504
+Column 1 precision 0.17 recall 0.35 F1 0.23 length 2.366/2.366 width 0.072/0.072
+Downsample @ 0.070 90171 -> 440
+Column 2 precision 0.43 recall 0.46 F1 0.45 length 2.227/2.226 width 0.141/0.166
+Downsample @ 0.070 88797 -> 502
+Column 3 precision 0.62 recall 0.66 F1 0.64 length 1.031/1.047 width 0.114/0.160
+Downsample @ 0.070 41767 -> 478
+Column 4 precision 0.09 recall 0.28 F1 0.13 length 1.739/2.290 width 0.010/0.011
+Downsample @ 0.070 60072 -> 454
+Column 5 precision 0.29 recall 0.35 F1 0.32 length 2.327/2.565 width 0.124/0.119
+Downsample @ 0.070 174632 -> 517
+Column 6 precision 0.16 recall 0.41 F1 0.24 length 1.147/2.612 width 0.073/0.078
+Downsample @ 0.070 207543 -> 674
+Column 7 precision 0.38 recall 0.39 F1 0.38 length 2.915/2.915 width 0.156/0.226
+Overall rgb precision 0.31 recall 0.41 F1 0.34 length 0.324 width 0.022
+Downsample @ 0.100 47804 -> 330
+Column 1 precision 0.23 recall 0.26 F1 0.25 length 1.632/2.336 width 0.100/0.116
+Downsample @ 0.100 90171 -> 212
+Column 2 precision 0.39 recall 0.28 F1 0.32 length 2.039/2.142 width 0.043/0.118
+Downsample @ 0.100 88797 -> 290
+Column 3 precision 0.53 recall 0.52 F1 0.52 length 0.775/2.132 width 0.080/0.168
+Downsample @ 0.100 41767 -> 192
+Column 4 precision 0.13 recall 0.24 F1 0.17 length 1.739/2.236 width 0.011/0.012
+Downsample @ 0.100 60072 -> 250
+Column 5 precision 0.19 recall 0.38 F1 0.25 length 1.702/2.050 width 0.019/0.022
+Downsample @ 0.100 174632 -> 279
+Column 6 precision 0.04 recall 0.25 F1 0.07 length nan/2.607 width nan/0.055
+Downsample @ 0.100 207543 -> 264
+Column 7 precision 0.30 recall 0.28 F1 0.29 length 2.889/2.890 width 0.106/0.203
+Overall rgb precision 0.26 recall 0.31 F1 0.27 length 0.502 width 0.047
+Downsample @ 0.001 47804 -> 47758
+Column 1 precision 0.04 recall 0.08 F1 0.05 length 2.527/2.533 width 0.145/0.161
+Downsample @ 0.001 90171 -> 90156
+Column 2 precision 0.31 recall 0.44 F1 0.36 length 2.289/2.289 width 0.198/0.198
+Downsample @ 0.001 88797 -> 88753
+Column 3 precision 0.22 recall 0.68 F1 0.33 length 2.280/2.280 width 0.201/0.201
+Downsample @ 0.001 41767 -> 41732
+Column 4 precision 0.08 recall 0.13 F1 0.10 length 2.302/2.318 width 0.078/0.083
+Downsample @ 0.001 60072 -> 60020
+Column 5 precision 0.26 recall 0.23 F1 0.24 length 2.597/2.603 width 0.152/0.162
+Downsample @ 0.001 174632 -> 174366
+Column 6 precision 0.09 recall 0.50 F1 0.15 length 2.611/2.613 width 0.120/0.120
+Downsample @ 0.001 207543 -> 207543
+Column 7 precision 0.19 recall 0.34 F1 0.25 length 2.935/2.937 width 0.280/0.281
+Overall int precision 0.17 recall 0.34 F1 0.21 length 0.005 width 0.004
+Downsample @ 0.002 47804 -> 47463
+Column 1 precision 0.04 recall 0.07 F1 0.05 length 2.527/2.533 width 0.145/0.161
+Downsample @ 0.002 90171 -> 87664
+Column 2 precision 0.27 recall 0.28 F1 0.28 length 2.289/2.289 width 0.198/0.198
+Downsample @ 0.002 88797 -> 86279
+Column 3 precision 0.21 recall 0.52 F1 0.30 length 2.280/2.280 width 0.201/0.201
+Downsample @ 0.002 41767 -> 41483
+Column 4 precision 0.10 recall 0.20 F1 0.13 length 2.316/2.318 width 0.079/0.083
+Downsample @ 0.002 60072 -> 59550
+Column 5 precision 0.25 recall 0.21 F1 0.23 length 2.596/2.603 width 0.152/0.162
+Downsample @ 0.002 174632 -> 158726
+Column 6 precision 0.10 recall 0.48 F1 0.16 length 2.611/2.613 width 0.120/0.120
+Downsample @ 0.002 207543 -> 191704
+Column 7 precision 0.19 recall 0.35 F1 0.24 length 2.935/2.937 width 0.275/0.281
+Overall int precision 0.16 recall 0.30 F1 0.20 length 0.003 width 0.005
+Downsample @ 0.005 47804 -> 42374
+Column 1 precision 0.04 recall 0.09 F1 0.06 length 2.527/2.533 width 0.145/0.161
+Downsample @ 0.005 90171 -> 62211
+Column 2 precision 0.30 recall 0.35 F1 0.32 length 2.289/2.289 width 0.198/0.198
+Downsample @ 0.005 88797 -> 59716
+Column 3 precision 0.20 recall 0.39 F1 0.26 length 2.280/2.280 width 0.201/0.201
+Downsample @ 0.005 41767 -> 36111
+Column 4 precision 0.09 recall 0.13 F1 0.11 length 2.302/2.318 width 0.078/0.083
+Downsample @ 0.005 60072 -> 46792
+Column 5 precision 0.21 recall 0.26 F1 0.23 length 2.595/2.603 width 0.156/0.162
+Downsample @ 0.005 174632 -> 87637
+Column 6 precision 0.10 recall 0.44 F1 0.17 length 2.609/2.613 width 0.120/0.120
+Downsample @ 0.005 207543 -> 106735
+Column 7 precision 0.20 recall 0.30 F1 0.24 length 2.935/2.937 width 0.279/0.281
+Overall int precision 0.16 recall 0.28 F1 0.20 length 0.005 width 0.004
+Downsample @ 0.007 47804 -> 32661
+Column 1 precision 0.04 recall 0.08 F1 0.05 length 2.526/2.533 width 0.140/0.161
+Downsample @ 0.007 90171 -> 40822
+Column 2 precision 0.32 recall 0.28 F1 0.30 length 2.286/2.286 width 0.197/0.197
+Downsample @ 0.007 88797 -> 39071
+Column 3 precision 0.19 recall 0.40 F1 0.26 length 2.280/2.280 width 0.201/0.202
+Downsample @ 0.007 41767 -> 27242
+Column 4 precision 0.09 recall 0.17 F1 0.12 length 2.316/2.318 width 0.078/0.089
+Downsample @ 0.007 60072 -> 35400
+Column 5 precision 0.22 recall 0.19 F1 0.21 length 2.566/2.602 width 0.147/0.162
+Downsample @ 0.007 174632 -> 50458
+Column 6 precision 0.12 recall 0.47 F1 0.19 length 2.609/2.612 width 0.114/0.119
+Downsample @ 0.007 207543 -> 61636
+Column 7 precision 0.20 recall 0.25 F1 0.22 length 2.930/2.937 width 0.278/0.280
+Overall int precision 0.17 recall 0.26 F1 0.19 length 0.008 width 0.008
+Downsample @ 0.010 47804 -> 20971
+Column 1 precision 0.03 recall 0.08 F1 0.05 length 2.523/2.530 width 0.145/0.154
+Downsample @ 0.010 90171 -> 22858
+Column 2 precision 0.30 recall 0.32 F1 0.31 length 2.285/2.285 width 0.195/0.197
+Downsample @ 0.010 88797 -> 22543
+Column 3 precision 0.21 recall 0.41 F1 0.28 length 2.278/2.280 width 0.198/0.200
+Downsample @ 0.010 41767 -> 17528
+Column 4 precision 0.10 recall 0.15 F1 0.12 length 2.298/2.316 width 0.075/0.083
+Downsample @ 0.010 60072 -> 21573
+Column 5 precision 0.23 recall 0.21 F1 0.22 length 2.596/2.601 width 0.144/0.159
+Downsample @ 0.010 174632 -> 25838
+Column 6 precision 0.11 recall 0.37 F1 0.17 length 2.611/2.613 width 0.107/0.116
+Downsample @ 0.010 207543 -> 31927
+Column 7 precision 0.19 recall 0.19 F1 0.19 length 2.925/2.937 width 0.272/0.280
+Overall int precision 0.17 recall 0.25 F1 0.19 length 0.006 width 0.008
+Downsample @ 0.020 47804 -> 6877
+Column 1 precision 0.04 recall 0.09 F1 0.05 length 2.507/2.533 width 0.136/0.149
+Downsample @ 0.020 90171 -> 5946
+Column 2 precision 0.34 recall 0.28 F1 0.31 length 2.266/2.267 width 0.196/0.196
+Downsample @ 0.020 88797 -> 5866
+Column 3 precision 0.15 recall 0.17 F1 0.16 length 2.278/2.277 width 0.193/0.196
+Downsample @ 0.020 41767 -> 5281
+Column 4 precision 0.09 recall 0.12 F1 0.10 length 2.254/2.316 width 0.052/0.081
+Downsample @ 0.020 60072 -> 7252
+Column 5 precision 0.20 recall 0.23 F1 0.21 length 2.538/2.602 width 0.141/0.159
+Downsample @ 0.020 174632 -> 7510
+Column 6 precision 0.08 recall 0.25 F1 0.12 length 2.606/2.610 width 0.101/0.117
+Downsample @ 0.020 207543 -> 7568
+Column 7 precision 0.25 recall 0.23 F1 0.24 length 2.927/2.936 width 0.235/0.274
+Overall int precision 0.16 recall 0.20 F1 0.17 length 0.024 width 0.017
+Downsample @ 0.050 47804 -> 968
+Column 1 precision 0.04 recall 0.14 F1 0.06 length 2.449/2.474 width 0.083/0.104
+Downsample @ 0.050 90171 -> 1019
+Column 2 precision 0.34 recall 0.19 F1 0.24 length 2.212/2.266 width 0.160/0.165
+Downsample @ 0.050 88797 -> 909
+Column 3 precision 0.20 recall 0.11 F1 0.14 length 1.644/2.205 width 0.157/0.193
+Downsample @ 0.050 41767 -> 936
+Column 4 precision 0.08 recall 0.26 F1 0.12 length 2.075/2.259 width 0.029/0.057
+Downsample @ 0.050 60072 -> 899
+Column 5 precision 0.20 recall 0.12 F1 0.15 length 2.417/2.564 width 0.107/0.131
+Downsample @ 0.050 174632 -> 1000
+Column 6 precision 0.09 recall 0.17 F1 0.12 length 2.270/2.581 width 0.063/0.091
+Downsample @ 0.050 207543 -> 1314
+Column 7 precision 0.22 recall 0.22 F1 0.22 length 2.887/2.920 width 0.187/0.272
+Overall int precision 0.17 recall 0.17 F1 0.15 length 0.188 width 0.032
+Downsample @ 0.070 47804 -> 504
+Column 1 precision 0.03 recall 0.12 F1 0.05 length 0.534/2.366 width 0.008/0.072
+Downsample @ 0.070 90171 -> 440
+Column 2 precision 0.28 recall 0.33 F1 0.31 length 1.576/2.226 width 0.122/0.166
+Downsample @ 0.070 88797 -> 502
+Column 3 precision 0.14 recall 0.08 F1 0.10 length 0.983/1.047 width 0.103/0.160
+Downsample @ 0.070 41767 -> 478
+Column 4 precision 0.04 recall 0.08 F1 0.05 length nan/2.290 width nan/0.011
+Downsample @ 0.070 60072 -> 454
+Column 5 precision 0.33 recall 0.25 F1 0.29 length 2.239/2.565 width 0.071/0.119
+Downsample @ 0.070 174632 -> 517
+Column 6 precision 0.06 recall 0.26 F1 0.10 length 2.386/2.612 width 0.073/0.078
+Downsample @ 0.070 207543 -> 674
+Column 7 precision 0.18 recall 0.22 F1 0.20 length 2.785/2.915 width 0.099/0.226
+Overall int precision 0.15 recall 0.19 F1 0.16 length 0.538 width 0.057
+Downsample @ 0.100 47804 -> 330
+Column 1 precision 0.04 recall 0.10 F1 0.06 length 1.128/2.336 width 0.021/0.116
+Downsample @ 0.100 90171 -> 212
+Column 2 precision 0.17 recall 0.16 F1 0.16 length 1.800/2.142 width 0.030/0.118
+Downsample @ 0.100 88797 -> 290
+Column 3 precision 0.19 recall 0.08 F1 0.11 length nan/2.132 width nan/0.168
+Downsample @ 0.100 41767 -> 192
+Column 4 precision 0.13 recall 0.24 F1 0.17 length 2.101/2.236 width 0.004/0.012
+Downsample @ 0.100 60072 -> 250
+Column 5 precision 0.09 recall 0.29 F1 0.13 length 1.652/2.050 width 0.020/0.022
+Downsample @ 0.100 174632 -> 279
+Column 6 precision 0.04 recall 0.37 F1 0.07 length nan/2.607 width nan/0.055
+Downsample @ 0.100 207543 -> 264
+Column 7 precision 0.21 recall 0.13 F1 0.16 length 2.565/2.890 width 0.060/0.203
+Overall int precision 0.12 recall 0.20 F1 0.12 length 0.482 width 0.067
+Downsample @ 0.001 47804 -> 47758
+Column 1 precision 0.24 recall 0.25 F1 0.25 length 2.532/2.533 width 0.152/0.161
+Downsample @ 0.001 90171 -> 90156
+Column 2 precision 0.38 recall 0.39 F1 0.39 length 2.289/2.289 width 0.179/0.198
+Downsample @ 0.001 88797 -> 88753
+Column 3 precision 0.48 recall 0.76 F1 0.59 length 2.280/2.280 width 0.184/0.201
+Downsample @ 0.001 41767 -> 41732
+Column 4 precision 0.09 recall 0.15 F1 0.12 length 2.318/2.318 width 0.059/0.083
+Downsample @ 0.001 60072 -> 60020
+Column 5 precision 0.27 recall 0.33 F1 0.30 length 2.602/2.603 width 0.154/0.162
+Downsample @ 0.001 174632 -> 174366
+Column 6 precision 0.12 recall 0.35 F1 0.18 length 2.612/2.613 width 0.117/0.120
+Downsample @ 0.001 207543 -> 207543
+Column 7 precision 0.27 recall 0.32 F1 0.29 length 2.936/2.937 width 0.280/0.281
+Overall norm precision 0.26 recall 0.37 F1 0.30 length 0.001 width 0.011
+Downsample @ 0.002 47804 -> 47463
+Column 1 precision 0.21 recall 0.22 F1 0.21 length 2.533/2.533 width 0.141/0.161
+Downsample @ 0.002 90171 -> 87664
+Column 2 precision 0.40 recall 0.42 F1 0.41 length 2.289/2.289 width 0.186/0.198
+Downsample @ 0.002 88797 -> 86279
+Column 3 precision 0.48 recall 0.76 F1 0.59 length 2.280/2.280 width 0.184/0.201
+Downsample @ 0.002 41767 -> 41483
+Column 4 precision 0.10 recall 0.16 F1 0.12 length 2.318/2.318 width 0.059/0.083
+Downsample @ 0.002 60072 -> 59550
+Column 5 precision 0.28 recall 0.33 F1 0.30 length 2.603/2.603 width 0.137/0.162
+Downsample @ 0.002 174632 -> 158726
+Column 6 precision 0.12 recall 0.32 F1 0.17 length 2.612/2.613 width 0.114/0.120
+Downsample @ 0.002 207543 -> 191704
+Column 7 precision 0.27 recall 0.34 F1 0.30 length 2.936/2.937 width 0.281/0.281
+Overall norm precision 0.27 recall 0.37 F1 0.30 length 0.000 width 0.015
+Downsample @ 0.005 47804 -> 42374
+Column 1 precision 0.21 recall 0.23 F1 0.22 length 2.532/2.533 width 0.152/0.161
+Downsample @ 0.005 90171 -> 62211
+Column 2 precision 0.39 recall 0.38 F1 0.38 length 2.289/2.289 width 0.177/0.198
+Downsample @ 0.005 88797 -> 59716
+Column 3 precision 0.52 recall 0.76 F1 0.62 length 2.277/2.280 width 0.174/0.201
+Downsample @ 0.005 41767 -> 36111
+Column 4 precision 0.09 recall 0.15 F1 0.11 length 2.318/2.318 width 0.059/0.083
+Downsample @ 0.005 60072 -> 46792
+Column 5 precision 0.28 recall 0.35 F1 0.31 length 2.602/2.603 width 0.134/0.162
+Downsample @ 0.005 174632 -> 87637
+Column 6 precision 0.11 recall 0.27 F1 0.15 length 2.596/2.613 width 0.101/0.120
+Downsample @ 0.005 207543 -> 106735
+Column 7 precision 0.29 recall 0.34 F1 0.31 length 2.937/2.937 width 0.280/0.281
+Overall norm precision 0.27 recall 0.35 F1 0.30 length 0.003 width 0.019
+Downsample @ 0.007 47804 -> 32661
+Column 1 precision 0.22 recall 0.23 F1 0.22 length 2.533/2.533 width 0.140/0.161
+Downsample @ 0.007 90171 -> 40822
+Column 2 precision 0.38 recall 0.33 F1 0.35 length 2.286/2.286 width 0.178/0.197
+Downsample @ 0.007 88797 -> 39071
+Column 3 precision 0.49 recall 0.74 F1 0.59 length 2.277/2.280 width 0.173/0.202
+Downsample @ 0.007 41767 -> 27242
+Column 4 precision 0.10 recall 0.16 F1 0.12 length 2.318/2.318 width 0.061/0.089
+Downsample @ 0.007 60072 -> 35400
+Column 5 precision 0.29 recall 0.36 F1 0.32 length 2.602/2.602 width 0.136/0.162
+Downsample @ 0.007 174632 -> 50458
+Column 6 precision 0.12 recall 0.24 F1 0.16 length 2.567/2.612 width 0.101/0.119
+Downsample @ 0.007 207543 -> 61636
+Column 7 precision 0.33 recall 0.34 F1 0.34 length 2.937/2.937 width 0.280/0.280
+Overall norm precision 0.27 recall 0.34 F1 0.30 length 0.007 width 0.020
+Downsample @ 0.010 47804 -> 20971
+Column 1 precision 0.23 recall 0.25 F1 0.24 length 2.531/2.530 width 0.146/0.154
+Downsample @ 0.010 90171 -> 22858
+Column 2 precision 0.40 recall 0.32 F1 0.36 length 2.284/2.285 width 0.161/0.197
+Downsample @ 0.010 88797 -> 22543
+Column 3 precision 0.48 recall 0.69 F1 0.57 length 2.277/2.280 width 0.173/0.200
+Downsample @ 0.010 41767 -> 17528
+Column 4 precision 0.07 recall 0.10 F1 0.08 length 2.310/2.316 width 0.057/0.083
+Downsample @ 0.010 60072 -> 21573
+Column 5 precision 0.26 recall 0.30 F1 0.28 length 2.566/2.601 width 0.148/0.159
+Downsample @ 0.010 174632 -> 25838
+Column 6 precision 0.10 recall 0.20 F1 0.13 length 2.507/2.613 width 0.080/0.116
+Downsample @ 0.010 207543 -> 31927
+Column 7 precision 0.32 recall 0.29 F1 0.30 length 2.932/2.937 width 0.279/0.280
+Overall norm precision 0.26 recall 0.31 F1 0.28 length 0.022 width 0.021
+Downsample @ 0.020 47804 -> 6877
+Column 1 precision 0.23 recall 0.33 F1 0.27 length 2.533/2.533 width 0.140/0.149
+Downsample @ 0.020 90171 -> 5946
+Column 2 precision 0.48 recall 0.33 F1 0.39 length 2.266/2.267 width 0.162/0.196
+Downsample @ 0.020 88797 -> 5866
+Column 3 precision 0.54 recall 0.74 F1 0.63 length 2.278/2.277 width 0.192/0.196
+Downsample @ 0.020 41767 -> 5281
+Column 4 precision 0.04 recall 0.08 F1 0.05 length 2.316/2.316 width 0.060/0.081
+Downsample @ 0.020 60072 -> 7252
+Column 5 precision 0.17 recall 0.28 F1 0.21 length 2.601/2.602 width 0.116/0.159
+Downsample @ 0.020 174632 -> 7510
+Column 6 precision 0.11 recall 0.22 F1 0.15 length 2.508/2.610 width 0.105/0.117
+Downsample @ 0.020 207543 -> 7568
+Column 7 precision 0.31 recall 0.27 F1 0.29 length 2.936/2.936 width 0.273/0.274
+Overall norm precision 0.27 recall 0.32 F1 0.28 length 0.015 width 0.018
+Downsample @ 0.050 47804 -> 968
+Column 1 precision 0.15 recall 0.31 F1 0.21 length 2.446/2.474 width 0.105/0.104
+Downsample @ 0.050 90171 -> 1019
+Column 2 precision 0.46 recall 0.61 F1 0.52 length 2.067/2.266 width 0.108/0.165
+Downsample @ 0.050 88797 -> 909
+Column 3 precision 0.34 recall 0.52 F1 0.41 length 2.102/2.205 width 0.142/0.193
+Downsample @ 0.050 41767 -> 936
+Column 4 precision 0.03 recall 0.24 F1 0.06 length 2.075/2.259 width 0.030/0.057
+Downsample @ 0.050 60072 -> 899
+Column 5 precision 0.35 recall 0.40 F1 0.38 length 2.273/2.564 width 0.081/0.131
+Downsample @ 0.050 174632 -> 1000
+Column 6 precision 0.22 recall 0.67 F1 0.33 length 2.350/2.581 width 0.084/0.091
+Downsample @ 0.050 207543 -> 1314
+Column 7 precision 0.22 recall 0.44 F1 0.29 length 2.921/2.920 width 0.192/0.272
+Overall norm precision 0.25 recall 0.46 F1 0.31 length 0.148 width 0.039
+Downsample @ 0.070 47804 -> 504
+Column 1 precision 0.02 recall 0.04 F1 0.03 length nan/2.366 width nan/0.072
+Downsample @ 0.070 90171 -> 440
+Column 2 precision 0.07 recall 0.06 F1 0.07 length nan/2.226 width nan/0.166
+Downsample @ 0.070 88797 -> 502
+Column 3 precision 0.70 recall 0.64 F1 0.67 length 0.847/1.047 width 0.144/0.160
+Downsample @ 0.070 41767 -> 478
+Column 4 precision 0.01 recall 0.08 F1 0.02 length nan/2.290 width nan/0.011
+Downsample @ 0.070 60072 -> 454
+Column 5 precision 0.67 recall 0.33 F1 0.44 length 0.936/2.565 width 0.030/0.119
+Downsample @ 0.070 174632 -> 517
+Column 6 precision 0.03 recall 0.12 F1 0.04 length 1.755/2.612 width 0.004/0.078
+Downsample @ 0.070 207543 -> 674
+Column 7 precision 0.15 recall 0.36 F1 0.21 length 2.880/2.915 width 0.153/0.226
+Overall norm precision 0.23 recall 0.23 F1 0.21 length 0.680 width 0.063
+Downsample @ 0.100 47804 -> 330
+Column 1 precision 0.23 recall 0.44 F1 0.30 length 1.707/2.336 width 0.024/0.116
+Downsample @ 0.100 90171 -> 212
+Column 2 precision 0.13 recall 0.07 F1 0.09 length nan/2.142 width nan/0.118
+Downsample @ 0.100 88797 -> 290
+Column 3 precision 0.14 recall 0.23 F1 0.17 length nan/2.132 width nan/0.168
+Downsample @ 0.100 41767 -> 192
+Column 4 precision 1.00 recall 0.10 F1 0.17 length nan/2.236 width nan/0.012
+Downsample @ 0.100 60072 -> 250
+Column 5 precision 0.01 recall 0.05 F1 0.02 length nan/2.050 width nan/0.022
+Downsample @ 0.100 174632 -> 279
+Column 6 precision 0.01 recall 0.12 F1 0.02 length nan/2.607 width nan/0.055
+Downsample @ 0.100 207543 -> 264
+Column 7 precision 0.12 recall 0.17 F1 0.14 length 0.706/2.890 width 0.008/0.203
+Overall norm precision 0.23 recall 0.17 F1 0.13 length 1.406 width 0.144
+Downsample @ 0.001 47804 -> 47758
+Column 1 precision 0.36 recall 0.48 F1 0.41 length 2.533/2.533 width 0.152/0.161
+Downsample @ 0.001 90171 -> 90156
+Column 2 precision 0.46 recall 0.60 F1 0.52 length 2.288/2.289 width 0.159/0.198
+Downsample @ 0.001 88797 -> 88753
+Column 3 precision 0.45 recall 0.72 F1 0.55 length 2.277/2.280 width 0.199/0.201
+Downsample @ 0.001 41767 -> 41732
+Column 4 precision 0.13 recall 0.21 F1 0.16 length 2.318/2.318 width 0.057/0.083
+Downsample @ 0.001 60072 -> 60020
+Column 5 precision 0.28 recall 0.33 F1 0.31 length 2.603/2.603 width 0.149/0.162
+Downsample @ 0.001 174632 -> 174366
+Column 6 precision 0.07 recall 0.16 F1 0.10 length 2.614/2.613 width 0.078/0.120
+Downsample @ 0.001 207543 -> 207543
+Column 7 precision 0.29 recall 0.38 F1 0.33 length 2.935/2.937 width 0.278/0.281
+Overall curv precision 0.29 recall 0.41 F1 0.34 length 0.001 width 0.019
+Downsample @ 0.002 47804 -> 47463
+Column 1 precision 0.36 recall 0.48 F1 0.41 length 2.533/2.533 width 0.152/0.161
+Downsample @ 0.002 90171 -> 87664
+Column 2 precision 0.46 recall 0.60 F1 0.52 length 2.289/2.289 width 0.159/0.198
+Downsample @ 0.002 88797 -> 86279
+Column 3 precision 0.44 recall 0.72 F1 0.55 length 2.277/2.280 width 0.198/0.201
+Downsample @ 0.002 41767 -> 41483
+Column 4 precision 0.12 recall 0.21 F1 0.16 length 2.318/2.318 width 0.058/0.083
+Downsample @ 0.002 60072 -> 59550
+Column 5 precision 0.27 recall 0.34 F1 0.30 length 2.603/2.603 width 0.149/0.162
+Downsample @ 0.002 174632 -> 158726
+Column 6 precision 0.07 recall 0.17 F1 0.09 length 2.613/2.613 width 0.099/0.120
+Downsample @ 0.002 207543 -> 191704
+Column 7 precision 0.29 recall 0.37 F1 0.33 length 2.936/2.937 width 0.256/0.281
+Overall curv precision 0.29 recall 0.41 F1 0.34 length 0.001 width 0.019
+Downsample @ 0.005 47804 -> 42374
+Column 1 precision 0.35 recall 0.45 F1 0.39 length 2.533/2.533 width 0.152/0.161
+Downsample @ 0.005 90171 -> 62211
+Column 2 precision 0.47 recall 0.57 F1 0.52 length 2.289/2.289 width 0.158/0.198
+Downsample @ 0.005 88797 -> 59716
+Column 3 precision 0.45 recall 0.71 F1 0.55 length 2.278/2.280 width 0.169/0.201
+Downsample @ 0.005 41767 -> 36111
+Column 4 precision 0.12 recall 0.21 F1 0.15 length 2.318/2.318 width 0.057/0.083
+Downsample @ 0.005 60072 -> 46792
+Column 5 precision 0.30 recall 0.36 F1 0.33 length 2.601/2.603 width 0.140/0.162
+Downsample @ 0.005 174632 -> 87637
+Column 6 precision 0.06 recall 0.14 F1 0.08 length 2.594/2.613 width 0.115/0.120
+Downsample @ 0.005 207543 -> 106735
+Column 7 precision 0.30 recall 0.36 F1 0.33 length 2.928/2.937 width 0.255/0.281
+Overall curv precision 0.29 recall 0.40 F1 0.33 length 0.005 width 0.023
+Downsample @ 0.007 47804 -> 32661
+Column 1 precision 0.35 recall 0.47 F1 0.40 length 2.533/2.533 width 0.154/0.161
+Downsample @ 0.007 90171 -> 40822
+Column 2 precision 0.51 recall 0.54 F1 0.52 length 2.286/2.286 width 0.158/0.197
+Downsample @ 0.007 88797 -> 39071
+Column 3 precision 0.42 recall 0.67 F1 0.52 length 2.277/2.280 width 0.171/0.202
+Downsample @ 0.007 41767 -> 27242
+Column 4 precision 0.11 recall 0.19 F1 0.14 length 2.318/2.318 width 0.056/0.089
+Downsample @ 0.007 60072 -> 35400
+Column 5 precision 0.31 recall 0.38 F1 0.34 length 2.602/2.602 width 0.149/0.162
+Downsample @ 0.007 174632 -> 50458
+Column 6 precision 0.05 recall 0.10 F1 0.07 length 2.447/2.612 width 0.073/0.119
+Downsample @ 0.007 207543 -> 61636
+Column 7 precision 0.31 recall 0.36 F1 0.33 length 2.927/2.937 width 0.255/0.280
+Overall curv precision 0.30 recall 0.39 F1 0.33 length 0.026 width 0.028
+Downsample @ 0.010 47804 -> 20971
+Column 1 precision 0.33 recall 0.46 F1 0.38 length 2.531/2.530 width 0.147/0.154
+Downsample @ 0.010 90171 -> 22858
+Column 2 precision 0.52 recall 0.51 F1 0.51 length 2.284/2.285 width 0.126/0.197
+Downsample @ 0.010 88797 -> 22543
+Column 3 precision 0.43 recall 0.60 F1 0.50 length 2.277/2.280 width 0.174/0.200
+Downsample @ 0.010 41767 -> 17528
+Column 4 precision 0.06 recall 0.09 F1 0.07 length 2.265/2.316 width 0.069/0.083
+Downsample @ 0.010 60072 -> 21573
+Column 5 precision 0.26 recall 0.29 F1 0.28 length 2.442/2.601 width 0.143/0.159
+Downsample @ 0.010 174632 -> 25838
+Column 6 precision 0.05 recall 0.09 F1 0.07 length 2.403/2.613 width 0.093/0.116
+Downsample @ 0.010 207543 -> 31927
+Column 7 precision 0.32 recall 0.35 F1 0.33 length 2.928/2.937 width 0.234/0.280
+Overall curv precision 0.28 recall 0.34 F1 0.31 length 0.062 width 0.029
+Downsample @ 0.020 47804 -> 6877
+Column 1 precision 0.39 recall 0.48 F1 0.43 length 2.533/2.533 width 0.147/0.149
+Downsample @ 0.020 90171 -> 5946
+Column 2 precision 0.61 recall 0.43 F1 0.51 length 2.137/2.267 width 0.133/0.196
+Downsample @ 0.020 88797 -> 5866
+Column 3 precision 0.47 recall 0.41 F1 0.44 length 2.216/2.277 width 0.076/0.196
+Downsample @ 0.020 41767 -> 5281
+Column 4 precision 0.07 recall 0.08 F1 0.07 length 2.080/2.316 width 0.061/0.081
+Downsample @ 0.020 60072 -> 7252
+Column 5 precision 0.26 recall 0.30 F1 0.28 length 2.537/2.602 width 0.126/0.159
+Downsample @ 0.020 174632 -> 7510
+Column 6 precision 0.07 recall 0.15 F1 0.10 length 2.609/2.610 width 0.097/0.117
+Downsample @ 0.020 207543 -> 7568
+Column 7 precision 0.31 recall 0.23 F1 0.26 length 2.929/2.936 width 0.193/0.274
+Overall curv precision 0.31 recall 0.30 F1 0.30 length 0.071 width 0.048
+Downsample @ 0.050 47804 -> 968
+Column 1 precision 0.12 recall 0.02 F1 0.03 length nan/2.474 width nan/0.104
+Downsample @ 0.050 90171 -> 1019
+Column 2 precision 0.65 recall 0.11 F1 0.19 length 2.032/2.266 width 0.070/0.165
+Downsample @ 0.050 88797 -> 909
+Column 3 precision 0.33 recall 0.03 F1 0.06 length 1.239/2.205 width 0.033/0.193
+Downsample @ 0.050 41767 -> 936
+Column 4 precision 0.00 recall 0.00 F1 0.00 length nan/2.259 width nan/0.057
+Downsample @ 0.050 60072 -> 899
+Column 5 precision 0.00 recall 0.00 F1 0.00 length nan/2.564 width nan/0.131
+Downsample @ 0.050 174632 -> 1000
+Column 6 precision 0.38 recall 0.04 F1 0.07 length 0.954/2.581 width 0.047/0.091
+Downsample @ 0.050 207543 -> 1314
+Column 7 precision 0.27 recall 0.12 F1 0.17 length 0.146/2.920 width 0.080/0.272
+Overall curv precision 0.25 recall 0.05 F1 0.07 length 1.400 width 0.123
+Downsample @ 0.070 47804 -> 504
+Column 1 precision 0.10 recall 1.00 F1 0.19 length 2.366/2.366 width 0.072/0.072
+Downsample @ 0.070 90171 -> 440
+Column 2 precision 0.00 recall 0.00 F1 0.00 length nan/2.226 width nan/0.166
+Downsample @ 0.070 88797 -> 502
+Column 3 precision 0.67 recall 0.03 F1 0.06 length nan/1.047 width nan/0.160
+Downsample @ 0.070 41767 -> 478
+Column 4 precision 0.05 recall 1.00 F1 0.10 length 2.290/2.290 width 0.011/0.011
+Downsample @ 0.070 60072 -> 454
+Column 5 precision 0.13 recall 1.00 F1 0.23 length 2.565/2.565 width 0.119/0.119
+Downsample @ 0.070 174632 -> 517
+Column 6 precision 0.00 recall 0.00 F1 0.00 length nan/2.612 width nan/0.078
+Downsample @ 0.070 207543 -> 674
+Column 7 precision 0.20 recall 0.04 F1 0.06 length nan/2.915 width nan/0.226
+Overall curv precision 0.16 recall 0.44 F1 0.09 length 0.000 width 0.000
+Downsample @ 0.100 47804 -> 330
+Column 1 precision 0.80 recall 0.08 F1 0.15 length 0.020/2.336 width 0.019/0.116
+Downsample @ 0.100 90171 -> 212
+Column 2 precision 0.20 recall 1.00 F1 0.34 length 2.142/2.142 width 0.118/0.118
+Downsample @ 0.100 88797 -> 290
+Column 3 precision 0.00 recall 0.00 F1 0.00 length nan/2.132 width nan/0.168
+Downsample @ 0.100 41767 -> 192
+Column 4 precision 0.11 recall 1.00 F1 0.20 length 2.236/2.236 width 0.012/0.012
+Downsample @ 0.100 60072 -> 250
+Column 5 precision 0.00 recall 0.00 F1 0.00 length nan/2.050 width nan/0.022
+Downsample @ 0.100 174632 -> 279
+Column 6 precision 0.00 recall 0.00 F1 0.00 length nan/2.607 width nan/0.055
+Downsample @ 0.100 207543 -> 264
+Column 7 precision 0.00 recall 0.00 F1 0.00 length nan/2.890 width nan/0.203
+Overall curv precision 0.16 recall 0.30 F1 0.10 length 0.772 width 0.032
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m133[0;m[0;m ms for [0;36m47758[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m47758[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m279[0;m[0;m ms : [0;36m47758[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m7[0;m[0;m ms : [0;36m47758[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m351[0;m[0;m ms for [0;36m90156[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m8[0;m[0;m ms : [0;36m90156[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m742[0;m[0;m ms : [0;36m90156[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m56[0;m[0;m ms : [0;36m90156[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m350[0;m[0;m ms for [0;36m88753[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m8[0;m[0;m ms : [0;36m88753[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m758[0;m[0;m ms : [0;36m88753[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m81[0;m[0;m ms : [0;36m88753[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m110[0;m[0;m ms for [0;36m41732[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m41732[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m228[0;m[0;m ms : [0;36m41732[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m6[0;m[0;m ms : [0;36m41732[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m175[0;m[0;m ms for [0;36m60020[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m5[0;m[0;m ms : [0;36m60020[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m369[0;m[0;m ms : [0;36m60020[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m69[0;m[0;m ms : [0;36m60020[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m957[0;m[0;m ms for [0;36m174366[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m16[0;m[0;m ms : [0;36m174366[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m2080[0;m[0;m ms : [0;36m174366[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m193[0;m[0;m ms : [0;36m174366[0;m[0;m points]
+Downsample @ 0.001 47804 -> 47758
+Saved 47758 points to tmp/tmp.pcd
+Column 1 precision 0.10 recall 0.01 F1 0.02 length 2.407/2.533 width 0.137/0.161
+Downsample @ 0.001 90171 -> 90156
+Saved 90156 points to tmp/tmp.pcd
+Column 2 precision 0.47 recall 0.19 F1 0.27 length 2.266/2.289 width 0.182/0.198
+Downsample @ 0.001 88797 -> 88753
+Saved 88753 points to tmp/tmp.pcd
+Column 3 precision 0.22 recall 0.15 F1 0.18 length 2.280/2.280 width 0.194/0.201
+Downsample @ 0.001 41767 -> 41732
+Saved 41732 points to tmp/tmp.pcd
+Column 4 precision 0.07 recall 0.02 F1 0.03 length 2.318/2.318 width 0.063/0.083
+Downsample @ 0.001 60072 -> 60020
+Saved 60020 points to tmp/tmp.pcd
+Column 5 precision 0.13 recall 0.02 F1 0.04 length 2.602/2.603 width 0.131/0.162
+Downsample @ 0.001 174632 -> 174366
+Saved 174366 points to tmp/tmp.pcd
+Column 6 precision 0.14 recall 0.14 F1 0.14 length 2.613/2.613 width 0.112/0.120
+Downsample @ 0.001 207543 -> 207543
+Column 7 precision 0.34 recall 0.17 F1 0.22 length 2.937/2.937 width 0.269/0.281
+Overall fpfh precision 0.21 recall 0.10 F1 0.13 length 0.021 width 0.017
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m130[0;m[0;m ms for [0;36m47463[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m47463[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m269[0;m[0;m ms : [0;36m47463[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m8[0;m[0;m ms : [0;36m47463[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m340[0;m[0;m ms for [0;36m87664[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m8[0;m[0;m ms : [0;36m87664[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m705[0;m[0;m ms : [0;36m87664[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m50[0;m[0;m ms : [0;36m87664[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m330[0;m[0;m ms for [0;36m86279[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m8[0;m[0;m ms : [0;36m86279[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m708[0;m[0;m ms : [0;36m86279[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m56[0;m[0;m ms : [0;36m86279[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m109[0;m[0;m ms for [0;36m41483[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m41483[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m229[0;m[0;m ms : [0;36m41483[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m5[0;m[0;m ms : [0;36m41483[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m174[0;m[0;m ms for [0;36m59550[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m5[0;m[0;m ms : [0;36m59550[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m364[0;m[0;m ms : [0;36m59550[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m55[0;m[0;m ms : [0;36m59550[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m822[0;m[0;m ms for [0;36m158726[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m14[0;m[0;m ms : [0;36m158726[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m1738[0;m[0;m ms : [0;36m158726[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m119[0;m[0;m ms : [0;36m158726[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m1010[0;m[0;m ms for [0;36m191704[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m18[0;m[0;m ms : [0;36m191704[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m2158[0;m[0;m ms : [0;36m191704[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m223[0;m[0;m ms : [0;36m191704[0;m[0;m points]
+Downsample @ 0.002 47804 -> 47463
+Saved 47463 points to tmp/tmp.pcd
+Column 1 precision 0.11 recall 0.02 F1 0.03 length 2.529/2.533 width 0.137/0.161
+Downsample @ 0.002 90171 -> 87664
+Saved 87664 points to tmp/tmp.pcd
+Column 2 precision 0.48 recall 0.20 F1 0.28 length 2.266/2.289 width 0.178/0.198
+Downsample @ 0.002 88797 -> 86279
+Saved 86279 points to tmp/tmp.pcd
+Column 3 precision 0.22 recall 0.15 F1 0.18 length 2.280/2.280 width 0.186/0.201
+Downsample @ 0.002 41767 -> 41483
+Saved 41483 points to tmp/tmp.pcd
+Column 4 precision 0.06 recall 0.02 F1 0.03 length 2.318/2.318 width 0.075/0.083
+Downsample @ 0.002 60072 -> 59550
+Saved 59550 points to tmp/tmp.pcd
+Column 5 precision 0.13 recall 0.02 F1 0.04 length 2.602/2.603 width 0.131/0.162
+Downsample @ 0.002 174632 -> 158726
+Saved 158726 points to tmp/tmp.pcd
+Column 6 precision 0.14 recall 0.13 F1 0.13 length 2.613/2.613 width 0.113/0.120
+Downsample @ 0.002 207543 -> 191704
+Saved 191704 points to tmp/tmp.pcd
+Column 7 precision 0.30 recall 0.17 F1 0.22 length 2.935/2.937 width 0.276/0.281
+Overall fpfh precision 0.21 recall 0.10 F1 0.13 length 0.004 width 0.016
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m112[0;m[0;m ms for [0;36m42374[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m42374[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m229[0;m[0;m ms : [0;36m42374[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m7[0;m[0;m ms : [0;36m42374[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m198[0;m[0;m ms for [0;36m62211[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m6[0;m[0;m ms : [0;36m62211[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m410[0;m[0;m ms : [0;36m62211[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m44[0;m[0;m ms : [0;36m62211[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m191[0;m[0;m ms for [0;36m59716[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m5[0;m[0;m ms : [0;36m59716[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m392[0;m[0;m ms : [0;36m59716[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m37[0;m[0;m ms : [0;36m59716[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m92[0;m[0;m ms for [0;36m36111[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m36111[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m186[0;m[0;m ms : [0;36m36111[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m5[0;m[0;m ms : [0;36m36111[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m129[0;m[0;m ms for [0;36m46792[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m46792[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m258[0;m[0;m ms : [0;36m46792[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m6[0;m[0;m ms : [0;36m46792[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m317[0;m[0;m ms for [0;36m87637[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m8[0;m[0;m ms : [0;36m87637[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m687[0;m[0;m ms : [0;36m87637[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m81[0;m[0;m ms : [0;36m87637[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m414[0;m[0;m ms for [0;36m106735[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m16[0;m[0;m ms : [0;36m106735[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m825[0;m[0;m ms : [0;36m106735[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m98[0;m[0;m ms : [0;36m106735[0;m[0;m points]
+Downsample @ 0.005 47804 -> 42374
+Saved 42374 points to tmp/tmp.pcd
+Column 1 precision 0.09 recall 0.01 F1 0.02 length 2.345/2.533 width 0.156/0.161
+Downsample @ 0.005 90171 -> 62211
+Saved 62211 points to tmp/tmp.pcd
+Column 2 precision 0.49 recall 0.16 F1 0.24 length 2.268/2.289 width 0.165/0.198
+Downsample @ 0.005 88797 -> 59716
+Saved 59716 points to tmp/tmp.pcd
+Column 3 precision 0.23 recall 0.13 F1 0.17 length 2.278/2.280 width 0.195/0.201
+Downsample @ 0.005 41767 -> 36111
+Saved 36111 points to tmp/tmp.pcd
+Column 4 precision 0.11 recall 0.02 F1 0.04 length 2.318/2.318 width 0.057/0.083
+Downsample @ 0.005 60072 -> 46792
+Saved 46792 points to tmp/tmp.pcd
+Column 5 precision 0.14 recall 0.02 F1 0.04 length 2.602/2.603 width 0.120/0.162
+Downsample @ 0.005 174632 -> 87637
+Saved 87637 points to tmp/tmp.pcd
+Column 6 precision 0.11 recall 0.10 F1 0.11 length 2.611/2.613 width 0.106/0.120
+Downsample @ 0.005 207543 -> 106735
+Saved 106735 points to tmp/tmp.pcd
+Column 7 precision 0.40 recall 0.15 F1 0.22 length 2.936/2.937 width 0.274/0.281
+Overall fpfh precision 0.22 recall 0.09 F1 0.12 length 0.031 width 0.019
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m79[0;m[0;m ms for [0;36m32661[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m32661[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m158[0;m[0;m ms : [0;36m32661[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m5[0;m[0;m ms : [0;36m32661[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m109[0;m[0;m ms for [0;36m40822[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m40822[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m226[0;m[0;m ms : [0;36m40822[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m5[0;m[0;m ms : [0;36m40822[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m105[0;m[0;m ms for [0;36m39071[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m39071[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m210[0;m[0;m ms : [0;36m39071[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m5[0;m[0;m ms : [0;36m39071[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m62[0;m[0;m ms for [0;36m27242[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m27242[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m128[0;m[0;m ms : [0;36m27242[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m27242[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m87[0;m[0;m ms for [0;36m35400[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m35400[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m175[0;m[0;m ms : [0;36m35400[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m35400[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m143[0;m[0;m ms for [0;36m50458[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m50458[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m289[0;m[0;m ms : [0;36m50458[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m25[0;m[0;m ms : [0;36m50458[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m182[0;m[0;m ms for [0;36m61636[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m5[0;m[0;m ms : [0;36m61636[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m360[0;m[0;m ms : [0;36m61636[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m40[0;m[0;m ms : [0;36m61636[0;m[0;m points]
+Downsample @ 0.007 47804 -> 32661
+Saved 32661 points to tmp/tmp.pcd
+Column 1 precision 0.15 recall 0.01 F1 0.01 length 1.668/2.533 width 0.131/0.161
+Downsample @ 0.007 90171 -> 40822
+Saved 40822 points to tmp/tmp.pcd
+Column 2 precision 0.47 recall 0.07 F1 0.13 length 2.267/2.286 width 0.173/0.197
+Downsample @ 0.007 88797 -> 39071
+Saved 39071 points to tmp/tmp.pcd
+Column 3 precision 0.33 recall 0.08 F1 0.13 length 2.225/2.280 width 0.188/0.202
+Downsample @ 0.007 41767 -> 27242
+Saved 27242 points to tmp/tmp.pcd
+Column 4 precision 0.14 recall 0.02 F1 0.04 length 2.113/2.318 width 0.071/0.089
+Downsample @ 0.007 60072 -> 35400
+Saved 35400 points to tmp/tmp.pcd
+Column 5 precision 0.19 recall 0.04 F1 0.06 length 2.602/2.602 width 0.114/0.162
+Downsample @ 0.007 174632 -> 50458
+Saved 50458 points to tmp/tmp.pcd
+Column 6 precision 0.16 recall 0.10 F1 0.12 length 2.610/2.612 width 0.104/0.119
+Downsample @ 0.007 207543 -> 61636
+Saved 61636 points to tmp/tmp.pcd
+Column 7 precision 0.36 recall 0.09 F1 0.14 length 2.935/2.937 width 0.267/0.280
+Overall fpfh precision 0.26 recall 0.06 F1 0.09 length 0.164 width 0.023
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m45[0;m[0;m ms for [0;36m20971[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m20971[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m86[0;m[0;m ms : [0;36m20971[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m20971[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m50[0;m[0;m ms for [0;36m22858[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m22858[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m101[0;m[0;m ms : [0;36m22858[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m22858[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m50[0;m[0;m ms for [0;36m22543[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m22543[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m97[0;m[0;m ms : [0;36m22543[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m22543[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m36[0;m[0;m ms for [0;36m17528[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m17528[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m69[0;m[0;m ms : [0;36m17528[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m17528[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m46[0;m[0;m ms for [0;36m21573[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m21573[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m92[0;m[0;m ms : [0;36m21573[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m21573[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m59[0;m[0;m ms for [0;36m25838[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m25838[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m111[0;m[0;m ms : [0;36m25838[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m25838[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m74[0;m[0;m ms for [0;36m31927[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m31927[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m143[0;m[0;m ms : [0;36m31927[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m31927[0;m[0;m points]
+Downsample @ 0.010 47804 -> 20971
+Saved 20971 points to tmp/tmp.pcd
+Column 1 precision 0.00 recall 0.00 F1 0.00 length nan/2.530 width nan/0.154
+Downsample @ 0.010 90171 -> 22858
+Saved 22858 points to tmp/tmp.pcd
+Column 2 precision 0.33 recall 0.00 F1 0.00 length nan/2.285 width nan/0.197
+Downsample @ 0.010 88797 -> 22543
+Saved 22543 points to tmp/tmp.pcd
+Column 3 precision 0.22 recall 0.00 F1 0.00 length 0.936/2.280 width 0.047/0.200
+Downsample @ 0.010 41767 -> 17528
+Saved 17528 points to tmp/tmp.pcd
+Column 4 precision 0.10 recall 0.00 F1 0.00 length nan/2.316 width nan/0.083
+Downsample @ 0.010 60072 -> 21573
+Saved 21573 points to tmp/tmp.pcd
+Column 5 precision 0.39 recall 0.00 F1 0.00 length 1.731/2.601 width 0.056/0.159
+Downsample @ 0.010 174632 -> 25838
+Saved 25838 points to tmp/tmp.pcd
+Column 6 precision 0.20 recall 0.01 F1 0.02 length 1.979/2.613 width 0.079/0.116
+Downsample @ 0.010 207543 -> 31927
+Saved 31927 points to tmp/tmp.pcd
+Column 7 precision 0.21 recall 0.00 F1 0.00 length 2.440/2.937 width 0.078/0.280
+Overall fpfh precision 0.21 recall 0.00 F1 0.00 length 0.836 width 0.124
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m11[0;m[0;m ms for [0;36m6877[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m6877[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m22[0;m[0;m ms : [0;36m6877[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m6877[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m10[0;m[0;m ms for [0;36m5946[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m5946[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m19[0;m[0;m ms : [0;36m5946[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m5946[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m9[0;m[0;m ms for [0;36m5866[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m5866[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m19[0;m[0;m ms : [0;36m5866[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m5866[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m8[0;m[0;m ms for [0;36m5281[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m5281[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m16[0;m[0;m ms : [0;36m5281[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m5281[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m12[0;m[0;m ms for [0;36m7252[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m7252[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m23[0;m[0;m ms : [0;36m7252[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m7252[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m13[0;m[0;m ms for [0;36m7510[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m7510[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m25[0;m[0;m ms : [0;36m7510[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m7510[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m12[0;m[0;m ms for [0;36m7568[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m7568[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m24[0;m[0;m ms : [0;36m7568[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m7568[0;m[0;m points]
+Downsample @ 0.020 47804 -> 6877
+Saved 6877 points to tmp/tmp.pcd
+Column 1 precision 0.00 recall 0.00 F1 0.00 length nan/2.533 width nan/0.149
+Downsample @ 0.020 90171 -> 5946
+Saved 5946 points to tmp/tmp.pcd
+Column 2 precision 0.37 recall 0.01 F1 0.01 length 2.192/2.267 width 0.141/0.196
+Downsample @ 0.020 88797 -> 5866
+Saved 5866 points to tmp/tmp.pcd
+Column 3 precision 0.29 recall 0.01 F1 0.02 length 1.459/2.277 width 0.013/0.196
+Downsample @ 0.020 41767 -> 5281
+Saved 5281 points to tmp/tmp.pcd
+Column 4 precision 0.00 recall 0.00 F1 0.00 length nan/2.316 width nan/0.081
+Downsample @ 0.020 60072 -> 7252
+Saved 7252 points to tmp/tmp.pcd
+Column 5 precision 0.00 recall 0.00 F1 0.00 length nan/2.602 width nan/0.159
+Downsample @ 0.020 174632 -> 7510
+Saved 7510 points to tmp/tmp.pcd
+Column 6 precision 0.00 recall 0.00 F1 0.00 length nan/2.610 width nan/0.117
+Downsample @ 0.020 207543 -> 7568
+Saved 7568 points to tmp/tmp.pcd
+Column 7 precision 0.60 recall 0.00 F1 0.01 length 1.846/2.936 width 0.035/0.274
+Overall fpfh precision 0.18 recall 0.00 F1 0.01 length 0.661 width 0.159
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m1[0;m[0;m ms for [0;36m968[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m968[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m968[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m968[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m1[0;m[0;m ms for [0;36m1019[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m1019[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m1019[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m1019[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m1[0;m[0;m ms for [0;36m909[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m909[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m909[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m909[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m1[0;m[0;m ms for [0;36m936[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m936[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m936[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m936[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m1[0;m[0;m ms for [0;36m899[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m899[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m899[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m899[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m1[0;m[0;m ms for [0;36m1000[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m1000[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m3[0;m[0;m ms : [0;36m1000[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m1000[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m2[0;m[0;m ms for [0;36m1314[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m1314[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m4[0;m[0;m ms : [0;36m1314[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m1314[0;m[0;m points]
+Downsample @ 0.050 47804 -> 968
+Saved 968 points to tmp/tmp.pcd
+Column 1 precision 0.09 recall 0.07 F1 0.08 length 2.168/2.474 width 0.052/0.104
+Downsample @ 0.050 90171 -> 1019
+Saved 1019 points to tmp/tmp.pcd
+Column 2 precision 0.51 recall 0.14 F1 0.22 length 1.261/2.266 width 0.104/0.165
+Downsample @ 0.050 88797 -> 909
+Saved 909 points to tmp/tmp.pcd
+Column 3 precision 0.24 recall 0.12 F1 0.16 length 1.906/2.205 width 0.039/0.193
+Downsample @ 0.050 41767 -> 936
+Saved 936 points to tmp/tmp.pcd
+Column 4 precision 0.02 recall 0.04 F1 0.02 length nan/2.259 width nan/0.057
+Downsample @ 0.050 60072 -> 899
+Saved 899 points to tmp/tmp.pcd
+Column 5 precision 0.33 recall 0.14 F1 0.19 length 1.656/2.564 width 0.077/0.131
+Downsample @ 0.050 174632 -> 1000
+Saved 1000 points to tmp/tmp.pcd
+Column 6 precision 0.20 recall 0.27 F1 0.23 length 2.104/2.581 width 0.055/0.091
+Downsample @ 0.050 207543 -> 1314
+Saved 1314 points to tmp/tmp.pcd
+Column 7 precision 0.19 recall 0.07 F1 0.10 length 2.050/2.920 width 0.056/0.272
+Overall fpfh precision 0.23 recall 0.12 F1 0.14 length 0.644 width 0.096
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m504[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m504[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m504[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m504[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m440[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m440[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m440[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m440[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m502[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m502[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m502[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m502[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m478[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m478[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m478[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m478[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m454[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m454[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m454[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m454[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m517[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m517[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m517[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m517[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m1[0;m[0;m ms for [0;36m674[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m674[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m674[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m674[0;m[0;m points]
+Downsample @ 0.070 47804 -> 504
+Saved 504 points to tmp/tmp.pcd
+Column 1 precision 0.00 recall 0.00 F1 0.00 length nan/2.366 width nan/0.072
+Downsample @ 0.070 90171 -> 440
+Saved 440 points to tmp/tmp.pcd
+Column 2 precision 0.07 recall 0.02 F1 0.04 length nan/2.226 width nan/0.166
+Downsample @ 0.070 88797 -> 502
+Saved 502 points to tmp/tmp.pcd
+Column 3 precision 0.69 recall 0.20 F1 0.32 length 0.664/1.047 width 0.087/0.160
+Downsample @ 0.070 41767 -> 478
+Saved 478 points to tmp/tmp.pcd
+Column 4 precision 0.03 recall 0.08 F1 0.04 length nan/2.290 width nan/0.011
+Downsample @ 0.070 60072 -> 454
+Saved 454 points to tmp/tmp.pcd
+Column 5 precision 0.71 recall 0.08 F1 0.15 length 0.338/2.565 width 0.004/0.119
+Downsample @ 0.070 174632 -> 517
+Saved 517 points to tmp/tmp.pcd
+Column 6 precision 0.08 recall 0.12 F1 0.09 length 1.755/2.612 width 0.004/0.078
+Downsample @ 0.070 207543 -> 674
+Saved 674 points to tmp/tmp.pcd
+Column 7 precision 0.07 recall 0.03 F1 0.04 length nan/2.915 width nan/0.226
+Overall fpfh precision 0.24 recall 0.08 F1 0.10 length 1.156 width 0.088
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m330[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m330[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m1[0;m[0;m ms : [0;36m330[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m330[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m212[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m212[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m212[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m212[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m290[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m290[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m290[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m290[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m192[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m192[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m192[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m192[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m250[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m250[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m250[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m250[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m279[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m279[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m279[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m279[0;m[0;m points]
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m0[0;m[0;m ms for [0;36m264[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m264[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m264[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m0[0;m[0;m ms : [0;36m264[0;m[0;m points]
+Downsample @ 0.100 47804 -> 330
+Saved 330 points to tmp/tmp.pcd
+Column 1 precision 0.20 recall 0.24 F1 0.22 length 1.305/2.336 width 0.023/0.116
+Downsample @ 0.100 90171 -> 212
+Saved 212 points to tmp/tmp.pcd
+Column 2 precision 0.21 recall 0.07 F1 0.11 length nan/2.142 width nan/0.118
+Downsample @ 0.100 88797 -> 290
+Saved 290 points to tmp/tmp.pcd
+Column 3 precision 0.17 recall 0.06 F1 0.09 length nan/2.132 width nan/0.168
+Downsample @ 0.100 41767 -> 192
+Saved 192 points to tmp/tmp.pcd
+Column 4 precision 0.11 recall 1.00 F1 0.20 length 2.236/2.236 width 0.012/0.012
+Downsample @ 0.100 60072 -> 250
+Saved 250 points to tmp/tmp.pcd
+Column 5 precision 0.00 recall 0.00 F1 0.00 length nan/2.050 width nan/0.022
+Downsample @ 0.100 174632 -> 279
+Saved 279 points to tmp/tmp.pcd
+Column 6 precision 0.00 recall 0.00 F1 0.00 length nan/2.607 width nan/0.055
+Downsample @ 0.100 207543 -> 264
+Saved 264 points to tmp/tmp.pcd
+Column 7 precision 0.27 recall 0.09 F1 0.13 length 0.706/2.890 width 0.002/0.203
+Overall fpfh precision 0.14 recall 0.21 F1 0.11 length 1.072 width 0.098
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Downsample @ 0.001 47804 -> 47758
+Column 1 precision 0.02 recall 0.01 F1 0.01 length 2.533/2.533 width 0.122/0.161
+Downsample @ 0.001 90171 -> 90156
+Column 2 precision 0.23 recall 0.09 F1 0.13 length 2.257/2.289 width 0.155/0.198
+Downsample @ 0.001 88797 -> 88753
+Column 3 precision 0.25 recall 0.17 F1 0.20 length 2.279/2.280 width 0.134/0.201
+Downsample @ 0.001 41767 -> 41732
+Column 4 precision 0.06 recall 0.05 F1 0.05 length 2.318/2.318 width 0.061/0.083
+Downsample @ 0.001 60072 -> 60020
+Column 5 precision 0.10 recall 0.04 F1 0.06 length 2.604/2.603 width 0.097/0.162
+Downsample @ 0.001 174632 -> 174366
+Column 6 precision 0.12 recall 0.19 F1 0.15 length 2.613/2.613 width 0.109/0.120
+Downsample @ 0.001 207543 -> 207543
+Column 7 precision 0.27 recall 0.17 F1 0.21 length 2.936/2.937 width 0.273/0.281
+Overall pointnet2 precision 0.15 recall 0.10 F1 0.12 length 0.005 width 0.037
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Downsample @ 0.002 47804 -> 47463
+Getting features from 24 batches ...
+Column 1 precision 0.02 recall 0.01 F1 0.01 length 2.533/2.533 width 0.131/0.161
+Downsample @ 0.002 90171 -> 87664
+Getting features from 43 batches ...
+Column 2 precision 0.24 recall 0.10 F1 0.14 length 2.280/2.289 width 0.149/0.198
+Downsample @ 0.002 88797 -> 86279
+Getting features from 43 batches ...
+Column 3 precision 0.24 recall 0.16 F1 0.19 length 2.280/2.280 width 0.134/0.201
+Downsample @ 0.002 41767 -> 41483
+Getting features from 21 batches ...
+Column 4 precision 0.07 recall 0.05 F1 0.06 length 2.318/2.318 width 0.053/0.083
+Downsample @ 0.002 60072 -> 59550
+Getting features from 30 batches ...
+Column 5 precision 0.14 recall 0.06 F1 0.09 length 2.604/2.603 width 0.099/0.162
+Downsample @ 0.002 174632 -> 158726
+Getting features from 78 batches ...
+Column 6 precision 0.13 recall 0.20 F1 0.16 length 2.613/2.613 width 0.106/0.120
+Downsample @ 0.002 207543 -> 191704
+Getting features from 94 batches ...
+Column 7 precision 0.25 recall 0.14 F1 0.18 length 2.936/2.937 width 0.272/0.281
+Overall pointnet2 precision 0.15 recall 0.10 F1 0.12 length 0.002 width 0.037
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Downsample @ 0.005 47804 -> 42374
+Getting features from 21 batches ...
+Column 1 precision 0.03 recall 0.02 F1 0.02 length 2.531/2.533 width 0.124/0.161
+Downsample @ 0.005 90171 -> 62211
+Getting features from 31 batches ...
+Column 2 precision 0.24 recall 0.09 F1 0.13 length 2.285/2.289 width 0.150/0.198
+Downsample @ 0.005 88797 -> 59716
+Getting features from 30 batches ...
+Column 3 precision 0.25 recall 0.17 F1 0.21 length 2.280/2.280 width 0.129/0.201
+Downsample @ 0.005 41767 -> 36111
+Getting features from 18 batches ...
+Column 4 precision 0.05 recall 0.04 F1 0.05 length 2.318/2.318 width 0.051/0.083
+Downsample @ 0.005 60072 -> 46792
+Getting features from 23 batches ...
+Column 5 precision 0.11 recall 0.06 F1 0.08 length 2.603/2.603 width 0.105/0.162
+Downsample @ 0.005 174632 -> 87637
+Getting features from 43 batches ...
+Column 6 precision 0.14 recall 0.18 F1 0.16 length 2.613/2.613 width 0.116/0.120
+Downsample @ 0.005 207543 -> 106735
+Getting features from 53 batches ...
+Column 7 precision 0.29 recall 0.14 F1 0.18 length 2.936/2.937 width 0.261/0.281
+Overall pointnet2 precision 0.16 recall 0.10 F1 0.12 length 0.001 width 0.038
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Downsample @ 0.007 47804 -> 32661
+Getting features from 16 batches ...
+Column 1 precision 0.03 recall 0.02 F1 0.02 length 2.533/2.533 width 0.122/0.161
+Downsample @ 0.007 90171 -> 40822
+Getting features from 20 batches ...
+Column 2 precision 0.20 recall 0.07 F1 0.10 length 2.286/2.286 width 0.139/0.197
+Downsample @ 0.007 88797 -> 39071
+Getting features from 20 batches ...
+Column 3 precision 0.26 recall 0.18 F1 0.21 length 2.279/2.280 width 0.122/0.202
+Downsample @ 0.007 41767 -> 27242
+Getting features from 14 batches ...
+Column 4 precision 0.07 recall 0.06 F1 0.06 length 2.318/2.318 width 0.051/0.089
+Downsample @ 0.007 60072 -> 35400
+Getting features from 18 batches ...
+Column 5 precision 0.10 recall 0.05 F1 0.07 length 2.603/2.602 width 0.097/0.162
+Downsample @ 0.007 174632 -> 50458
+Getting features from 25 batches ...
+Column 6 precision 0.14 recall 0.16 F1 0.15 length 2.613/2.612 width 0.101/0.119
+Downsample @ 0.007 207543 -> 61636
+Getting features from 31 batches ...
+Column 7 precision 0.31 recall 0.15 F1 0.20 length 2.936/2.937 width 0.275/0.280
+Overall pointnet2 precision 0.16 recall 0.10 F1 0.12 length 0.001 width 0.043
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Downsample @ 0.010 47804 -> 20971
+Getting features from 11 batches ...
+Column 1 precision 0.03 recall 0.02 F1 0.02 length 2.532/2.530 width 0.122/0.154
+Downsample @ 0.010 90171 -> 22858
+Getting features from 12 batches ...
+Column 2 precision 0.19 recall 0.06 F1 0.10 length 2.253/2.285 width 0.099/0.197
+Downsample @ 0.010 88797 -> 22543
+Getting features from 12 batches ...
+Column 3 precision 0.24 recall 0.15 F1 0.18 length 2.280/2.280 width 0.115/0.200
+Downsample @ 0.010 41767 -> 17528
+Getting features from 9 batches ...
+Column 4 precision 0.07 recall 0.04 F1 0.05 length 2.316/2.316 width 0.051/0.083
+Downsample @ 0.010 60072 -> 21573
+Getting features from 11 batches ...
+Column 5 precision 0.12 recall 0.05 F1 0.07 length 2.602/2.601 width 0.081/0.159
+Downsample @ 0.010 174632 -> 25838
+Getting features from 13 batches ...
+Column 6 precision 0.13 recall 0.15 F1 0.14 length 2.614/2.613 width 0.079/0.116
+Downsample @ 0.010 207543 -> 31927
+Getting features from 16 batches ...
+Column 7 precision 0.31 recall 0.14 F1 0.19 length 2.936/2.937 width 0.261/0.280
+Overall pointnet2 precision 0.16 recall 0.09 F1 0.11 length 0.005 width 0.054
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Downsample @ 0.020 47804 -> 6877
+Getting features from 4 batches ...
+Column 1 precision 0.04 recall 0.02 F1 0.03 length 2.533/2.533 width 0.066/0.149
+Downsample @ 0.020 90171 -> 5946
+Getting features from 3 batches ...
+Column 2 precision 0.24 recall 0.07 F1 0.10 length 2.186/2.267 width 0.107/0.196
+Downsample @ 0.020 88797 -> 5866
+Getting features from 3 batches ...
+Column 3 precision 0.24 recall 0.13 F1 0.17 length 2.278/2.277 width 0.078/0.196
+Downsample @ 0.020 41767 -> 5281
+Getting features from 3 batches ...
+Column 4 precision 0.05 recall 0.04 F1 0.04 length 2.316/2.316 width 0.035/0.081
+Downsample @ 0.020 60072 -> 7252
+Getting features from 4 batches ...
+Column 5 precision 0.08 recall 0.05 F1 0.06 length 2.601/2.602 width 0.086/0.159
+Downsample @ 0.020 174632 -> 7510
+Getting features from 4 batches ...
+Column 6 precision 0.12 recall 0.11 F1 0.11 length 2.611/2.610 width 0.047/0.117
+Downsample @ 0.020 207543 -> 7568
+Getting features from 4 batches ...
+Column 7 precision 0.37 recall 0.16 F1 0.22 length 2.936/2.936 width 0.263/0.274
+Overall pointnet2 precision 0.16 recall 0.08 F1 0.11 length 0.012 width 0.070
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Downsample @ 0.050 47804 -> 968
+Getting features from 1 batches ...
+Column 1 precision 0.06 recall 0.04 F1 0.05 length 1.698/2.474 width 0.011/0.104
+Downsample @ 0.050 90171 -> 1019
+Getting features from 1 batches ...
+Column 2 precision 0.21 recall 0.06 F1 0.10 length 1.963/2.266 width 0.053/0.165
+Downsample @ 0.050 88797 -> 909
+Getting features from 1 batches ...
+Column 3 precision 0.31 recall 0.16 F1 0.21 length 2.153/2.205 width 0.018/0.193
+Downsample @ 0.050 41767 -> 936
+Getting features from 1 batches ...
+Column 4 precision 0.07 recall 0.11 F1 0.09 length 2.259/2.259 width 0.054/0.057
+Downsample @ 0.050 60072 -> 899
+Getting features from 1 batches ...
+Column 5 precision 0.09 recall 0.05 F1 0.06 length 2.564/2.564 width 0.048/0.131
+Downsample @ 0.050 174632 -> 1000
+Getting features from 1 batches ...
+Column 6 precision 0.12 recall 0.11 F1 0.12 length 2.581/2.581 width 0.037/0.091
+Downsample @ 0.050 207543 -> 1314
+Getting features from 1 batches ...
+Column 7 precision 0.32 recall 0.13 F1 0.19 length 1.574/2.920 width 0.138/0.272
+Overall pointnet2 precision 0.17 recall 0.10 F1 0.12 length 0.354 width 0.093
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Downsample @ 0.070 47804 -> 504
+Getting features from 1 batches ...
+Column 1 precision 0.05 recall 0.06 F1 0.06 length nan/2.366 width nan/0.072
+Downsample @ 0.070 90171 -> 440
+Getting features from 1 batches ...
+Column 2 precision 0.23 recall 0.10 F1 0.14 length 1.735/2.226 width 0.067/0.166
+Downsample @ 0.070 88797 -> 502
+Getting features from 1 batches ...
+Column 3 precision 0.29 recall 0.11 F1 0.16 length nan/1.047 width nan/0.160
+Downsample @ 0.070 41767 -> 478
+Getting features from 1 batches ...
+Column 4 precision 0.10 recall 0.16 F1 0.12 length 2.290/2.290 width 0.005/0.011
+Downsample @ 0.070 60072 -> 454
+Getting features from 1 batches ...
+Column 5 precision 0.19 recall 0.12 F1 0.15 length 2.565/2.565 width 0.056/0.119
+Downsample @ 0.070 174632 -> 517
+Getting features from 1 batches ...
+Column 6 precision 0.08 recall 0.15 F1 0.11 length 0.230/2.612 width 0.018/0.078
+Downsample @ 0.070 207543 -> 674
+Getting features from 1 batches ...
+Column 7 precision 0.33 recall 0.15 F1 0.21 length 2.914/2.915 width 0.148/0.226
+Overall pointnet2 precision 0.18 recall 0.12 F1 0.13 length 0.575 width 0.061
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Downsample @ 0.100 47804 -> 330
+Getting features from 1 batches ...
+Column 1 precision 0.03 recall 0.02 F1 0.02 length nan/2.336 width nan/0.116
+Downsample @ 0.100 90171 -> 212
+Getting features from 1 batches ...
+Column 2 precision 0.05 recall 0.02 F1 0.03 length nan/2.142 width nan/0.118
+Downsample @ 0.100 88797 -> 290
+Getting features from 1 batches ...
+Column 3 precision 0.23 recall 0.09 F1 0.13 length nan/2.132 width nan/0.168
+Downsample @ 0.100 41767 -> 192
+Getting features from 1 batches ...
+Column 4 precision 0.17 recall 0.14 F1 0.15 length nan/2.236 width nan/0.012
+Downsample @ 0.100 60072 -> 250
+Getting features from 1 batches ...
+Column 5 precision 0.06 recall 0.05 F1 0.05 length nan/2.050 width nan/0.022
+Downsample @ 0.100 174632 -> 279
+Getting features from 1 batches ...
+Column 6 precision 0.12 recall 0.37 F1 0.18 length nan/2.607 width nan/0.055
+Downsample @ 0.100 207543 -> 264
+Getting features from 1 batches ...
+Column 7 precision 0.39 recall 0.15 F1 0.22 length 2.890/2.890 width 0.102/0.203
+Overall pointnet2 precision 0.15 recall 0.12 F1 0.11 length 0.000 width 0.101
+Restored from models/mcpnet.ckpt
+Downsample @ 0.001 47804 -> 47758
+Column 1 precision 0.52 recall 0.56 F1 0.54 length 2.533/2.533 width 0.152/0.161
+Downsample @ 0.001 90171 -> 90156
+Column 2 precision 0.54 recall 0.88 F1 0.67 length 2.289/2.289 width 0.198/0.198
+Downsample @ 0.001 88797 -> 88753
+Column 3 precision 0.46 recall 0.97 F1 0.63 length 2.280/2.280 width 0.201/0.201
+Downsample @ 0.001 41767 -> 41732
+Column 4 precision 0.20 recall 0.45 F1 0.27 length 2.316/2.318 width 0.073/0.083
+Downsample @ 0.001 60072 -> 60020
+Column 5 precision 0.47 recall 0.63 F1 0.54 length 2.602/2.603 width 0.158/0.162
+Downsample @ 0.001 174632 -> 174366
+Column 6 precision 0.27 recall 0.94 F1 0.42 length 2.613/2.613 width 0.117/0.120
+Downsample @ 0.001 207543 -> 207543
+Column 7 precision 0.37 recall 0.63 F1 0.47 length 2.937/2.937 width 0.281/0.281
+Overall tle precision 0.41 recall 0.73 F1 0.51 length 0.000 width 0.004
+Restored from models/mcpnet.ckpt
+Downsample @ 0.002 47804 -> 47463
+Column 1 precision 0.56 recall 0.60 F1 0.58 length 2.533/2.533 width 0.154/0.161
+Downsample @ 0.002 90171 -> 87664
+Column 2 precision 0.54 recall 0.85 F1 0.66 length 2.289/2.289 width 0.198/0.198
+Downsample @ 0.002 88797 -> 86279
+Column 3 precision 0.45 recall 0.93 F1 0.61 length 2.279/2.280 width 0.201/0.201
+Downsample @ 0.002 41767 -> 41483
+Column 4 precision 0.20 recall 0.46 F1 0.28 length 2.318/2.318 width 0.073/0.083
+Downsample @ 0.002 60072 -> 59550
+Column 5 precision 0.47 recall 0.64 F1 0.54 length 2.603/2.603 width 0.156/0.162
+Downsample @ 0.002 174632 -> 158726
+Column 6 precision 0.30 recall 0.95 F1 0.45 length 2.613/2.613 width 0.117/0.120
+Downsample @ 0.002 207543 -> 191704
+Column 7 precision 0.37 recall 0.55 F1 0.44 length 2.937/2.937 width 0.280/0.281
+Overall tle precision 0.41 recall 0.71 F1 0.51 length 0.000 width 0.004
+Restored from models/mcpnet.ckpt
+Downsample @ 0.005 47804 -> 42374
+Column 1 precision 0.54 recall 0.54 F1 0.54 length 2.533/2.533 width 0.147/0.161
+Downsample @ 0.005 90171 -> 62211
+Column 2 precision 0.56 recall 0.74 F1 0.64 length 2.289/2.289 width 0.198/0.198
+Downsample @ 0.005 88797 -> 59716
+Column 3 precision 0.45 recall 0.87 F1 0.60 length 2.279/2.280 width 0.201/0.201
+Downsample @ 0.005 41767 -> 36111
+Column 4 precision 0.20 recall 0.47 F1 0.28 length 2.318/2.318 width 0.073/0.083
+Downsample @ 0.005 60072 -> 46792
+Column 5 precision 0.48 recall 0.67 F1 0.56 length 2.603/2.603 width 0.157/0.162
+Downsample @ 0.005 174632 -> 87637
+Column 6 precision 0.32 recall 0.94 F1 0.47 length 2.613/2.613 width 0.117/0.120
+Downsample @ 0.005 207543 -> 106735
+Column 7 precision 0.37 recall 0.45 F1 0.40 length 2.937/2.937 width 0.279/0.281
+Overall tle precision 0.42 recall 0.67 F1 0.50 length 0.000 width 0.005
+Restored from models/mcpnet.ckpt
+Downsample @ 0.007 47804 -> 32661
+Column 1 precision 0.52 recall 0.51 F1 0.51 length 2.531/2.533 width 0.147/0.161
+Downsample @ 0.007 90171 -> 40822
+Column 2 precision 0.55 recall 0.60 F1 0.58 length 2.286/2.286 width 0.197/0.197
+Downsample @ 0.007 88797 -> 39071
+Column 3 precision 0.45 recall 0.79 F1 0.57 length 2.279/2.280 width 0.201/0.202
+Downsample @ 0.007 41767 -> 27242
+Column 4 precision 0.19 recall 0.48 F1 0.27 length 2.316/2.318 width 0.072/0.089
+Downsample @ 0.007 60072 -> 35400
+Column 5 precision 0.46 recall 0.68 F1 0.55 length 2.601/2.602 width 0.158/0.162
+Downsample @ 0.007 174632 -> 50458
+Column 6 precision 0.32 recall 0.92 F1 0.48 length 2.612/2.612 width 0.115/0.119
+Downsample @ 0.007 207543 -> 61636
+Column 7 precision 0.41 recall 0.42 F1 0.42 length 2.937/2.937 width 0.279/0.280
+Overall tle precision 0.41 recall 0.63 F1 0.48 length 0.001 width 0.006
+Restored from models/mcpnet.ckpt
+Downsample @ 0.010 47804 -> 20971
+Column 1 precision 0.51 recall 0.54 F1 0.52 length 2.531/2.530 width 0.149/0.154
+Downsample @ 0.010 90171 -> 22858
+Column 2 precision 0.58 recall 0.56 F1 0.57 length 2.285/2.285 width 0.195/0.197
+Downsample @ 0.010 88797 -> 22543
+Column 3 precision 0.50 recall 0.82 F1 0.62 length 2.279/2.280 width 0.200/0.200
+Downsample @ 0.010 41767 -> 17528
+Column 4 precision 0.23 recall 0.46 F1 0.30 length 2.313/2.316 width 0.071/0.083
+Downsample @ 0.010 60072 -> 21573
+Column 5 precision 0.50 recall 0.66 F1 0.57 length 2.415/2.601 width 0.153/0.159
+Downsample @ 0.010 174632 -> 25838
+Column 6 precision 0.36 recall 0.92 F1 0.52 length 2.613/2.613 width 0.108/0.116
+Downsample @ 0.010 207543 -> 31927
+Column 7 precision 0.38 recall 0.39 F1 0.38 length 2.937/2.937 width 0.273/0.280
+Overall tle precision 0.44 recall 0.62 F1 0.50 length 0.027 width 0.006
+Restored from models/mcpnet.ckpt
+Downsample @ 0.020 47804 -> 6877
+Column 1 precision 0.56 recall 0.61 F1 0.58 length 2.531/2.533 width 0.137/0.149
+Downsample @ 0.020 90171 -> 5946
+Column 2 precision 0.68 recall 0.65 F1 0.67 length 2.267/2.267 width 0.160/0.196
+Downsample @ 0.020 88797 -> 5866
+Column 3 precision 0.52 recall 0.77 F1 0.62 length 2.275/2.277 width 0.194/0.196
+Downsample @ 0.020 41767 -> 5281
+Column 4 precision 0.24 recall 0.46 F1 0.31 length 2.296/2.316 width 0.071/0.081
+Downsample @ 0.020 60072 -> 7252
+Column 5 precision 0.40 recall 0.56 F1 0.47 length 2.600/2.602 width 0.138/0.159
+Downsample @ 0.020 174632 -> 7510
+Column 6 precision 0.34 recall 0.77 F1 0.47 length 2.587/2.610 width 0.103/0.117
+Downsample @ 0.020 207543 -> 7568
+Column 7 precision 0.51 recall 0.44 F1 0.47 length 2.936/2.936 width 0.274/0.274
+Overall tle precision 0.46 recall 0.61 F1 0.51 length 0.007 width 0.014
+Restored from models/mcpnet.ckpt
+Downsample @ 0.050 47804 -> 968
+Column 1 precision 0.40 recall 0.35 F1 0.37 length 2.125/2.474 width 0.104/0.104
+Downsample @ 0.050 90171 -> 1019
+Column 2 precision 0.71 recall 0.34 F1 0.46 length 2.261/2.266 width 0.162/0.165
+Downsample @ 0.050 88797 -> 909
+Column 3 precision 0.70 recall 0.79 F1 0.74 length 2.151/2.205 width 0.157/0.193
+Downsample @ 0.050 41767 -> 936
+Column 4 precision 0.17 recall 0.52 F1 0.26 length 2.110/2.259 width 0.053/0.057
+Downsample @ 0.050 60072 -> 899
+Column 5 precision 0.39 recall 0.43 F1 0.41 length 2.312/2.564 width 0.131/0.131
+Downsample @ 0.050 174632 -> 1000
+Column 6 precision 0.38 recall 0.39 F1 0.38 length 2.581/2.581 width 0.071/0.091
+Downsample @ 0.050 207543 -> 1314
+Column 7 precision 0.43 recall 0.32 F1 0.36 length 2.920/2.920 width 0.219/0.272
+Overall tle precision 0.46 recall 0.45 F1 0.43 length 0.116 width 0.017
+Restored from models/mcpnet.ckpt
+Downsample @ 0.070 47804 -> 504
+Column 1 precision 0.20 recall 0.23 F1 0.21 length 2.366/2.366 width 0.072/0.072
+Downsample @ 0.070 90171 -> 440
+Column 2 precision 0.66 recall 0.23 F1 0.34 length 1.430/2.226 width 0.140/0.166
+Downsample @ 0.070 88797 -> 502
+Column 3 precision 0.74 recall 0.67 F1 0.70 length 0.907/1.047 width 0.109/0.160
+Downsample @ 0.070 41767 -> 478
+Column 4 precision 0.13 recall 0.20 F1 0.16 length 0.261/2.290 width 0.007/0.011
+Downsample @ 0.070 60072 -> 454
+Column 5 precision 0.38 recall 0.25 F1 0.30 length 2.381/2.565 width 0.052/0.119
+Downsample @ 0.070 174632 -> 517
+Column 6 precision 0.08 recall 0.15 F1 0.10 length 0.230/2.612 width 0.018/0.078
+Downsample @ 0.070 207543 -> 674
+Column 7 precision 0.32 recall 0.30 F1 0.31 length 2.562/2.915 width 0.213/0.226
+Overall tle precision 0.36 recall 0.29 F1 0.30 length 0.840 width 0.032
+Restored from models/mcpnet.ckpt
+Downsample @ 0.100 47804 -> 330
+Column 1 precision 0.50 recall 0.28 F1 0.36 length 1.369/2.336 width 0.100/0.116
+Downsample @ 0.100 90171 -> 212
+Column 2 precision 0.35 recall 0.14 F1 0.20 length 1.899/2.142 width 0.037/0.118
+Downsample @ 0.100 88797 -> 290
+Column 3 precision 0.62 recall 0.36 F1 0.46 length 0.828/2.132 width 0.077/0.168
+Downsample @ 0.100 41767 -> 192
+Column 4 precision 0.18 recall 0.24 F1 0.20 length 1.739/2.236 width 0.011/0.012
+Downsample @ 0.100 60072 -> 250
+Column 5 precision 0.26 recall 0.29 F1 0.27 length 1.702/2.050 width 0.016/0.022
+Downsample @ 0.100 174632 -> 279
+Column 6 precision 0.03 recall 0.12 F1 0.04 length nan/2.607 width nan/0.055
+Downsample @ 0.100 207543 -> 264
+Column 7 precision 0.20 recall 0.17 F1 0.18 length 2.387/2.890 width 0.105/0.203
+Overall tle precision 0.31 recall 0.23 F1 0.25 length 0.644 width 0.049

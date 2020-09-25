@@ -1,0 +1,253 @@
+Saved to viz/column1_rgb_isolation.ply: (47804 points)
+Found 9681/7485/47804 cluster
+Saved to tmp/column1_rgb.ply: (47804 points)
+Column 1 precision 0.28 recall 0.37 F1 0.32 length 2.531/2.533 width 0.149/0.161
+Saved to viz/column2_rgb_isolation.ply: (90171 points)
+Found 15443/15371/90171 cluster
+Saved to tmp/column2_rgb.ply: (90171 points)
+Column 2 precision 0.51 recall 0.51 F1 0.51 length 2.289/2.289 width 0.198/0.198
+Saved to viz/column3_rgb_isolation.ply: (88797 points)
+Found 14511/10488/88797 cluster
+Saved to tmp/column3_rgb.ply: (88797 points)
+Column 3 precision 0.50 recall 0.70 F1 0.59 length 2.276/2.280 width 0.175/0.201
+Saved to viz/column4_rgb_isolation.ply: (41767 points)
+Found 5623/3841/41767 cluster
+Saved to tmp/column4_rgb.ply: (41767 points)
+Column 4 precision 0.19 recall 0.27 F1 0.22 length 2.316/2.318 width 0.079/0.083
+Saved to viz/column5_rgb_isolation.ply: (60072 points)
+Found 10965/9059/60072 cluster
+Saved to tmp/column5_rgb.ply: (60072 points)
+Column 5 precision 0.25 recall 0.30 F1 0.27 length 2.603/2.603 width 0.138/0.162
+Saved to viz/column6_rgb_isolation.ply: (174632 points)
+Found 29351/9713/174632 cluster
+Saved to tmp/column6_rgb.ply: (174632 points)
+Column 6 precision 0.16 recall 0.48 F1 0.24 length 2.614/2.613 width 0.113/0.120
+Saved to viz/column7_rgb_isolation.ply: (207543 points)
+Found 34730/25890/207543 cluster
+Saved to tmp/column7_rgb.ply: (207543 points)
+Column 7 precision 0.32 recall 0.44 F1 0.37 length 2.937/2.937 width 0.280/0.281
+Overall rgb precision 0.32 recall 0.44 F1 0.36 length 0.001 width 0.011
+Saved to viz/column1_int_isolation.ply: (47804 points)
+Found 15240/7485/47804 cluster
+Saved to tmp/column1_int.ply: (47804 points)
+Column 1 precision 0.04 recall 0.08 F1 0.05 length 2.527/2.533 width 0.145/0.161
+Saved to viz/column2_int_isolation.ply: (90171 points)
+Found 20435/15371/90171 cluster
+Saved to tmp/column2_int.ply: (90171 points)
+Column 2 precision 0.31 recall 0.41 F1 0.35 length 2.289/2.289 width 0.198/0.198
+Saved to viz/column3_int_isolation.ply: (88797 points)
+Found 30658/10488/88797 cluster
+Saved to tmp/column3_int.ply: (88797 points)
+Column 3 precision 0.22 recall 0.65 F1 0.33 length 2.280/2.280 width 0.201/0.201
+Saved to viz/column4_int_isolation.ply: (41767 points)
+Found 6300/3841/41767 cluster
+Saved to tmp/column4_int.ply: (41767 points)
+Column 4 precision 0.10 recall 0.17 F1 0.13 length 2.316/2.318 width 0.079/0.083
+Saved to viz/column5_int_isolation.ply: (60072 points)
+Found 7786/9059/60072 cluster
+Saved to tmp/column5_int.ply: (60072 points)
+Column 5 precision 0.24 recall 0.21 F1 0.22 length 2.597/2.603 width 0.154/0.162
+Saved to viz/column6_int_isolation.ply: (174632 points)
+Found 45138/9713/174632 cluster
+Saved to tmp/column6_int.ply: (174632 points)
+Column 6 precision 0.10 recall 0.47 F1 0.17 length 2.611/2.613 width 0.120/0.120
+Saved to viz/column7_int_isolation.ply: (207543 points)
+Found 45959/25890/207543 cluster
+Saved to tmp/column7_int.ply: (207543 points)
+Column 7 precision 0.19 recall 0.34 F1 0.25 length 2.935/2.937 width 0.280/0.281
+Overall int precision 0.17 recall 0.33 F1 0.21 length 0.003 width 0.004
+Saved to viz/column1_norm.ply: (47804 points)
+Saved to viz/column1_curv.ply: (47804 points)
+Saved to viz/column1_norm_isolation.ply: (47804 points)
+Found 7729/7485/47804 cluster
+Saved to tmp/column1_norm.ply: (47804 points)
+Column 1 precision 0.22 recall 0.23 F1 0.22 length 2.532/2.533 width 0.152/0.161
+Saved to viz/column2_norm.ply: (90171 points)
+Saved to viz/column2_curv.ply: (90171 points)
+Saved to viz/column2_norm_isolation.ply: (90171 points)
+Found 16238/15371/90171 cluster
+Saved to tmp/column2_norm.ply: (90171 points)
+Column 2 precision 0.38 recall 0.40 F1 0.39 length 2.289/2.289 width 0.179/0.198
+Saved to viz/column3_norm.ply: (88797 points)
+Saved to viz/column3_curv.ply: (88797 points)
+Saved to viz/column3_norm_isolation.ply: (88797 points)
+Found 16853/10488/88797 cluster
+Saved to tmp/column3_norm.ply: (88797 points)
+Column 3 precision 0.48 recall 0.77 F1 0.59 length 2.280/2.280 width 0.184/0.201
+Saved to viz/column4_norm.ply: (41767 points)
+Saved to viz/column4_curv.ply: (41767 points)
+Saved to viz/column4_norm_isolation.ply: (41767 points)
+Found 6294/3841/41767 cluster
+Saved to tmp/column4_norm.ply: (41767 points)
+Column 4 precision 0.09 recall 0.15 F1 0.12 length 2.318/2.318 width 0.052/0.083
+Saved to viz/column5_norm.ply: (60072 points)
+Saved to viz/column5_curv.ply: (60072 points)
+Saved to viz/column5_norm_isolation.ply: (60072 points)
+Found 11500/9059/60072 cluster
+Saved to tmp/column5_norm.ply: (60072 points)
+Column 5 precision 0.28 recall 0.36 F1 0.32 length 2.602/2.603 width 0.155/0.162
+Saved to viz/column6_norm.ply: (174632 points)
+Saved to viz/column6_curv.ply: (174632 points)
+Saved to viz/column6_norm_isolation.ply: (174632 points)
+Found 27295/9713/174632 cluster
+Saved to tmp/column6_norm.ply: (174632 points)
+Column 6 precision 0.12 recall 0.34 F1 0.18 length 2.612/2.613 width 0.117/0.120
+Saved to viz/column7_norm.ply: (207543 points)
+Saved to viz/column7_curv.ply: (207543 points)
+Saved to viz/column7_norm_isolation.ply: (207543 points)
+Found 30900/25890/207543 cluster
+Saved to tmp/column7_norm.ply: (207543 points)
+Column 7 precision 0.27 recall 0.32 F1 0.29 length 2.936/2.937 width 0.280/0.281
+Overall norm precision 0.26 recall 0.37 F1 0.30 length 0.001 width 0.012
+Saved to viz/column1_norm.ply: (47804 points)
+Saved to viz/column1_curv.ply: (47804 points)
+Saved to viz/column1_curv_isolation.ply: (47804 points)
+Found 9985/7485/47804 cluster
+Saved to tmp/column1_curv.ply: (47804 points)
+Column 1 precision 0.35 recall 0.47 F1 0.41 length 2.533/2.533 width 0.152/0.161
+Saved to viz/column2_norm.ply: (90171 points)
+Saved to viz/column2_curv.ply: (90171 points)
+Saved to viz/column2_curv_isolation.ply: (90171 points)
+Found 20783/15371/90171 cluster
+Saved to tmp/column2_curv.ply: (90171 points)
+Column 2 precision 0.46 recall 0.62 F1 0.52 length 2.288/2.289 width 0.166/0.198
+Saved to viz/column3_norm.ply: (88797 points)
+Saved to viz/column3_curv.ply: (88797 points)
+Saved to viz/column3_curv_isolation.ply: (88797 points)
+Found 16915/10488/88797 cluster
+Saved to tmp/column3_curv.ply: (88797 points)
+Column 3 precision 0.45 recall 0.72 F1 0.55 length 2.277/2.280 width 0.199/0.201
+Saved to viz/column4_norm.ply: (41767 points)
+Saved to viz/column4_curv.ply: (41767 points)
+Saved to viz/column4_curv_isolation.ply: (41767 points)
+Found 6281/3841/41767 cluster
+Saved to tmp/column4_curv.ply: (41767 points)
+Column 4 precision 0.13 recall 0.21 F1 0.16 length 2.318/2.318 width 0.057/0.083
+Saved to viz/column5_norm.ply: (60072 points)
+Saved to viz/column5_curv.ply: (60072 points)
+Saved to viz/column5_curv_isolation.ply: (60072 points)
+Found 12201/9059/60072 cluster
+Saved to tmp/column5_curv.ply: (60072 points)
+Column 5 precision 0.25 recall 0.34 F1 0.29 length 2.603/2.603 width 0.149/0.162
+Saved to viz/column6_norm.ply: (174632 points)
+Saved to viz/column6_curv.ply: (174632 points)
+Saved to viz/column6_curv_isolation.ply: (174632 points)
+Found 23601/9713/174632 cluster
+Saved to tmp/column6_curv.ply: (174632 points)
+Column 6 precision 0.07 recall 0.17 F1 0.10 length 2.613/2.613 width 0.099/0.120
+Saved to viz/column7_norm.ply: (207543 points)
+Saved to viz/column7_curv.ply: (207543 points)
+Saved to viz/column7_curv_isolation.ply: (207543 points)
+Found 33873/25890/207543 cluster
+Saved to tmp/column7_curv.ply: (207543 points)
+Column 7 precision 0.29 recall 0.38 F1 0.33 length 2.935/2.937 width 0.278/0.281
+Overall curv precision 0.29 recall 0.42 F1 0.34 length 0.001 width 0.015
+Saved to viz/column1_fpfh.ply: (47804 points)
+Saved to viz/column1_fpfh_isolation.ply: (47804 points)
+Found 1010/7485/47804 cluster
+Saved to tmp/column1_fpfh.ply: (47804 points)
+Column 1 precision 0.10 recall 0.01 F1 0.02 length 2.420/2.533 width 0.137/0.161
+Saved to viz/column2_fpfh.ply: (90171 points)
+Saved to viz/column2_fpfh_isolation.ply: (90171 points)
+Found 5814/15371/90171 cluster
+Saved to tmp/column2_fpfh.ply: (90171 points)
+Column 2 precision 0.49 recall 0.19 F1 0.27 length 2.266/2.289 width 0.182/0.198
+Saved to viz/column3_fpfh.ply: (88797 points)
+Saved to viz/column3_fpfh_isolation.ply: (88797 points)
+Found 7145/10488/88797 cluster
+Saved to tmp/column3_fpfh.ply: (88797 points)
+Column 3 precision 0.22 recall 0.15 F1 0.18 length 2.279/2.280 width 0.197/0.201
+Saved to viz/column4_fpfh.ply: (41767 points)
+Saved to viz/column4_fpfh_isolation.ply: (41767 points)
+Found 882/3841/41767 cluster
+Saved to tmp/column4_fpfh.ply: (41767 points)
+Column 4 precision 0.07 recall 0.02 F1 0.03 length 2.318/2.318 width 0.054/0.083
+Saved to viz/column5_fpfh.ply: (60072 points)
+Saved to viz/column5_fpfh_isolation.ply: (60072 points)
+Found 1386/9059/60072 cluster
+Saved to tmp/column5_fpfh.ply: (60072 points)
+Column 5 precision 0.14 recall 0.02 F1 0.04 length 2.602/2.603 width 0.131/0.162
+Saved to viz/column6_fpfh.ply: (174632 points)
+Saved to viz/column6_fpfh_isolation.ply: (174632 points)
+Found 9840/9713/174632 cluster
+Saved to tmp/column6_fpfh.ply: (174632 points)
+Column 6 precision 0.14 recall 0.14 F1 0.14 length 2.613/2.613 width 0.112/0.120
+Saved to viz/column7_fpfh.ply: (207543 points)
+Saved to viz/column7_fpfh_isolation.ply: (207543 points)
+Found 12723/25890/207543 cluster
+Saved to tmp/column7_fpfh.ply: (207543 points)
+Column 7 precision 0.34 recall 0.17 F1 0.22 length 2.937/2.937 width 0.269/0.281
+Overall fpfh precision 0.21 recall 0.10 F1 0.13 length 0.020 width 0.018
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Saved to viz/column1_pointnet2.ply: (47804 points)
+Saved to viz/column1_pointnet2_isolation.ply: (47804 points)
+Found 4468/7485/47804 cluster
+Saved to tmp/column1_pointnet2.ply: (47804 points)
+Column 1 precision 0.02 recall 0.01 F1 0.01 length 2.533/2.533 width 0.062/0.161
+Saved to viz/column2_pointnet2.ply: (90171 points)
+Saved to viz/column2_pointnet2_isolation.ply: (90171 points)
+Found 6283/15371/90171 cluster
+Saved to tmp/column2_pointnet2.ply: (90171 points)
+Column 2 precision 0.23 recall 0.09 F1 0.13 length 2.274/2.289 width 0.145/0.198
+Saved to viz/column3_pointnet2.ply: (88797 points)
+Saved to viz/column3_pointnet2_isolation.ply: (88797 points)
+Found 6978/10488/88797 cluster
+Saved to tmp/column3_pointnet2.ply: (88797 points)
+Column 3 precision 0.25 recall 0.16 F1 0.20 length 2.280/2.280 width 0.130/0.201
+Saved to viz/column4_pointnet2.ply: (41767 points)
+Saved to viz/column4_pointnet2_isolation.ply: (41767 points)
+Found 2924/3841/41767 cluster
+Saved to tmp/column4_pointnet2.ply: (41767 points)
+Column 4 precision 0.06 recall 0.05 F1 0.05 length 2.318/2.318 width 0.051/0.083
+Saved to viz/column5_pointnet2.ply: (60072 points)
+Saved to viz/column5_pointnet2_isolation.ply: (60072 points)
+Found 3965/9059/60072 cluster
+Saved to tmp/column5_pointnet2.ply: (60072 points)
+Column 5 precision 0.12 recall 0.05 F1 0.07 length 2.603/2.603 width 0.123/0.162
+Saved to viz/column6_pointnet2.ply: (174632 points)
+Saved to viz/column6_pointnet2_isolation.ply: (174632 points)
+Found 16017/9713/174632 cluster
+Saved to tmp/column6_pointnet2.ply: (174632 points)
+Column 6 precision 0.12 recall 0.19 F1 0.14 length 2.614/2.613 width 0.107/0.120
+Saved to viz/column7_pointnet2.ply: (207543 points)
+Saved to viz/column7_pointnet2_isolation.ply: (207543 points)
+Found 14373/25890/207543 cluster
+Saved to tmp/column7_pointnet2.ply: (207543 points)
+Column 7 precision 0.27 recall 0.15 F1 0.20 length 2.936/2.937 width 0.272/0.281
+Overall pointnet2 precision 0.15 recall 0.10 F1 0.12 length 0.002 width 0.045
+Saved to viz/column1_feat.ply: (47804 points)
+Saved to viz/column1_feat_isolation.ply: (47804 points)
+Found 7446/7485/47804 cluster
+Saved to tmp/column1_feat.ply: (47804 points)
+Column 1 precision 0.55 recall 0.55 F1 0.55 length 2.533/2.533 width 0.152/0.161
+Saved to viz/column2_feat.ply: (90171 points)
+Saved to viz/column2_feat_isolation.ply: (90171 points)
+Found 23715/15371/90171 cluster
+Saved to tmp/column2_feat.ply: (90171 points)
+Column 2 precision 0.55 recall 0.85 F1 0.67 length 2.289/2.289 width 0.198/0.198
+Saved to viz/column3_feat.ply: (88797 points)
+Saved to viz/column3_feat_isolation.ply: (88797 points)
+Found 22461/10488/88797 cluster
+Saved to tmp/column3_feat.ply: (88797 points)
+Column 3 precision 0.45 recall 0.96 F1 0.61 length 2.280/2.280 width 0.201/0.201
+Saved to viz/column4_feat.ply: (41767 points)
+Saved to viz/column4_feat_isolation.ply: (41767 points)
+Found 9048/3841/41767 cluster
+Saved to tmp/column4_feat.ply: (41767 points)
+Column 4 precision 0.19 recall 0.44 F1 0.26 length 2.318/2.318 width 0.078/0.083
+Saved to viz/column5_feat.ply: (60072 points)
+Saved to viz/column5_feat_isolation.ply: (60072 points)
+Found 12697/9059/60072 cluster
+Saved to tmp/column5_feat.ply: (60072 points)
+Column 5 precision 0.47 recall 0.66 F1 0.55 length 2.602/2.603 width 0.152/0.162
+Saved to viz/column6_feat.ply: (174632 points)
+Saved to viz/column6_feat_isolation.ply: (174632 points)
+Found 33522/9713/174632 cluster
+Saved to tmp/column6_feat.ply: (174632 points)
+Column 6 precision 0.28 recall 0.95 F1 0.43 length 2.613/2.613 width 0.117/0.120
+Saved to viz/column7_feat.ply: (207543 points)
+Saved to viz/column7_feat_isolation.ply: (207543 points)
+Found 35786/25890/207543 cluster
+Saved to tmp/column7_feat.ply: (207543 points)
+Column 7 precision 0.36 recall 0.50 F1 0.42 length 2.937/2.937 width 0.279/0.281
+Overall feat precision 0.41 recall 0.70 F1 0.50 length 0.000 width 0.004

@@ -12,7 +12,47 @@ mode_to_string = {
     'fpfh': "FPFH",
     'pointnet2': "PointNet++",
     'feat': "Triplet loss embedding",
+    'tle': "Triplet loss embedding",
 }
+
+F1 = {}
+width = {}
+resolutions = []
+f = open('results_resolution_analysis.txt', 'r')
+for l in f:
+    if l.startswith('Downsample'):
+        resolution = float(l.split()[2])
+        if not resolution in resolutions:
+            resolutions.append(resolution)
+    elif l.startswith('Overall'):
+        mode = l.split()[1]
+        Fscore = float(l.split()[7])
+        Wscore = float(l.split()[11])
+        if not mode in F1:
+            F1[mode] = []
+            width[mode] = []
+        Fscore = max(Fscore, 0.1)
+        if Wscore==0:
+            Wscore = numpy.nan
+        F1[mode].append(Fscore)
+        width[mode].append(Wscore)
+f.close()
+
+plt.style.use('dark_background')
+plt.figure()
+for m in F1:
+    plt.loglog(resolutions, F1[m], '-x', label=mode_to_string[m])
+plt.xlabel('Resolution (m)')
+plt.ylabel('F1 score')
+plt.legend()
+plt.figure()
+for m in F1:
+    plt.loglog(resolutions, width[m], '-x', label=mode_to_string[m])
+plt.xlabel('Resolution (m)')
+plt.ylabel('Width Error (m)')
+plt.legend()
+plt.show()
+
 F1 = {}
 f1_array = []
 f = open('results_feature_analysis.txt', 'r')

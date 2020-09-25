@@ -21,6 +21,7 @@ except NameError:
     FileNotFoundError = IOError
 
 parser = argparse.ArgumentParser()
+parser.add_argument('--resolution', type=float, default=0.001)
 parser.add_argument('--mode', type=str, default='tle')
 parser.add_argument('--clustering', type=str, default='kmeans')
 parser.add_argument('--param', type=int, default=0)
@@ -30,7 +31,6 @@ args = parser.parse_args()
 if args.mode=='pointnet2':
     from pointnet_features import get_pointnet_features
 if args.mode=='tle':
-#    from triplet_loss_features import get_triplet_loss_embedding
     from triplet_loss_embedding import get_triplet_loss_embedding
 
 K_param = {
@@ -100,17 +100,36 @@ for column_id in range(1, 8):
         column[crack_main_mask, 3:6] = [255,255,0]
         savePLY('tmp/column%d_main_gt.ply'%column_id, column)
 
+    #equalize resolution
+    unequalized_points = column
+    equalized_idx = []
+    equalized_map = {}
+    unequalized_idx = []
+    for i in range(len(unequalized_points)):
+        k = tuple(numpy.round(unequalized_points[i,:3] / args.resolution).astype(int))
+        if not k in equalized_map:
+            equalized_map[k] = len(equalized_idx)
+            equalized_idx.append(i)
+        unequalized_idx.append(equalized_map[k])
+
+    column = unequalized_points[equalized_idx]
+    column_gray = column_gray[equalized_idx]
+    crack_mask = crack_mask[equalized_idx]
+    crack_main_mask = crack_main_mask[equalized_idx]
+    print('Downsample @ %.3f %d -> %d' % (args.resolution, len(unequalized_points), len(column)))
+
     if args.mode=='tle':
         try:
             features = numpy.load('tmp/column%d_tle.npy'%column_id)
-#            features = numpy.load('tmp/column%d_feat.npy'%column_id)
-        except FileNotFoundError:
+            assert len(features) == len(column)
+        except (FileNotFoundError, AssertionError):
             features = get_triplet_loss_embedding(column[:, :6])
             numpy.save('tmp/column%d_tle.npy'%column_id, features)
     elif args.mode=='fpfh':
         try:
             fpfh = numpy.load('tmp/column%d_fpfh.npy'%column_id)
-        except FileNotFoundError:
+            assert len(fpfh) == len(column)
+        except (FileNotFoundError, AssertionError):
             savePCD('tmp/tmp.pcd', column)
             R1 = 0.015
             R2 = 0.01
@@ -123,14 +142,16 @@ for column_id in range(1, 8):
     elif args.mode=='pointnet2':
         try:
             features = numpy.load('tmp/column%d_pointnet2.npy'%column_id)
-        except FileNotFoundError:
+            assert len(features) == len(column)
+        except (FileNotFoundError, AssertionError):
             features = get_pointnet_features(column[:, :6])
             numpy.save('tmp/column%d_pointnet2.npy'%column_id, features)
     elif args.mode=='norm' or args.mode=='curv':
         try:
             normals = numpy.load('tmp/column%d_norm.npy'%column_id)
             curvatures = numpy.load('tmp/column%d_curv.npy'%column_id)
-        except FileNotFoundError:
+            assert len(normals) == len(column)
+        except (FileNotFoundError, AssertionError):
             normal_grid = {}
             resolution = 0.015
             for i in range(len(column)):
@@ -157,9 +178,9 @@ for column_id in range(1, 8):
                 U,S,V = numpy.linalg.svd(cov)
                 curvature = S[2] / (S[0] + S[1] + S[2])
                 normals.append(numpy.fabs(V[2]))
-                curvatures.append(0 if math.isnan(curvature) else numpy.fabs(curvature)) # change to absolute values?
-            normals = numpy.array(normals) #(N,3)
-            curvatures = numpy.array(curvatures) #(N,)
+                curvatures.append(0 if math.isnan(curvature) else numpy.fabs(curvature)) 
+            normals = numpy.array(normals)
+            curvatures = numpy.array(curvatures)
             numpy.save('tmp/column%d_norm.npy'%column_id, normals)
             numpy.save('tmp/column%d_curv.npy'%column_id, curvatures)
         features = curvatures.reshape(-1, 1) if args.mode=='curv' else normals
@@ -242,8 +263,8 @@ for column_id in range(1, 8):
         savePLY('tmp/column%d_%s.ply' % (column_id, args.mode), column)
 
     tp = numpy.sum(numpy.logical_and(predict_mask, crack_mask))
-    precision = 1.0 * tp / numpy.sum(predict_mask)
-    recall = 1.0 * tp / numpy.sum(crack_mask)
+    precision = 1.0 * tp / (numpy.sum(predict_mask) + 1e-6)
+    recall = 1.0 * tp / (numpy.sum(crack_mask) + 1e-6)
     F1 = 2 * precision * recall / (precision + recall + 1e-6)
     agg_precision.append(precision)
     agg_recall.append(recall)
