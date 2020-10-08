@@ -18,7 +18,7 @@ mode_to_string = {
 F1 = {}
 width = {}
 resolutions = []
-f = open('results_resolution_analysis.txt', 'r')
+f = open('results/results_resolution_analysis.txt', 'r')
 for l in f:
     if l.startswith('Downsample'):
         resolution = float(l.split()[2])
@@ -38,7 +38,7 @@ for l in f:
         width[mode].append(Wscore)
 f.close()
 
-plt.style.use('dark_background')
+#plt.style.use('dark_background')
 plt.figure()
 for m in F1:
     plt.loglog(resolutions, F1[m], '-x', label=mode_to_string[m])
@@ -55,7 +55,7 @@ plt.show()
 
 F1 = {}
 f1_array = []
-f = open('results_feature_analysis.txt', 'r')
+f = open('results/results_feature_analysis.txt', 'r')
 for l in f:
     if l.startswith('Column'):
         f1_array.append(float(l.split()[7]))
@@ -81,7 +81,7 @@ else:
         dimensions.append([gt_width, outlier_ratio])
     numpy.save('tmp/dimensions.npy', numpy.array(dimensions))
 
-plt.style.use('dark_background')
+#plt.style.use('dark_background')
 plt.figure()
 for m in F1:
     x = dimensions[:, 0]

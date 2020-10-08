@@ -22,6 +22,7 @@ except NameError:
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--resolution', type=float, default=0.001)
+parser.add_argument('--obj', type=str, default='column')
 parser.add_argument('--mode', type=str, default='tle')
 parser.add_argument('--clustering', type=str, default='kmeans')
 parser.add_argument('--param', type=int, default=0)
@@ -47,28 +48,29 @@ agg_recall = []
 agg_F1 = []
 agg_length_err = []
 agg_width_err = []
-for column_id in range(1, 8):
-#for column_id in [99]:
-    column = loadPLY('data/column%d.ply' % column_id)
+for obj_id in range(1, 8) if args.obj=='column' else range(1, 5):
+#for obj_id in [99]:
+    column = loadPLY('data/%s%d.ply' % (args.obj, obj_id))
     column_gray = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
 
     try:
-        crack_mask = numpy.load('data/column%d_mask.npy'%column_id)
+        crack_mask = numpy.load('data/%s%d_mask.npy'%(args.obj, obj_id))
     except FileNotFoundError:
-        crack = loadPLY('tmp/column%d_crack.ply' % column_id)
+        crack = loadPLY('tmp/%s%d_crack.ply' % (args.obj, obj_id))
         crack_set = set([tuple(p) for p in crack[:,:3]])
         crack_mask = numpy.zeros(len(column), dtype=bool)
         for i in range(len(column)):
             p = tuple(column[i,:3])
             if p in crack_set:
                 crack_mask[i] = True
-        numpy.save('data/column%d_mask.npy'%column_id, crack_mask)
-        column[:,3:6] = column_gray
-        column[crack_mask, 3:6] = [255,255,0]
-        savePLY('tmp/column%d_gt.ply'%column_id, column)
+        numpy.save('data/%s%d_mask.npy'%(args.obj, obj_id), crack_mask)
+        column_viz = column.copy()
+        column_viz[:,3:6] = column_gray
+        column_viz[crack_mask, 3:6] = [255,255,0]
+        savePLY('tmp/%s%d_gt.ply'%(args.obj, obj_id), column_viz)
 
     try:
-        crack_main_mask = numpy.load('tmp/column%d_main_mask.npy'%column_id)
+        crack_main_mask = numpy.load('tmp/%s%d_main_mask.npy'%(args.obj, obj_id))
     except FileNotFoundError:
         crack = column[crack_mask]
         resolution = 0.008
@@ -95,10 +97,11 @@ for column_id in range(1, 8):
             if len(c)==max_cluster_size:
                 crack_main_mask[numpy.nonzero(crack_mask)[0][c]] = True
                 break
-        numpy.save('tmp/column%d_main_mask.npy'%column_id, crack_main_mask)
-        column[:,3:6] = column_gray
-        column[crack_main_mask, 3:6] = [255,255,0]
-        savePLY('tmp/column%d_main_gt.ply'%column_id, column)
+        numpy.save('tmp/%s%d_main_mask.npy'%(args.obj, obj_id), crack_main_mask)
+        column_viz = column.copy()
+        column_viz[:,3:6] = column_gray
+        column_viz[crack_main_mask, 3:6] = [255,255,0]
+        savePLY('tmp/%s%d_main_gt.ply'%(args.obj, obj_id), column_viz)
 
     #equalize resolution
     unequalized_points = column
@@ -120,14 +123,14 @@ for column_id in range(1, 8):
 
     if args.mode=='tle':
         try:
-            features = numpy.load('tmp/column%d_tle.npy'%column_id)
+            features = numpy.load('tmp/%s%d_tle.npy'%(args.obj, obj_id))
             assert len(features) == len(column)
         except (FileNotFoundError, AssertionError):
             features = get_triplet_loss_embedding(column[:, :6])
-            numpy.save('tmp/column%d_tle.npy'%column_id, features)
+            numpy.save('tmp/%s%d_tle.npy'%(args.obj, obj_id), features)
     elif args.mode=='fpfh':
         try:
-            fpfh = numpy.load('tmp/column%d_fpfh.npy'%column_id)
+            fpfh = numpy.load('tmp/%s%d_fpfh.npy'%(args.obj, obj_id))
             assert len(fpfh) == len(column)
         except (FileNotFoundError, AssertionError):
             savePCD('tmp/tmp.pcd', column)
@@ -137,19 +140,19 @@ for column_id in range(1, 8):
             os.system('pcl_fpfh_estimation tmp/normal.pcd tmp/fpfh.pcd -radius %f' % R2)
             os.system('pcl_convert_pcd_ascii_binary tmp/fpfh.pcd tmp/fpfh_ascii.pcd 0')
             fpfh = loadFPFH('tmp/fpfh_ascii.pcd')
-            numpy.save('data/column%d_fpfh.npy'%column_id, fpfh)
+            numpy.save('tmp/%s%d_fpfh.npy'%(args.obj, obj_id), fpfh)
         features = fpfh
     elif args.mode=='pointnet2':
         try:
-            features = numpy.load('tmp/column%d_pointnet2.npy'%column_id)
+            features = numpy.load('tmp/%s%d_pointnet2.npy'%(args.obj, obj_id))
             assert len(features) == len(column)
         except (FileNotFoundError, AssertionError):
             features = get_pointnet_features(column[:, :6])
-            numpy.save('tmp/column%d_pointnet2.npy'%column_id, features)
+            numpy.save('tmp/%s%d_pointnet2.npy'%(args.obj, obj_id), features)
     elif args.mode=='norm' or args.mode=='curv':
         try:
-            normals = numpy.load('tmp/column%d_norm.npy'%column_id)
-            curvatures = numpy.load('tmp/column%d_curv.npy'%column_id)
+            normals = numpy.load('tmp/%s%d_norm.npy'%(args.obj, obj_id))
+            curvatures = numpy.load('tmp/%s%d_curv.npy'%(args.obj, obj_id))
             assert len(normals) == len(column)
         except (FileNotFoundError, AssertionError):
             normal_grid = {}
@@ -181,8 +184,8 @@ for column_id in range(1, 8):
                 curvatures.append(0 if math.isnan(curvature) else numpy.fabs(curvature)) 
             normals = numpy.array(normals)
             curvatures = numpy.array(curvatures)
-            numpy.save('tmp/column%d_norm.npy'%column_id, normals)
-            numpy.save('tmp/column%d_curv.npy'%column_id, curvatures)
+            numpy.save('tmp/%s%d_norm.npy'%(args.obj, obj_id), normals)
+            numpy.save('tmp/%s%d_curv.npy'%(args.obj, obj_id), curvatures)
         features = curvatures.reshape(-1, 1) if args.mode=='curv' else normals
     else:
         rgb = column[:,3:6]
@@ -233,34 +236,34 @@ for column_id in range(1, 8):
         # save visualization of features
         if args.mode in ['norm', 'curv']:
             column[:,3:6] = normals * 255
-            savePLY('viz/column%d_%s.ply' % (column_id, 'norm'), column)
+            savePLY('viz/%s%d_%s.ply' % (args.obj, obj_id, 'norm'), column)
             curvatures /= curvatures.max()
             column[:, 3:6] = plt.get_cmap('jet')(curvatures)[:, :3] * 255
-            savePLY('viz/column%d_%s.ply' % (column_id, 'curv'), column)
+            savePLY('viz/%s%d_%s.ply' % (args.obj, obj_id, 'curv'), column)
         elif args.mode in ['fpfh', 'pointnet2', 'tle']:
             X_embedded = PCA(n_components=3).fit_transform(features)
             embedded_color = (X_embedded - X_embedded.min(axis=0)) / (X_embedded.max(axis=0) - X_embedded.min(axis=0))
             column[:,3:6] = embedded_color * 255
-            savePLY('viz/column%d_%s.ply' % (column_id, args.mode), column)
+            savePLY('viz/%s%d_%s.ply' % (args.obj, obj_id, args.mode), column)
         # save visualization of clustering results
         if args.clustering=='meanshift':
             cluster_color = numpy.random.randint(0, 255, (K+1, 3))
             cluster_color[-1] = [100, 100, 100]
             column[:, 3:6] = cluster_color[cluster_labels, :]
-            savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
+            savePLY('viz/%s%d_%s_%s.ply' % (args.obj, obj_id, args.mode, args.clustering), column)
         elif args.clustering in ['kmeans', 'gmm', 'dbscan', 'spectral']:
             cluster_color = numpy.random.randint(0, 255, (K, 3))
             column[:, 3:6] = cluster_color[cluster_labels, :]
-            savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
+            savePLY('viz/%s%d_%s_%s.ply' % (args.obj, obj_id, args.mode, args.clustering), column)
         elif args.clustering in ['isolation', 'svm', 'lof']:
             score = (score - score.min()) / (score.max() - score.min())
             column[:, 3:6] = plt.get_cmap('jet')(score)[:, :3] * 255
-            savePLY('viz/column%d_%s_%s.ply' % (column_id, args.mode, args.clustering), column)
+            savePLY('viz/%s%d_%s_%s.ply' % (args.obj, obj_id, args.mode, args.clustering), column)
         # save visualization of predict_mask
         column[:,3:6] = column_gray
         column[predict_mask,3:6] = [255,255,0]
         print('Found %d/%d/%d cluster'%(numpy.sum(predict_mask), numpy.sum(crack_mask), len(column)))
-        savePLY('tmp/column%d_%s.ply' % (column_id, args.mode), column)
+        savePLY('tmp/%s%d_%s.ply' % (args.obj, obj_id, args.mode), column)
 
     tp = numpy.sum(numpy.logical_and(predict_mask, crack_mask))
     precision = 1.0 * tp / (numpy.sum(predict_mask) + 1e-6)
@@ -281,6 +284,6 @@ for column_id in range(1, 8):
     else:
         predict_length = predict_width = length_err = width_err = numpy.nan
 
-    print('Column %d precision %.2f recall %.2f F1 %.2f length %.3f/%.3f width %.3f/%.3f'%(column_id, precision, recall, F1, predict_length, gt_length, predict_width, gt_width))
+    print('%s %d precision %.2f recall %.2f F1 %.2f length %.3f/%.3f width %.3f/%.3f'%(args.obj, obj_id, precision, recall, F1, predict_length, gt_length, predict_width, gt_width))
 
 print('Overall %s precision %.2f recall %.2f F1 %.2f length %.3f width %.3f'%(args.mode, numpy.mean(agg_precision), numpy.mean(agg_recall), numpy.mean(agg_F1), numpy.mean(agg_length_err), numpy.mean(agg_width_err)))
