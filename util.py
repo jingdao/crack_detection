@@ -1,6 +1,8 @@
 import numpy
 from pyquaternion import Quaternion
 from scipy.spatial import ConvexHull
+import networkx as nx
+import itertools
 
 def loadPLY(filename):
 	vertices = []
@@ -119,4 +121,56 @@ def get_crack_dimensions(crack_points):
             loadY = R[0,1] * (xmin + xmax)/2 + R[1,1] * (ymin + ymax)/2
     return crack_width, crack_length
 
+def clustering(points, resolution):
+    voxel_map = {}
+    edges = []
+    for i in range(len(points)):
+        k = tuple(numpy.round(points[i, :3] / resolution).astype(int))
+        if not k in voxel_map:
+            voxel_map[k] = []
+        voxel_map[k].append(i)
+    for k in voxel_map:
+        for offset in itertools.product([-1,0,1],[-1,0,1],[-1,0,1]):
+            kk = (k[0]+offset[0], k[1]+offset[1], k[2]+offset[2])
+            if kk in voxel_map:
+                for i in voxel_map[k]:
+                    for j in voxel_map[kk]:
+                        edges.append([i, j])
+    G = nx.Graph(edges)
+    clusters = nx.connected_components(G)
+    clusters = [list(c) for c in clusters]
+    return clusters
 
+def dilation(points, predict_mask, resolution):
+    predicted_voxels = set()
+    dilated_voxels = set()
+    dilated_mask = numpy.zeros_like(predict_mask)
+    predicted_points = points[predict_mask]
+    for i in range(len(predicted_points)):
+        k = tuple(numpy.round(predicted_points[i, :3] / resolution).astype(int))
+        predicted_voxels.add(k)
+    for k in predicted_voxels:
+        for offset in itertools.product([-1,0,1],[-1,0,1],[-1,0,1]):
+            kk = (k[0]+offset[0], k[1]+offset[1], k[2]+offset[2])
+            dilated_voxels.add(kk)
+    for i in range(len(points)):
+        k = tuple(numpy.round(points[i, :3] / resolution).astype(int))
+        if k in dilated_voxels:
+            dilated_mask[i] = True
+    print(len(predicted_voxels), len(dilated_voxels))
+    print('dilation: %d -> %d' % (numpy.sum(predict_mask), numpy.sum(dilated_mask)))
+    return dilated_mask
+
+def erosion(points, predict_mask, resolution, size):
+    clusters = clustering(points[predict_mask], resolution)
+    filtered_mask = numpy.zeros_like(predict_mask)
+    remaining = 0
+    for c in clusters:
+        inliers = points[c, :3]
+        extent = inliers.max(axis=0) - inliers.min(axis=0)
+        print('extent', inliers.shape, extent, max(extent))
+        if max(extent) > size:
+            filtered_mask[c] = True
+            remaining += 1
+    print('filtering: %d -> %d clusters' % (len(clusters), remaining))
+    return filtered_mask

@@ -4,13 +4,13 @@
 ## Crack segmentation
 
 ```
-python3 crack_detection.py --obj column --mode tle --clustering isolation --resolution 0.001 --viz
+python crack_detection.py --obj column --mode tle --clustering isolation --resolution 0.001 --viz
 ```
 
 ```
 for i in rgb int norm curv fpfh pointnet2 tle
 do
-    python3 -u crack_detection.py --obj slab --mode $i --clustering isolation --resolution 0.001 --viz >> results/slab_feature_analysis.txt
+    python -u crack_detection.py --obj slab --mode $i --clustering isolation --resolution 0.01 --viz >> results/slab_feature_analysis.txt
 done
 ```
 

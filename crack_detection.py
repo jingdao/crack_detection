@@ -11,9 +11,8 @@ import itertools
 import math
 from sklearn.decomposition import PCA
 import os
-import networkx as nx
 import argparse
-from util import loadPLY, savePLY, loadFPFH, savePCD, get_crack_dimensions
+from util import loadPLY, savePLY, loadFPFH, savePCD, get_crack_dimensions, clustering
 
 try:
     FileNotFoundError
@@ -48,14 +47,14 @@ agg_recall = []
 agg_F1 = []
 agg_length_err = []
 agg_width_err = []
-for obj_id in range(1, 8) if args.obj=='column' else range(1, 5):
-#for obj_id in [99]:
+for obj_id in range(1, 8) if args.obj=='column' else range(1, 3):
     column = loadPLY('data/%s%d.ply' % (args.obj, obj_id))
     column_gray = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
 
     try:
         crack_mask = numpy.load('data/%s%d_mask.npy'%(args.obj, obj_id))
-    except FileNotFoundError:
+        assert len(crack_mask) == len(column)
+    except (FileNotFoundError, AssertionError):
         crack = loadPLY('tmp/%s%d_crack.ply' % (args.obj, obj_id))
         crack_set = set([tuple(p) for p in crack[:,:3]])
         crack_mask = numpy.zeros(len(column), dtype=bool)
@@ -71,26 +70,10 @@ for obj_id in range(1, 8) if args.obj=='column' else range(1, 5):
 
     try:
         crack_main_mask = numpy.load('tmp/%s%d_main_mask.npy'%(args.obj, obj_id))
-    except FileNotFoundError:
+        assert len(crack_main_mask) == len(column)
+    except (FileNotFoundError, AssertionError):
         crack = column[crack_mask]
-        resolution = 0.008
-        voxel_map = {}
-        edges = []
-        for i in range(len(crack)):
-            k = tuple(numpy.round(crack[i, :3] / resolution).astype(int))
-            if not k in voxel_map:
-                voxel_map[k] = []
-            voxel_map[k].append(i)
-        for k in voxel_map:
-            for offset in itertools.product([-1,0,1],[-1,0,1],[-1,0,1]):
-                kk = (k[0]+offset[0], k[1]+offset[1], k[2]+offset[2])
-                if kk in voxel_map:
-                    for i in voxel_map[k]:
-                        for j in voxel_map[kk]:
-                            edges.append([i, j])
-        G = nx.Graph(edges)
-        clusters = nx.connected_components(G)
-        clusters = [list(c) for c in clusters]
+        clusters = clustering(crack, 0.008)
         max_cluster_size = max([len(c) for c in clusters])
         crack_main_mask = numpy.zeros(len(crack_mask), dtype=bool)
         for c in clusters:

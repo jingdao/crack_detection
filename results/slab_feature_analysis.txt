@@ -1,0 +1,113 @@
+Downsample @ 0.010 374987 -> 111934
+Saved to viz/slab9_rgb_isolation.ply: (111934 points)
+Found 16129/24486/111934 cluster
+Saved to tmp/slab9_rgb.ply: (111934 points)
+slab 9 precision 0.80 recall 0.53 F1 0.64 length 2.604/2.632 width 1.396/1.405
+Downsample @ 0.010 29221 -> 25761
+Saved to viz/slab11_rgb_isolation.ply: (25761 points)
+Found 3110/3324/25761 cluster
+Saved to tmp/slab11_rgb.ply: (25761 points)
+slab 11 precision 0.64 recall 0.60 F1 0.62 length 0.412/0.385 width 0.330/0.362
+Overall rgb precision 0.72 recall 0.57 F1 0.63 length 0.027 width 0.021
+Downsample @ 0.010 374987 -> 111934
+Saved to viz/slab9_int_isolation.ply: (111934 points)
+Found 20160/24486/111934 cluster
+Saved to tmp/slab9_int.ply: (111934 points)
+slab 9 precision 0.68 recall 0.56 F1 0.62 length 2.624/2.632 width 1.396/1.405
+Downsample @ 0.010 29221 -> 25761
+Saved to viz/slab11_int_isolation.ply: (25761 points)
+Found 4210/3324/25761 cluster
+Saved to tmp/slab11_int.ply: (25761 points)
+slab 11 precision 0.52 recall 0.66 F1 0.58 length 0.389/0.385 width 0.355/0.362
+Overall int precision 0.60 recall 0.61 F1 0.60 length 0.006 width 0.008
+Downsample @ 0.010 374987 -> 111934
+Saved to viz/slab9_norm.ply: (111934 points)
+Saved to viz/slab9_curv.ply: (111934 points)
+Saved to viz/slab9_norm_isolation.ply: (111934 points)
+Found 17147/24486/111934 cluster
+Saved to tmp/slab9_norm.ply: (111934 points)
+slab 9 precision 0.63 recall 0.44 F1 0.52 length 2.605/2.632 width 1.379/1.405
+Downsample @ 0.010 29221 -> 25761
+Saved to viz/slab11_norm.ply: (25761 points)
+Saved to viz/slab11_curv.ply: (25761 points)
+Saved to viz/slab11_norm_isolation.ply: (25761 points)
+Found 2786/3324/25761 cluster
+Saved to tmp/slab11_norm.ply: (25761 points)
+slab 11 precision 0.42 recall 0.35 F1 0.38 length 0.120/0.385 width 0.092/0.362
+Overall norm precision 0.52 recall 0.40 F1 0.45 length 0.146 width 0.148
+Downsample @ 0.010 374987 -> 111934
+Saved to viz/slab9_norm.ply: (111934 points)
+Saved to viz/slab9_curv.ply: (111934 points)
+Saved to viz/slab9_curv_isolation.ply: (111934 points)
+Found 15770/24486/111934 cluster
+Saved to tmp/slab9_curv.ply: (111934 points)
+slab 9 precision 0.60 recall 0.38 F1 0.47 length 2.578/2.632 width 1.379/1.405
+Downsample @ 0.010 29221 -> 25761
+Saved to viz/slab11_norm.ply: (25761 points)
+Saved to viz/slab11_curv.ply: (25761 points)
+Saved to viz/slab11_curv_isolation.ply: (25761 points)
+Found 4733/3324/25761 cluster
+Saved to tmp/slab11_curv.ply: (25761 points)
+slab 11 precision 0.35 recall 0.50 F1 0.41 length 0.341/0.385 width 0.309/0.362
+Overall curv precision 0.47 recall 0.44 F1 0.44 length 0.049 width 0.040
+Downsample @ 0.010 374987 -> 111934
+Saved 111934 points to tmp/tmp.pcd
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m233[0;m[0;m ms for [0;36m111934[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m12[0;m[0;m ms : [0;36m111934[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m473[0;m[0;m ms : [0;36m111934[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m107[0;m[0;m ms : [0;36m111934[0;m[0;m points]
+Saved to viz/slab9_fpfh.ply: (111934 points)
+Saved to viz/slab9_fpfh_isolation.ply: (111934 points)
+Found 2228/24486/111934 cluster
+Saved to tmp/slab9_fpfh.ply: (111934 points)
+slab 9 precision 0.79 recall 0.07 F1 0.13 length 2.552/2.632 width 1.325/1.405
+Downsample @ 0.010 29221 -> 25761
+Saved 25761 points to tmp/tmp.pcd
+[0;mEstimate surface normals using NormalEstimation. For more information, use: pcl_normal_estimation -h
+[0;mEstimating normals with a k/radius/smoothing size of: [0;36m0 / 0.015000 / 0.015000
+[0;m[1;32m> [0;mComputed normals in [0;36m46[0;m[0;m ms for [0;36m25761[0;m[0;m points.
+[0;mEstimate FPFH (33) descriptors using pcl::FPFHEstimation. For more information, use: pcl_fpfh_estimation -h
+[1;32m> [0;mLoading [0;36mtmp/normal.pcd [0;m[0;m[done, [0;36m2[0;m[0;m ms : [0;36m25761[0;m[0;m points]
+[0;mAvailable dimensions: [0;36mnormal_x normal_y normal_z curvature x y z rgb
+[0;m[0;m[done, [0;36m90[0;m[0;m ms : [0;36m25761[0;m[0;m points]
+[1;32m> [0;mSaving [0;36mtmp/fpfh.pcd [0;m[0;m[done, [0;36m98[0;m[0;m ms : [0;36m25761[0;m[0;m points]
+Saved to viz/slab11_fpfh.ply: (25761 points)
+Saved to viz/slab11_fpfh_isolation.ply: (25761 points)
+Found 652/3324/25761 cluster
+Saved to tmp/slab11_fpfh.ply: (25761 points)
+slab 11 precision 0.43 recall 0.09 F1 0.14 length 0.298/0.385 width 0.269/0.362
+Overall fpfh precision 0.61 recall 0.08 F1 0.14 length 0.083 width 0.086
+Restored from /home/jd/Desktop/multiview_segmentation/models/offline_pointnet2_model3.ckpt
+Downsample @ 0.010 374987 -> 111934
+Getting features from 55 batches ...
+Saved to viz/slab9_pointnet2.ply: (111934 points)
+Saved to viz/slab9_pointnet2_isolation.ply: (111934 points)
+Found 8418/24486/111934 cluster
+Saved to tmp/slab9_pointnet2.ply: (111934 points)
+slab 9 precision 0.68 recall 0.23 F1 0.35 length 2.553/2.632 width 1.309/1.405
+Downsample @ 0.010 29221 -> 25761
+Getting features from 13 batches ...
+Saved to viz/slab11_pointnet2.ply: (25761 points)
+Saved to viz/slab11_pointnet2_isolation.ply: (25761 points)
+Found 2798/3324/25761 cluster
+Saved to tmp/slab11_pointnet2.ply: (25761 points)
+slab 11 precision 0.52 recall 0.44 F1 0.47 length 0.409/0.385 width 0.322/0.362
+Overall pointnet2 precision 0.60 recall 0.34 F1 0.41 length 0.052 width 0.068
+Restored from models/mcpnet.ckpt
+Downsample @ 0.010 374987 -> 111934
+Saved to viz/slab9_tle.ply: (111934 points)
+Saved to viz/slab9_tle_isolation.ply: (111934 points)
+Found 21249/24486/111934 cluster
+Saved to tmp/slab9_tle.ply: (111934 points)
+slab 9 precision 0.73 recall 0.63 F1 0.68 length 2.632/2.632 width 1.401/1.405
+Downsample @ 0.010 29221 -> 25761
+Saved to viz/slab11_tle.ply: (25761 points)
+Saved to viz/slab11_tle_isolation.ply: (25761 points)
+Found 4419/3324/25761 cluster
+Saved to tmp/slab11_tle.ply: (25761 points)
+slab 11 precision 0.65 recall 0.87 F1 0.75 length 0.377/0.385 width 0.359/0.362
+Overall tle precision 0.69 recall 0.75 F1 0.71 length 0.004 width 0.004
