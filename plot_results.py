@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from util import get_crack_dimensions
 import sys
 import os
+plt.rcParams.update({'font.size': 15})
 
 mode_to_string = {
     'rgb': "RGB color",
@@ -11,8 +12,8 @@ mode_to_string = {
     'curv': "Curvature",
     'fpfh': "FPFH",
     'pointnet2': "PointNet++",
-    'feat': "Triplet loss embedding",
-    'tle': "Triplet loss embedding",
+    'feat': "CrackEmbed",
+    'tle': "CrackEmbed",
 }
 
 F1 = {}
@@ -38,7 +39,7 @@ for l in f:
         width[mode].append(Wscore)
 f.close()
 
-#plt.style.use('dark_background')
+plt.style.use('dark_background')
 plt.figure()
 for m in F1:
     plt.loglog(resolutions, F1[m], '-x', label=mode_to_string[m])
@@ -55,7 +56,7 @@ plt.show()
 
 F1 = {}
 f1_array = []
-f = open('results/results_feature_analysis.txt', 'r')
+f = open('results/column_feature_analysis.txt', 'r')
 for l in f:
     if l.startswith('Column'):
         f1_array.append(float(l.split()[7]))
@@ -81,7 +82,7 @@ else:
         dimensions.append([gt_width, outlier_ratio])
     numpy.save('tmp/dimensions.npy', numpy.array(dimensions))
 
-#plt.style.use('dark_background')
+plt.style.use('dark_background')
 plt.figure()
 for m in F1:
     x = dimensions[:, 0]
