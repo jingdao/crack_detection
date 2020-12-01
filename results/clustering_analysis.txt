@@ -1,0 +1,112 @@
+Restored from models/mcpnet.ckpt
+Downsample @ 0.001 47804 -> 47758
+column 1 precision 0.52 recall 0.59 F1 0.55 length 2.533/2.533 width 0.152/0.161
+Downsample @ 0.001 90171 -> 90156
+column 2 precision 0.54 recall 0.91 F1 0.68 length 2.289/2.289 width 0.198/0.198
+Downsample @ 0.001 88797 -> 88753
+column 3 precision 0.44 recall 0.89 F1 0.59 length 2.279/2.280 width 0.201/0.201
+Downsample @ 0.001 41767 -> 41732
+column 4 precision 0.20 recall 0.45 F1 0.28 length 2.318/2.318 width 0.072/0.083
+Downsample @ 0.001 60072 -> 60020
+column 5 precision 0.51 recall 0.64 F1 0.57 length 2.602/2.603 width 0.157/0.162
+Downsample @ 0.001 174632 -> 174366
+column 6 precision 0.28 recall 0.95 F1 0.43 length 2.613/2.613 width 0.117/0.120
+Downsample @ 0.001 207543 -> 207543
+column 7 precision 0.37 recall 0.61 F1 0.46 length 2.937/2.937 width 0.281/0.281
+Overall tle precision 0.41 recall 0.72 F1 0.51 length 0.000 width 0.004
+Restored from models/mcpnet.ckpt
+Downsample @ 0.001 47804 -> 47758
+column 1 precision 0.75 recall 0.46 F1 0.57 length 2.533/2.533 width 0.142/0.161
+Downsample @ 0.001 90171 -> 90156
+column 2 precision 0.72 recall 0.39 F1 0.50 length 2.237/2.289 width 0.180/0.198
+Downsample @ 0.001 88797 -> 88753
+column 3 precision 0.12 recall 1.00 F1 0.21 length 2.280/2.280 width 0.201/0.201
+Downsample @ 0.001 41767 -> 41732
+column 4 precision 0.09 recall 0.08 F1 0.09 length 1.997/2.318 width 0.062/0.083
+Downsample @ 0.001 60072 -> 60020
+column 5 precision 0.46 recall 0.56 F1 0.50 length 2.423/2.603 width 0.148/0.162
+Downsample @ 0.001 174632 -> 174366
+column 6 precision 0.46 recall 0.28 F1 0.35 length 2.614/2.613 width 0.088/0.120
+Downsample @ 0.001 207543 -> 207543
+column 7 precision 0.22 recall 0.79 F1 0.35 length 2.937/2.937 width 0.281/0.281
+Overall tle precision 0.40 recall 0.51 F1 0.37 length 0.079 width 0.015
+Restored from models/mcpnet.ckpt
+Downsample @ 0.001 47804 -> 47758
+column 1 precision 0.76 recall 0.48 F1 0.59 length 2.526/2.533 width 0.142/0.161
+Downsample @ 0.001 90171 -> 90156
+column 2 precision 0.72 recall 0.42 F1 0.53 length 2.237/2.289 width 0.180/0.198
+Downsample @ 0.001 88797 -> 88753
+column 3 precision 0.75 recall 0.63 F1 0.68 length 2.256/2.280 width 0.189/0.201
+Downsample @ 0.001 41767 -> 41732
+column 4 precision 0.23 recall 0.25 F1 0.24 length 2.318/2.318 width 0.073/0.083
+Downsample @ 0.001 60072 -> 60020
+column 5 precision 0.73 recall 0.48 F1 0.58 length 2.394/2.603 width 0.144/0.162
+Downsample @ 0.001 174632 -> 174366
+column 6 precision 0.45 recall 0.82 F1 0.58 length 2.613/2.613 width 0.115/0.120
+Downsample @ 0.001 207543 -> 207543
+column 7 precision 0.47 recall 0.38 F1 0.42 length 2.932/2.937 width 0.281/0.281
+Overall tle precision 0.59 recall 0.49 F1 0.52 length 0.042 width 0.012
+Restored from models/mcpnet.ckpt
+Downsample @ 0.001 47804 -> 47758
+column 1 precision 0.12 recall 0.08 F1 0.09 length 2.468/2.533 width 0.153/0.161
+Downsample @ 0.001 90171 -> 90156
+column 2 precision 0.16 recall 0.09 F1 0.12 length 2.277/2.289 width 0.181/0.198
+Downsample @ 0.001 88797 -> 88753
+column 3 precision 0.15 recall 0.13 F1 0.14 length 2.268/2.280 width 0.199/0.201
+Downsample @ 0.001 41767 -> 41732
+column 4 precision 0.10 recall 0.11 F1 0.11 length 2.307/2.318 width 0.075/0.083
+Downsample @ 0.001 60072 -> 60020
+column 5 precision 0.17 recall 0.11 F1 0.13 length 2.602/2.603 width 0.152/0.162
+Downsample @ 0.001 174632 -> 174366
+column 6 precision 0.10 recall 0.18 F1 0.13 length 2.612/2.613 width 0.115/0.120
+Downsample @ 0.001 207543 -> 207543
+column 7 precision 0.18 recall 0.14 F1 0.16 length 2.929/2.937 width 0.275/0.281
+Overall tle precision 0.14 recall 0.12 F1 0.13 length 0.016 width 0.008
+Restored from models/mcpnet.ckpt
+Downsample @ 0.001 47804 -> 47758
+column 1 precision 0.75 recall 0.58 F1 0.65 length 2.533/2.533 width 0.146/0.161
+Downsample @ 0.001 90171 -> 90156
+column 2 precision 0.60 recall 0.31 F1 0.41 length 2.271/2.289 width 0.197/0.198
+Downsample @ 0.001 88797 -> 88753
+column 3 precision 0.90 recall 0.37 F1 0.53 length 2.279/2.280 width 0.194/0.201
+Downsample @ 0.001 41767 -> 41732
+column 4 precision 0.34 recall 0.05 F1 0.09 length 0.630/2.318 width 0.052/0.083
+Downsample @ 0.001 60072 -> 60020
+column 5 precision 0.72 recall 0.49 F1 0.58 length 2.394/2.603 width 0.148/0.162
+Downsample @ 0.001 174632 -> 174366
+column 6 precision 0.40 recall 0.38 F1 0.39 length 2.584/2.613 width 0.115/0.120
+Downsample @ 0.001 207543 -> 207543
+column 7 precision 0.45 recall 0.39 F1 0.42 length 2.932/2.937 width 0.281/0.281
+Overall tle precision 0.59 recall 0.37 F1 0.44 length 0.279 width 0.010
+Restored from models/mcpnet.ckpt
+Downsample @ 0.001 47804 -> 47758
+column 1 precision 0.00 recall 0.00 F1 0.00 length nan/2.533 width nan/0.161
+Downsample @ 0.001 90171 -> 90156
+column 2 precision 0.71 recall 0.34 F1 0.46 length 2.237/2.289 width 0.180/0.198
+Downsample @ 0.001 88797 -> 88753
+column 3 precision 0.00 recall 0.00 F1 0.00 length nan/2.280 width nan/0.201
+Downsample @ 0.001 41767 -> 41732
+column 4 precision 0.00 recall 0.00 F1 0.00 length nan/2.318 width nan/0.083
+Downsample @ 0.001 60072 -> 60020
+column 5 precision 0.67 recall 0.28 F1 0.39 length 2.369/2.603 width 0.144/0.162
+Downsample @ 0.001 174632 -> 174366
+column 6 precision 0.00 recall 0.00 F1 0.00 length 0.009/2.613 width 0.004/0.120
+Downsample @ 0.001 207543 -> 207543
+column 7 precision 0.45 recall 0.40 F1 0.43 length 2.932/2.937 width 0.281/0.281
+Overall tle precision 0.26 recall 0.15 F1 0.18 length 0.724 width 0.038
+Restored from models/mcpnet.ckpt
+Downsample @ 0.001 47804 -> 47758
+column 1 precision 0.19 recall 0.28 F1 0.23 length 2.525/2.533 width 0.157/0.161
+Downsample @ 0.001 90171 -> 90156
+column 2 precision 0.44 recall 0.42 F1 0.43 length 2.277/2.289 width 0.197/0.198
+Downsample @ 0.001 88797 -> 88753
+column 3 precision 0.48 recall 0.38 F1 0.42 length 2.279/2.280 width 0.197/0.201
+Downsample @ 0.001 41767 -> 41732
+column 4 precision 0.31 recall 0.92 F1 0.47 length 2.318/2.318 width 0.083/0.083
+Downsample @ 0.001 60072 -> 60020
+column 5 precision 0.48 recall 0.39 F1 0.43 length 2.564/2.603 width 0.153/0.162
+Downsample @ 0.001 174632 -> 174366
+column 6 precision 0.16 recall 0.37 F1 0.22 length 2.609/2.613 width 0.118/0.120
+Downsample @ 0.001 207543 -> 207543
+column 7 precision 0.18 recall 0.24 F1 0.21 length 2.935/2.937 width 0.274/0.281
+Overall tle precision 0.32 recall 0.43 F1 0.34 length 0.009 width 0.004

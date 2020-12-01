@@ -16,6 +16,58 @@ mode_to_string = {
     'tle': "CrackEmbed",
 }
 
+labels = []
+scores = []
+f = open('results/column_feature_analysis.txt', 'r')
+for l in f:
+    if l.startswith('Overall'):
+        labels.append(mode_to_string[l.split()[1]])
+        scores.append([float(l.split()[7])*100, float(l.split()[9])*1000+1, float(l.split()[11])*1000])
+f.close()
+metrics = ['F1-score (%)', 'Length error (mm)', 'Width error (mm)']
+width = 1.0 / (len(labels) + 1)
+ind = numpy.arange(len(metrics))
+plt.style.use('dark_background')
+plt.figure()
+for i in range(len(labels)):
+    plt.bar(ind + width*i, scores[i], width, label=labels[i])
+plt.xticks(ind + 0.5, metrics)
+plt.legend()
+
+labels = []
+scores = []
+f = open('results/slab_feature_analysis.txt', 'r')
+for l in f:
+    if l.startswith('Overall'):
+        labels.append(mode_to_string[l.split()[1]])
+        scores.append([float(l.split()[7])*100, float(l.split()[9])*1000+1, float(l.split()[11])*1000])
+f.close()
+width = 1.0 / (len(labels) + 1)
+plt.style.use('dark_background')
+plt.figure()
+for i in range(len(labels)):
+    plt.bar(ind + width*i, scores[i], width, label=labels[i])
+plt.xticks(ind + 0.5, metrics)
+plt.legend()
+
+labels = ['isolation', 'svm', 'cov', 'lof', 'kmeans', 'gmm', 'meanshift']
+f = open('results/clustering_analysis.txt', 'r')
+scores = []
+for l in f:
+    if l.startswith('Overall'):
+        scores.append([float(l.split()[7])*100, float(l.split()[9])*1000+1, float(l.split()[11])*1000])
+f.close()
+scores = numpy.array(scores)
+scores = numpy.minimum(scores, 100)
+width = 1.0 / (len(labels) + 1)
+plt.style.use('dark_background')
+plt.figure()
+for i in range(len(labels)):
+    plt.bar(ind + width*i, scores[i], width, label=labels[i])
+plt.xticks(ind + 0.5, metrics)
+plt.legend()
+plt.show()
+
 F1 = {}
 width = {}
 resolutions = []

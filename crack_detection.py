@@ -184,7 +184,7 @@ for obj_id in range(1, 8) if args.obj=='column' else range(1, 3):
         elif args.clustering=='dbscan':
             cluster_algorithm = DBSCAN(eps=0.5, algorithm='brute')
         elif args.clustering=='meanshift':
-            cluster_algorithm = MeanShift(min_bin_freq=1000, cluster_all=False, max_iter=10)
+            cluster_algorithm = MeanShift(min_bin_freq=1000, cluster_all=False)
         elif args.clustering=='spectral':
             cluster_algorithm = SpectralClustering(n_clusters=K)
         cluster_algorithm.fit(features)
