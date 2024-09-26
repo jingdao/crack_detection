@@ -3,6 +3,7 @@ from pyquaternion import Quaternion
 from scipy.spatial import ConvexHull
 import networkx as nx
 import itertools
+import open3d as o3d
 
 def loadPLY(filename):
 	vertices = []
@@ -122,23 +123,27 @@ def get_crack_dimensions(crack_points):
     return crack_width, crack_length
 
 def clustering(points, resolution):
-    voxel_map = {}
-    edges = []
-    for i in range(len(points)):
-        k = tuple(numpy.round(points[i, :3] / resolution).astype(int))
-        if not k in voxel_map:
-            voxel_map[k] = []
-        voxel_map[k].append(i)
-    for k in voxel_map:
-        for offset in itertools.product([-1,0,1],[-1,0,1],[-1,0,1]):
-            kk = (k[0]+offset[0], k[1]+offset[1], k[2]+offset[2])
-            if kk in voxel_map:
-                for i in voxel_map[k]:
-                    for j in voxel_map[kk]:
-                        edges.append([i, j])
-    G = nx.Graph(edges)
-    clusters = nx.connected_components(G)
-    clusters = [list(c) for c in clusters]
+#    voxel_map = {}
+#    edges = []
+#    for i in range(len(points)):
+#        k = tuple(numpy.round(points[i, :3] / resolution).astype(int))
+#        if not k in voxel_map:
+#            voxel_map[k] = []
+#        voxel_map[k].append(i)
+#    for k in voxel_map:
+#        for offset in itertools.product([-1,0,1],[-1,0,1],[-1,0,1]):
+#            kk = (k[0]+offset[0], k[1]+offset[1], k[2]+offset[2])
+#            if kk in voxel_map:
+#                for i in voxel_map[k]:
+#                    for j in voxel_map[kk]:
+#                        edges.append([i, j])
+#    G = nx.Graph(edges)
+#    clusters = nx.connected_components(G)
+#    clusters = [list(c) for c in clusters]
+    cloud = o3d.geometry.PointCloud()
+    cloud.points = o3d.utility.Vector3dVector(points[:, :3])
+    labels = numpy.array(cloud.cluster_dbscan(eps=resolution, min_points=0, print_progress=False))
+    clusters = [numpy.nonzero(labels==i)[0] for i in range(0, labels.max()+1)]
     return clusters
 
 def dilation(points, predict_mask, resolution):

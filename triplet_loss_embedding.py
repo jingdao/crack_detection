@@ -57,6 +57,7 @@ config.allow_soft_placement = True
 config.log_device_placement = False
 sess = tf.Session(config=config)
 net = MCPNet(batch_size, num_neighbors, feature_size, hidden_size, embedding_size)
+print('Initialized MCPNet')
 saver = tf.train.Saver()
 MODEL_PATH = 'models/mcpnet.ckpt'
 saver = tf.train.Saver()
@@ -67,7 +68,7 @@ def get_triplet_loss_embedding(pcd):
 
     unequalized_points = pcd.copy()
     unequalized_points[:,:3] *= 10
-#    print('unequalized', unequalized_points.shape)
+    print('unequalized', unequalized_points.shape)
 
     #equalize resolution
     equalized_idx = []
@@ -85,7 +86,7 @@ def get_triplet_loss_embedding(pcd):
             coarse_map[kk].append(equalized_map[k])
         unequalized_idx.append(equalized_map[k])
     points = unequalized_points[equalized_idx]
-#    print('equalized',points.shape)
+    print('equalized',points.shape)
 
     #compute neighbors for each point
     neighbor_array = numpy.zeros((len(points), num_neighbors, 6), dtype=float)
@@ -101,7 +102,7 @@ def get_triplet_loss_embedding(pcd):
         neighbors = points[neighbors, :6].copy()
         neighbors -= p
         neighbor_array[i,:,:] = neighbors
-#    print('neighbors',points.shape)
+    print('neighbors',points.shape)
         
     #compute embedding for each point
     embeddings = numpy.zeros((len(points), embedding_size), dtype=float)
@@ -113,6 +114,7 @@ def get_triplet_loss_embedding(pcd):
         input_points[0,0] = 0.5
         input_neighbors[0,:,:] = neighbor_array[i, :, :feature_size]
         emb_val = sess.run(net.embeddings, {net.input_pl:input_points, net.neighbor_pl:input_neighbors})
+        print('emb_val', emb_val.shape, '%d/%d' % (i, len(points)))
         embeddings[i] = emb_val
         num_batches += 1
 

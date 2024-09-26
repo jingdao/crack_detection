@@ -4,7 +4,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import tensorflow as tf
 import sys
 
-ROOT_DIR = '/home/jd/Desktop/multiview_segmentation'
+ROOT_DIR = '/home/jd/Desktop/cvpr_scan2bim'
 sys.path.append(os.path.join(ROOT_DIR, 'tf_ops/sampling'))
 sys.path.append(os.path.join(ROOT_DIR, 'tf_ops/grouping'))
 sys.path.append(os.path.join(ROOT_DIR, 'tf_ops/3d_interpolation'))
@@ -240,7 +240,7 @@ config.allow_soft_placement = True
 config.log_device_placement = False
 sess = tf.Session(config=config)
 base_path = '/home/jd/Desktop/multiview_segmentation/models'
-MODEL_PATH = '%s/offline_%s_model%d.ckpt' % (base_path, net_type, VAL_AREA)
+MODEL_PATH = '%s/offline_%s_model_s3dis_%d.ckpt' % (base_path, net_type, VAL_AREA)
 if net_type=='pointnet':
     net = PointNet(1,NUM_POINT,NUM_CLASSES) 
 elif net_type=='pointnet2':

@@ -50,7 +50,7 @@ for i in range(len(labels)):
 plt.xticks(ind + 0.5, metrics)
 plt.legend()
 
-labels = ['isolation', 'svm', 'cov', 'lof', 'kmeans', 'gmm', 'meanshift']
+labels = ['Isolation Forest', 'One-class SVM', 'Robust Covariance', 'Local Outlier Factor', 'K-means', 'Gaussian Mixture Model', 'Mean-shift']
 f = open('results/clustering_analysis.txt', 'r')
 scores = []
 for l in f:

@@ -47,7 +47,7 @@ agg_recall = []
 agg_F1 = []
 agg_length_err = []
 agg_width_err = []
-for obj_id in range(1, 8) if args.obj=='column' else range(1, 3):
+for obj_id in range(1, 8) if args.obj=='column' else range(1, 3) if args.obj=='slab' else range(5, 7) if args.obj=='erica' else range(2,3):
     column = loadPLY('data/%s%d.ply' % (args.obj, obj_id))
     column_gray = numpy.mean(column[:,3:6], axis=1).reshape(-1,1)
 
@@ -110,7 +110,8 @@ for obj_id in range(1, 8) if args.obj=='column' else range(1, 3):
             assert len(features) == len(column)
         except (FileNotFoundError, AssertionError):
             features = get_triplet_loss_embedding(column[:, :6])
-            numpy.save('tmp/%s%d_tle.npy'%(args.obj, obj_id), features)
+            print('features', features.shape)
+#            numpy.save('tmp/%s%d_tle.npy'%(args.obj, obj_id), features)
     elif args.mode=='fpfh':
         try:
             fpfh = numpy.load('tmp/%s%d_fpfh.npy'%(args.obj, obj_id))
@@ -118,7 +119,7 @@ for obj_id in range(1, 8) if args.obj=='column' else range(1, 3):
         except (FileNotFoundError, AssertionError):
             savePCD('tmp/tmp.pcd', column)
             R1 = 0.015
-            R2 = 0.01
+            R2 = 0.02
             os.system('pcl_normal_estimation tmp/tmp.pcd tmp/normal.pcd -radius %f' % R1)
             os.system('pcl_fpfh_estimation tmp/normal.pcd tmp/fpfh.pcd -radius %f' % R2)
             os.system('pcl_convert_pcd_ascii_binary tmp/fpfh.pcd tmp/fpfh_ascii.pcd 0')
@@ -200,7 +201,8 @@ for obj_id in range(1, 8) if args.obj=='column' else range(1, 3):
         else:
             predict_mask = cluster_labels==numpy.argmin(counts)
     elif args.clustering=='isolation':
-        forest = IsolationForest(random_state=0, behaviour='new', contamination='auto').fit(features)
+#        forest = IsolationForest(random_state=0, behaviour='new', contamination='auto').fit(features)
+        forest = IsolationForest(random_state=0, contamination='auto').fit(features)
         score = forest.decision_function(features)
         predict_mask = score<0
     elif args.clustering=='svm':
